@@ -18,18 +18,18 @@
     <header>
         <div class="nav-block">
             <div id="header-logo">
-                <img src="/img/logos/logo.svg" alt="logo">
+                <a href="/pages/index.html"><img src="/img/logos/logo.svg" alt="logo"></a>
             </div>
             <nav>
-                <a class="btn-nav" id="btn-accueil" href="#section-accueil">
+                <div class="btn-nav" id="btn-accueil" onclick=toggleSection("accueil")>
                     Accueil
-                </a>
-                <a class="btn-nav" id="btn-kyvos" href="#kyvos">
+                </div>
+                <div class="btn-nav" id="btn-kyvos" onclick=toggleSection("kyvos")>
                     Kyvos
-                </a>
-                <a class="btn-nav" id="btn-kyvos-suite" href="#section-kyvos-suite">
+                </div>
+                <div class="btn-nav" id="btn-kyvos-suite" onclick=toggleSection("kyvos-suite")>
                     Kyvos Suite
-                </a>
+                </div>
             </nav>
         </div>
 
@@ -48,16 +48,59 @@
 
     </header>
 
-    <section id="accueil">
+    <section id="accueil" class="active">
         <div class="container">
             <div class="content">
                 <div class="heading">
                     <div class="badge">
-                        <p class="font-weight-600">Vous voulez participer ?</p>
+                        <p class="font-weight-500">Vous voulez participer ?</p>
                         <a class="btn-secondary" href="/pages/wikyvos.html">Wikyvos <img
                                 src="/img/icons/external-link.svg" alt="external-link icon"></a>
                     </div>
                     <h1 class="display-xxl font-weight-600">Parlons hôtellerie, ensemble</h1>
+                </div>
+                <p class="txt-md font-weight-300">
+                    — Dans un secteur en perpétuelle (r)évolution, Kyvos propose une plateforme d’écoute, de partage et
+                    d’outillage pour
+                    appréhender les métiers hôtelier —
+                </p>
+            </div>
+
+            <img src="/img/geographic01.svg" alt="geographical shapes">
+        </div>
+    </section>
+
+    <section id="kyvos" class="inactive">
+        <div class="container">
+            <div class="content">
+                <div class="heading">
+                    <div class="badge">
+                        <p class="font-weight-500">Vous voulez participer ?</p>
+                        <a class="btn-secondary" href="/pages/wikyvos.html">Wikyvos <img
+                                src="/img/icons/external-link.svg" alt="external-link icon"></a>
+                    </div>
+                    <h1 class="display-xxl font-weight-600">Ecouter, Supporter, Encourager</h1>
+                </div>
+                <p class="txt-md font-weight-300">
+                    — Dans un secteur en perpétuelle (r)évolution, Kyvos propose une plateforme d’écoute, de partage et
+                    d’outillage pour
+                    appréhender les métiers hôtelier —
+                </p>
+            </div>
+
+            <img src="/img/geographic01.svg" alt="geographical shapes">
+        </div>
+    </section>
+    <section id="kyvos-suite" class="inactive">
+        <div class="container">
+            <div class="content">
+                <div class="heading">
+                    <div class="badge">
+                        <p class="font-weight-500">Vous voulez participer ?</p>
+                        <a class="btn-secondary" href="/pages/wikyvos.html">Wikyvos <img
+                                src="/img/icons/external-link.svg" alt="external-link icon"></a>
+                    </div>
+                    <h1 class="display-xxl font-weight-600">S'équipper, s'informer.<h1>
                 </div>
                 <p class="txt-md font-weight-300">
                     — Dans un secteur en perpétuelle (r)évolution, Kyvos propose une plateforme d’écoute, de partage et
