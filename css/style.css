@@ -9,25 +9,24 @@
     --color-main300: #F0C29D;
     --color-main400: #E3A979;
     --color-main500: #EB9B69;
-    --color-main600: #ED7752;
+    --color-main600: #e38c55;
     --color-main700: #ED7752;
     --color-main800: #CB5D39;
     --color-main900: #C03B0F;
     --text-color: #252628;
-    --alt-text-color: #455661;
-    --grey-color: #727b82;
-    --txt-size-xs: 10px;
-    --txt-size-sm: 12px;
-    --txt-size-md: 14px;
-    --txt-size-lg: 16px;
+    --color-grey600: #475467;
+    --txt-size-xs: 12px;
+    --txt-size-sm: 14px;
+    --txt-size-md: 16px;
+    --txt-size-lg: 18px;
     --txt-size-xl: 20px;
-    --txt-size-xxl: 24px;
-    --display-size-xs: 12px;
-    --display-size-sm: 14px;
-    --display-size-md: 16px;
-    --display-size-lg: 18px;
-    --display-size-xl: 22px;
-    --display-size-xxl: 26px;
+    --txt-size-xxl: 22px;
+    --display-size-xs: 24px;
+    --display-size-sm: 30px;
+    --display-size-md: 36px;
+    --display-size-lg: 48px;
+    --display-size-xl: 60px;
+    --display-size-xxl: 72px;
 }
 
 /*set the font size for the website*/
@@ -43,19 +42,23 @@ body {
 
 /*set the font family for the title*/
 h1 {
-    font-family: 'Circular', 'Inter', sans-serif;
+    font-size: var(--display-size-lg);
+    font-weight: 500;
 }
 
 /*set the font family for the heading*/
 h2 {
     font-family: 'Circular', sans-serif;
-    font-size: var(--heading-font-size);
-    color: var(--color-main500);
+    font-size: var(--display-size-md);
+    font-weight: 600;
+    color: black;
 }
 
 /*set the font family for the body text*/
 p {
-    font-size: var(--body-font-size);
+    font-size: var(--txt-size-xl);
+    line-height: 30px;
+    padding: 0px;
 }
 
 a {
@@ -126,6 +129,23 @@ button {
     font-size: var(--display-size-xxl);
 }
 
+.txt-center {
+    text-align: center;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.txt-justify {
+    text-align: justify;
+}
+
+
 /* class settings for font weight */
 .font-weight-100 {
     font-weight: 100;
@@ -183,11 +203,46 @@ button {
     font-family: 'Circular', sans-serif;
 }
 
+/* positioning classes */
+.column {
+    flex-direction: column;
+
+}
+
+.row {
+    flex-direction: row;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.container-title {
+    color: var(--color-main600);
+    font-size: var(--txt-size-md);
+    font-weight: 600;
+}
+
+/* class settings for img */
+#img-geo-square {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+}
 
 /* containers*/
+
 header {
     display: flex;
-    flex-direction: row;
     width: 100vw;
     height: 2rem;
     background-color: #ffffff;
@@ -197,26 +252,31 @@ header {
 
 .container {
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
+    padding: 50px;
+    gap: 80px;
 }
 
 .content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 200px 50px;
+    padding: 50px;
     gap: 20px;
+    max-width: 800px;
 }
 
 .heading {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
+}
+
+.supporting {
+    color: var(--color-grey600);
+    font-size: var(--txt-size-md);
+    font-weight: 400;
+    line-height: 1.2;
 }
 
 /* class settings for navigation */
@@ -258,6 +318,7 @@ nav {
 .btn-text:hover {
     background-color: var(--color-main100);
     color: var(--color-main700);
+    changeColor(this.id, #FFFFFF)
 }
 
 .btn-nav {
@@ -267,8 +328,8 @@ nav {
     align-items: center;
     padding: 0px 18px;
     font-weight: 600;
-    font-size: var(--txt-size-md);
-    color: var(--alt-text-color);
+    font-size: var(--txt-size-sm);
+    color: var(--color-grey600);
     background-color: #ffffff00;
     border: solid 1px #ffffff00;
     flex: none;
@@ -287,12 +348,31 @@ nav {
     color: red;
 }
 
+.btn-primary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 48px;
+    font-weight: 600;
+    font-size: var(--txt-size-md);
+    color: #ffffff;
+    background-color: var(--color-main600);
+    border-radius: 10px;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-main700);
+    color: white;
+}
+
 .btn-secondary {
     display: flex;
     align-items: center;
     padding: 0px 18px;
     font-weight: 500;
-    font-size: var(--txt-size-md);
+    font-size: var(--txt-size-sm);
     color: var(--color-main700);
     border: solid 1px var(--color-main700);
     border-radius: 20px;

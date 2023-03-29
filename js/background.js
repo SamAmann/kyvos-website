@@ -7,7 +7,6 @@ window.onload = function () {
         } else {
             sections[i].style.display = "block";
         }
-        console.log(sections);
     }
 }
 

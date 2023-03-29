@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/img/logos/logo-key_orange.svg">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="/js/background.js"></script>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -34,10 +34,9 @@
         </div>
 
         <div class="nav-block">
-            <div>
-                <a class="btn-text" href="/pages/wikyvos.html" target="_blank">
-                    WiKyvos <img src="/img/icons/graduation-hat.svg" alt="graduation-hat icon" class="icon">
-                </a>
+            <div class="btn-text" href="/pages/wikyvos.html" target="_blank">
+                WiKyvos <img id="wikyvos-icon" src="/img/icons/graduation-hat.svg" alt="graduation-hat icon"
+                    class="icon">
             </div>
 
             <a class="btn-text" href="#section-login">
@@ -48,49 +47,97 @@
 
     </header>
 
-    <section id="accueil" class="active">
-        <div class="container">
-            <div class="content">
-                <div class="heading">
+    <section id="accueil" class="inactive">
+        <div id="hero-accueil" class="container column center">
+            <div class="content column center">
+                <div class="heading center">
                     <div class="badge">
-                        <p class="font-weight-500">Vous voulez participer ?</p>
+                        Vous voulez participer ?
                         <a class="btn-secondary" href="/pages/wikyvos.html">Wikyvos <img
                                 src="/img/icons/external-link.svg" alt="external-link icon"></a>
                     </div>
-                    <h1 class="display-xxl font-weight-600">Parlons hôtellerie, ensemble</h1>
+                    <h1>Parlons d'hôtellerie, ensemble</h1>
                 </div>
-                <p class="txt-md font-weight-300">
-                    — Dans un secteur en perpétuelle (r)évolution, Kyvos propose une plateforme d’écoute, de partage et
-                    d’outillage pour
-                    appréhender les métiers hôtelier —
+                <p class="supporting txt-center">
+                    — Dans un secteur en perpétuelle (r)évolution, <span>Kyvos</span> propose une plateforme d’écoute,
+                    de partage et d’outillage pour appréhender <span>les métiers hôteliers</span> —
                 </p>
             </div>
 
-            <img src="/img/geographic01.svg" alt="geographical shapes">
+            <div class="content center"><img src="/img/geographic01.svg" alt="geographical shapes"></div>
         </div>
     </section>
 
-    <section id="kyvos" class="inactive">
-        <div class="container">
-            <div class="content">
+    <section id="kyvos" class="active">
+        <div class="container row center">
+            <div class="content column left">
                 <div class="heading">
-                    <div class="badge">
-                        <p class="font-weight-500">Vous voulez participer ?</p>
-                        <a class="btn-secondary" href="/pages/wikyvos.html">Wikyvos <img
-                                src="/img/icons/external-link.svg" alt="external-link icon"></a>
-                    </div>
-                    <h1 class="display-xxl font-weight-600">Ecouter, Supporter, Encourager</h1>
+                    <h1 class="txt-left">Écouter, <br> Supporter, <br> Encourager.</h1>
                 </div>
-                <p class="txt-md font-weight-300">
-                    — Dans un secteur en perpétuelle (r)évolution, Kyvos propose une plateforme d’écoute, de partage et
-                    d’outillage pour
-                    appréhender les métiers hôtelier —
+                <p class="supporting txt-left">
+                    — Notre expérience d’hôtelier imprègne chacun des conseils que nous pouvons vous apporter —
                 </p>
             </div>
-
-            <img src="/img/geographic01.svg" alt="geographical shapes">
+            <img id="img-geo-square" src="/img/geograpic02.svg" alt="geographical shapes">
         </div>
+
+        <div class="container column">
+            <div class="content">
+                <div class="content column left">
+                    <h1 class="container-title">
+                        Un Art de vivre
+                    </h1>
+                    <h2>
+                        Un <span>savoir faire</span> et un <span>savoir être hôtelier</span>,
+                        <br>
+                        au service de votre entreprise.
+                    </h2>
+                    <p>Que vous soyez vous-même hôtelier ou non, vous apprécierez notre capacité d’adaptation au milieu
+                        particulier dans lequel évolue votre entreprise.
+                    </p>
+                    <p>Fort de nos expériences professionnelles respectives, nous saurons décortiquer, analyser et
+                        optimiser
+                        vos opérations
+                    </p>
+                </div>
+                <div class="content row center">
+                    <a class="btn-primary txt-center" href="#nos-prestations">
+                        Nos prestations
+                        <img src="/img/icons/arrow-down.svg" alt="arrow down icon" class="icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="nos-prestations">
+            <div class="container column">
+                <div class="content">
+                    <div class="content column left">
+                        <h1 class="container-title">
+                            Nos prestations
+                        </h1>
+                        <h2>
+                            Nous vous accompagnons dans la <span>création</span> et le <span>développement</span> de
+                            votre
+                            entreprise.
+                        </h2>
+                        <p>Que vous soyez vous-même hôtelier ou non, vous apprécierez notre capacité d’adaptation au
+                            milieu
+                            particulier dans lequel évolue votre entreprise.
+                        </p>
+                        <p>Fort de nos expériences professionnelles respectives, nous saurons décortiquer, analyser et
+                            optimiser
+                            vos opérations
+                        </p>
+                    </div>
+                    <a class="btn-primary" href="#contact">
+                        Contactez-nous
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </section>
+
     <section id="kyvos-suite" class="inactive">
         <div class="container">
             <div class="content">
@@ -102,7 +149,7 @@
                     </div>
                     <h1 class="display-xxl font-weight-600">S'équipper, s'informer.<h1>
                 </div>
-                <p class="txt-md font-weight-300">
+                <p class="supporting">
                     — Dans un secteur en perpétuelle (r)évolution, Kyvos propose une plateforme d’écoute, de partage et
                     d’outillage pour
                     appréhender les métiers hôtelier —
