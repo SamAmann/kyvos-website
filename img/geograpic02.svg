@@ -1,0 +1,52 @@
+<svg width="756" height="720" viewBox="0 0 756 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="180" height="180" transform="translate(540)" fill="#F0C29D"/>
+<path d="M540 90H630C630 139.706 589.706 180 540 180V90Z" fill="white"/>
+<path d="M630 0C679.706 0 720 40.2944 720 90H630V0Z" fill="#ED7752"/>
+<rect width="180" height="180" transform="translate(540 180)" fill="#FFE0C8"/>
+<path d="M630 270H720C720 319.706 679.706 360 630 360V270Z" fill="#EB9B69"/>
+<path d="M630 270C580.294 270 540 310.294 540 360H630V270Z" fill="#ED7752"/>
+<rect width="180" height="180" transform="translate(180 180)" fill="white"/>
+<path d="M360 270H270C270 319.706 310.294 360 360 360V270Z" fill="#EB9B69"/>
+<path d="M270 180C319.706 180 360 220.294 360 270H270V180Z" fill="#ED7752"/>
+<rect width="180" height="180" transform="translate(360)" fill="white"/>
+<path d="M450 90H540L450 180V90Z" fill="#EB9B69"/>
+<path d="M450 0V90H360L450 0Z" fill="#EB9B69"/>
+<rect width="180" height="180" transform="translate(360 360)" fill="#FFE0C8"/>
+<path d="M450 450L450 360L540 450L450 450Z" fill="white"/>
+<path d="M360 450L450 450L450 540L360 450Z" fill="#EB9B69"/>
+<rect width="180" height="180" transform="translate(360 180)" fill="#F0C29D"/>
+<path d="M450 360C400.294 360 360 319.706 360 270C360 220.294 400.294 180 450 180V360Z" fill="#ED7752"/>
+<circle cx="450" cy="270" r="45" fill="white"/>
+<rect width="180" height="180" transform="translate(0 540)" fill="#FFE0C8"/>
+<path d="M-3.93402e-06 630C-1.76132e-06 580.294 40.2944 540 90 540C139.706 540 180 580.294 180 630L-3.93402e-06 630Z" fill="#EB9B69"/>
+<ellipse cx="90" cy="675" rx="45" ry="45" fill="white"/>
+<rect width="180" height="180" transform="translate(180 540)" fill="white"/>
+<path d="M180 630C180 580.294 220.294 540 270 540C319.706 540 360 580.294 360 630L180 630Z" fill="#EB9B69"/>
+<path d="M270 720C220.294 720 180 679.706 180 630C180 580.294 220.294 540 270 540V720Z" fill="#ED7752"/>
+<ellipse cx="315" cy="675" rx="45" ry="45" fill="#F0C29D"/>
+<rect width="180" height="180" transform="translate(0 360)" fill="white"/>
+<path d="M180 540C130.294 540 90 499.706 90 450C90 400.294 130.294 360 180 360V540Z" fill="#ED7752"/>
+<circle cx="45" cy="450" r="45" fill="#F0C29D"/>
+<rect width="180" height="180" transform="translate(180 360)" fill="#F0C29D"/>
+<path d="M180 540C229.706 540 270 499.706 270 450C270 400.294 229.706 360 180 360V540Z" fill="#ED7752"/>
+<path d="M360 360L360 540L270 450L360 360Z" fill="white"/>
+<rect width="180" height="180" fill="white"/>
+<rect x="90" y="90" width="90" height="90" fill="#EB9B69"/>
+<rect width="90" height="90" fill="#FFE0C8"/>
+<rect width="180" height="180" transform="translate(360 540)" fill="#FFE0C8"/>
+<rect x="360" y="540" width="90" height="90" fill="#ED7752"/>
+<rect x="450" y="630" width="90" height="90" fill="white"/>
+<rect width="180" height="180" transform="translate(0 180)" fill="#FFE0C8"/>
+<circle cx="90" cy="270" r="45" fill="white"/>
+<path d="M180 360H0L90 270L180 360Z" fill="#ED7752"/>
+<rect width="180" height="180" transform="translate(540 540)" fill="white"/>
+<circle cx="630" cy="630" r="45" fill="#FFF2E8"/>
+<path d="M720 720H540L630 630L720 720Z" fill="#ED7752"/>
+<path d="M720 630H540L630 540L720 630Z" fill="#EB9B69"/>
+<rect width="180" height="180" transform="translate(180)" fill="#F0C29D"/>
+<path d="M360 0V180H180L360 0Z" fill="#ED7752"/>
+<circle cx="270" cy="90" r="45" fill="white"/>
+<rect width="180" height="180" transform="translate(540 360)" fill="white"/>
+<path d="M540 360L720 360L720 540L540 360Z" fill="#EB9B69"/>
+<circle cx="630" cy="450" r="45" fill="#ED7752"/>
+</svg>

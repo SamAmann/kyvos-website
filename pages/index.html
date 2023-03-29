@@ -5,17 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="../img/logos/logo-key_orange.svg">
+    <link rel="icon" type="image/svg+xml" href="/img/logos/logo-key_orange.svg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/js/background.js"></script>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Accueil | Kyvos</title>
+    <title>Kyvos</title>
 </head>
 
 <body>
-    <object style="width: 100%;" type="text/html" data="header.html"></object>
+    <header>
+        <div class="nav-block">
+            <div id="header-logo">
+                <img src="/img/logos/logo.svg" alt="logo">
+            </div>
+            <nav>
+                <a class="btn-nav" id="btn-accueil" href="#section-accueil">
+                    Accueil
+                </a>
+                <a class="btn-nav" id="btn-kyvos" href="#kyvos">
+                    Kyvos
+                </a>
+                <a class="btn-nav" id="btn-kyvos-suite" href="#section-kyvos-suite">
+                    Kyvos Suite
+                </a>
+            </nav>
+        </div>
 
+        <div class="nav-block">
+            <div>
+                <a class="btn-text" href="/pages/wikyvos.html" target="_blank">
+                    WiKyvos <img src="/img/icons/graduation-hat.svg" alt="graduation-hat icon" class="icon">
+                </a>
+            </div>
+
+            <a class="btn-text" href="#section-login">
+                Se connecter <img src="/img/icons/lock.svg" alt="graduation-hat icon" class="icon">
+            </a>
+
+        </div>
+
+    </header>
+
+    <section id="accueil">
+        <div class="container">
+            <div class="content">
+                <div class="heading">
+                    <div class="badge">
+                        <p class="font-weight-600">Vous voulez participer ?</p>
+                        <a class="btn-secondary" href="/pages/wikyvos.html">Wikyvos <img
+                                src="/img/icons/external-link.svg" alt="external-link icon"></a>
+                    </div>
+                    <h1 class="display-xxl font-weight-600">Parlons hôtellerie, ensemble</h1>
+                </div>
+                <p class="txt-md font-weight-300">
+                    — Dans un secteur en perpétuelle (r)évolution, Kyvos propose une plateforme d’écoute, de partage et
+                    d’outillage pour
+                    appréhender les métiers hôtelier —
+                </p>
+            </div>
+
+            <img src="/img/geographic01.svg" alt="geographical shapes">
+        </div>
+    </section>
 
 </body>
 
