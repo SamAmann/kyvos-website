@@ -1,0 +1,267 @@
+/*declare the variables*/
+
+:root {
+    --font-size: 1.6rem;
+    --color-main25: #FFFDFC;
+    --color-main50: #FFF9F8;
+    --color-main100: #FFF2E8;
+    --color-main200: #FFE0C8;
+    --color-main300: #F0C29D;
+    --color-main400: #E3A979;
+    --color-main500: #EB9B69;
+    --color-main600: #ED7752;
+    --color-main700: #ED7752;
+    --color-main800: #CB5D39;
+    --color-main900: #C03B0F;
+    --text-color: #252628;
+    --alt-text-color: #455661;
+    --grey-color: #727b82;
+    --txt-size-xs: 0.2rem;
+    --txt-size-sm: 0.4rem;
+    --txt-size-md: 0.6rem;
+    --txt-size-lg: 0.8rem;
+    --txt-size-xl: 1rem;
+    --txt-size-xxl: 1.2rem;
+    --display-size-xs: 0.8rem;
+    --display-size-sm: 1rem;
+    --display-size-md: 1.2rem;
+    --display-size-lg: 1.4rem;
+    --display-size-xl: 1.6rem;
+    --display-size-xxl: 1.8rem;
+}
+
+/*set the font size for the website*/
+html {
+    font-size: var(--font-size);
+}
+
+/*set the font family for the website*/
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+
+/*set the font family for the title*/
+h1 {
+    font-family: 'Circular', sans-serif;
+    font-size: var(--title-font-size);
+    color: var(--color-main500);
+}
+
+/*set the font family for the heading*/
+h2 {
+    font-family: 'Circular', sans-serif;
+    font-size: var(--heading-font-size);
+    color: var(--color-main500);
+}
+
+/*set the font family for the body text*/
+p {
+    font-size: var(--body-font-size);
+    color: var(--text-color);
+}
+
+small {
+    font-size: var(--small-font-size);
+}
+
+tiny {
+    font-size: var(--tiny-font-size);
+}
+
+a {
+    color: var(--alt-text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-main800);
+}
+
+a:focus {
+    color: var(--color-main800);
+}
+
+button {
+    background-color: #ffffff00;
+    border: none;
+}
+
+/* class settings for text */
+.txt-xs {
+    font-size: var(--txt-size-xs);
+}
+
+.txt-sm {
+    font-size: var(--txt-size-sm);
+}
+
+.txt-md {
+    font-size: var(--txt-size-md);
+}
+
+.txt-lg {
+    font-size: var(--txt-size-lg);
+}
+
+.txt-xl {
+    font-size: var(--txt-size-xl);
+}
+
+.txt-xxl {
+    font-size: var(--txt-size-xxl);
+}
+
+/* class settings for display */
+.display-xs {
+    font-size: var(--display-size-xs);
+}
+
+.display-sm {
+    font-size: var(--display-size-sm);
+}
+
+.display-md {
+    font-size: var(--display-size-md);
+}
+
+.display-lg {
+    font-size: var(--display-size-lg);
+}
+
+.display-xl {
+    font-size: var(--display-size-xl);
+}
+
+.display-xxl {
+    font-size: var(--display-size-xxl);
+}
+
+/* class settings for font weight */
+.font-weight-100 {
+    font-weight: 100;
+}
+
+.font-weight-200 {
+    font-weight: 200;
+}
+
+.font-weight-300 {
+    font-weight: 300;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.font-weight-800 {
+    font-weight: 800;
+}
+
+.font-weight-900 {
+    font-weight: 900;
+}
+
+/* class settings for font style */
+
+.font-style-italic {
+    font-style: italic;
+}
+
+.font-style-normal {
+    font-style: normal;
+}
+
+/* class settings for font family */
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-circular {
+    font-family: 'Circular', sans-serif;
+}
+
+
+/* containers*/
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+}
+
+.nav-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 100px;
+    gap: 20px;
+}
+
+nav {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    flex: none;
+}
+
+.btn-nav {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 18px;
+    height: 80px;
+
+
+    background-color: #ffffff00;
+    border: none;
+}
+
+.btn-nav:hover {
+    border-bottom: solid 1.5px var(--color-main700);
+    color: var(--color-main700);
+}
+
+.btn-nav.active {
+    border-bottom: solid 1px var(--color-main700);
+    color: var(--color-main700);
+}
+
+
+.btn-secondary {
+    display: flex;
+    background-color: #ffffff00;
+    border: solid 2px #ffffff00;
+    color: var(--color-main700);
+    align-items: center;
+    padding: 8px 14px;
+    gap: 10px;
+}
+
+.btn-secondary:hover {
+    color: var(--color-main700);
+    border: solid 1px var(--color-main700);
+    border-radius: 10px;
+}

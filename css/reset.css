@@ -1,0 +1,167 @@
+/*
+Circular will be used for titles and headings
+Inter will be used for body text
+Main color is #e38c55, light contrast is #f0c29d, dark contrast is #d36c4a
+text color is #252628, alt (link, ...) is #455661, grey is #727b82
+text color of Hovered link are #ED7752 and focused link are #CB5D39
+background color of hovered link is #FFFDFC and focused link transparent
+
+The font size is store in the variable $font-size
+The main color is store in the variable $main-color
+The light contrast color is store in the variable $light-color
+The dark contrast color is store in the variable $dark-color
+The text color is store in the variable $text-color
+The alt text color is store in the variable $alt-text-color
+The grey color is store in the variable $grey-color
+
+The font size of the title is store in the variable $title-font-size
+The font size of the heading is store in the variable $heading-font-size
+The font size of the body text is store in the variable $body-font-size
+The font size of the small text is store in the variable $small-font-size
+The font size of the tiny text is store in the variable $tiny-font-size
+ */
+
+/*
+Reset all the browser default CSS setting with Meyer technique
+    http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 
+***
+END of the reset of CSS browser default
+Start CSS for the website here 
+***
+*/
