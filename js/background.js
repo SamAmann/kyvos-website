@@ -1,23 +1,14 @@
-// Onpageload Get all section of document, hide the .inactive and show the .active
-window.onload = function () {
-    var sections = document.getElementsByTagName("section");
-    for (var i = 0; i < sections.length; i++) {
-        if (sections[i].className == "inactive") {
-            sections[i].style.display = "none";
+// To navigate between pages
+function togglePage(id) {
+    var pages = document.getElementsByTagName("page");
+    for (var i = 0; i < pages.length; i++) {
+        if (pages[i].id == id) {
+            pages[i].classList.add("active");
+            pages[i].classList.remove("inactive");
         } else {
-            sections[i].style.display = "block";
+            pages[i].classList.add("inactive");
+            pages[i].classList.remove("active");
         }
     }
 }
 
-// Function that show the called section and hide the others
-function toggleSection(id) {
-    var sections = document.getElementsByTagName("section");
-    for (var i = 0; i < sections.length; i++) {
-        if (sections[i].id == id) {
-            sections[i].style.display = "block";
-        } else {
-            sections[i].style.display = "none";
-        }
-    }
-}
