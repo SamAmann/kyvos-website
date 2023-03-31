@@ -1,19 +1,152 @@
 /* Style for wide screen */
-:root {
-    /*declare the variables*/
-    --txt-size-xs: 12px;
-    --txt-size-sm: 14px;
-    --txt-size-md: 16px;
-    --txt-size-lg: 18px;
-    --txt-size-xl: 20px;
-    --txt-size-xxl: 22px;
-    --display-size-xs: 24px;
-    --display-size-sm: 30px;
-    --display-size-md: 36px;
-    --display-size-lg: 48px;
-    --display-size-xl: 60px;
-    --display-size-xxl: 72px;
+@media screen and (min-width: 1024px) {}
+
+/* Style for mobile */
+@media screen and (max-width: 1023px) {
+    :root {
+        --txt-size-xs: 8px;
+        --txt-size-sm: 14px;
+        --txt-size-md: 16px;
+        --txt-size-lg: 18px;
+        --txt-size-xl: 20px;
+        --txt-size-xxl: 22px;
+        --display-size-xs: 24px;
+        --display-size-sm: 30px;
+        --display-size-md: 36px;
+        --display-size-lg: 48px;
+        --display-size-xl: 60px;
+        --display-size-xxl: 72px;
+    }
+
+    .no-mobile {
+        display: none;
+    }
 }
+
+:root {
+    /* Universal styles */
+    /*--txt-size-xs: 12px;
+--txt-size-sm: 14px;
+--txt-size-md: 16px;
+--txt-size-lg: 18px;
+--txt-size-xl: 20px;
+--txt-size-xxl: 22px;
+--display-size-xs: 24px;
+--display-size-sm: 30px;
+--display-size-md: 36px;
+--display-size-lg: 48px;
+--display-size-xl: 60px;
+--display-size-xxl: 72px;
+*/
+
+    --txt-size-xs: 0.75rem;
+    --txt-size-sm: 0.875rem;
+    --txt-size-md: 1rem;
+    --txt-size-lg: 1.125rem;
+    --txt-size-xl: 1.25rem;
+    --txt-size-xxl: 1.375rem;
+    --display-size-xs: 1.5rem;
+    --display-size-sm: 1.875rem;
+    --display-size-md: 2.25rem;
+    --display-size-lg: 3rem;
+    --display-size-xl: 3.75rem;
+    --display-size-xxl: 4.5rem;
+
+    --font-size: 1.6rem;
+    --color-main25: #FFFDFC;
+    --color-main50: #FFF9F8;
+    --color-main100: #FFF2E8;
+    --color-main200: #FFE0C8;
+    --color-main300: #F0C29D;
+    --color-main400: #E3A979;
+    --color-main500: #EB9B69;
+    --color-main600: #e38c55;
+    --color-main700: #ED7752;
+    --color-main800: #CB5D39;
+    --color-main900: #C03B0F;
+    --text-color: #252628;
+    --color-grey600: #475467;
+    --color-grey500: #5E6C84;
+    --color-success25: #F6FEF9;
+    --color-success50: #ECFDF3;
+    --color-success100: #D1FADF;
+    --color-success200: #A7F5BF;
+    --color-success300: #6EEF9C;
+    --color-success400: #3DE97B;
+    --color-success500: #1DE66B;
+    --color-success600: #00D95F;
+    --color-success700: #00C14F;
+    --color-success800: #00A73F;
+    --color-success900: #008C2E;
+    --color-error25: #FFF6F6;
+    --color-error50: #FFF0F0;
+    --color-error100: #FFE3E3;
+    --color-error200: #FFC7C7;
+    --color-error300: #FF9B9B;
+    --color-error400: #FF6E6E;
+    --color-error500: #FF4D4D;
+    --color-error600: #FF2E2E;
+    --color-error700: #FF0F0F;
+    --color-error800: #E60000;
+    --color-error900: #C40000;
+    --color-warning25: #FFFDF6;
+    --color-warning50: #FFFBEF;
+    --color-warning100: #FFF7DE;
+    --color-warning200: #FFF0BD;
+    --color-warning300: #FFE79C;
+    --color-warning400: #FFD97B;
+    --color-warning500: #FFC95B;
+    --color-warning600: #FFB93A;
+    --color-warning700: #FFA91A;
+    --color-warning800: #FF9800;
+    --color-warning900: #E68400;
+    --color-info25: #F6F9FF;
+    --color-info50: #EDF3FF;
+    --color-info100: #DDE8FF;
+    --color-info200: #BDD0FF;
+    --color-info300: #9CB8FF;
+    --color-info400: #7CA0FF;
+    --color-info500: #5C88FF;
+    --color-info600: #3D70FF;
+    --color-info700: #1E58FF;
+    --color-info800: #0040FF;
+    --color-info900: #0026E6;
+    --color-grey25: #F8F8F8;
+    --color-grey50: #F1F1F1;
+    --color-grey100: #E3E3E3;
+    --color-grey200: #CFCFCF;
+    --color-grey300: #B1B1B1;
+    --color-grey400: #9E9E9E;
+    --color-grey500: #5E6C84;
+    --color-grey600: #475467;
+    --color-grey700: #343D48;
+    --color-grey800: #232F3E;
+    --color-grey900: #172B4D;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-transparent: #ffffff00;
+    --color-shadow: #0000001A;
+    --color-shadow-dark: #00000033;
+    --color-shadow-darker: #0000004D;
+    --color-shadow-darkest: #00000066;
+    --color-shadow-light: #0000000D;
+    --color-shadow-lighter: #0000001A;
+    --color-shadow-lightest: #00000033;
+    --color-shadow-white: #ffffff1A;
+
+    --header-height: 4rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    max-width: 100vw;
+}
+
+
 
 /*set the font family for the title*/
 h1 {
@@ -63,15 +196,58 @@ p {
     padding: 0px;
 }
 
+/* Form, input and labels */
+
+form {
+    border: solid 1px var(--color-grey200);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+label {
+    display: flex;
+    font-size: var(--txt-size-sm);
+    font-weight: 500;
+    color: var(--color-grey600);
+    text-align: left;
+    width: 100%;
+    padding-top: 0.8rem;
+    padding-bottom: 0.2rem;
+}
+
+input {
+    display: flex;
+    width: 100%;
+    height: 1rem;
+    padding: 0.5rem;
+    border: 0.1rem solid var(--color-grey200);
+    border-radius: 0.5rem;
+    font-size: var(--txt-size-sm);
+    font-weight: 100;
+    color: var(--color-grey700);
+    background-color: var(--color-white);
+}
+
+input::placeholder {
+    color: var(--color-grey400);
+}
+
 
 /* Images */
 #img-accueil {
     width: 100%;
 }
 
-#lobby-hotel {
-    max-width: 50vw;
+#img-kyvos-hero {
+    width: 50vw;
+    height: 50vh;
 }
+
 
 .half-content-width {
     width: 50%;
@@ -162,25 +338,26 @@ page.active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 99vw;
 }
 
 .hero {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - var(--header-height));
-    gap: 5rem;
 }
+
+
 
 .container {
     display: flex;
-    gap: 1rem;
-    padding: 6rem;
+    gap: 2rem;
+    padding: 5rem;
 }
 
 .content {
     display: flex;
-    max-width: 75vw;
+    max-width: 50vw;
     padding: 1rem;
     gap: 1rem;
 }
@@ -189,7 +366,7 @@ page.active {
     display: flex;
     padding: 1rem;
     gap: 1rem;
-    width: 100%;
+    max-width: 80vw;
 }
 
 .content-no-space {
@@ -222,6 +399,8 @@ page.active {
     max-width: 400px;
 }
 
+
+
 /* class settings for navigation */
 .nav-block {
     display: flex;
@@ -241,6 +420,7 @@ nav {
     height: 100%;
 }
 
+/* Cards */
 .card-white {
     display: flex;
     flex-direction: column;
@@ -250,7 +430,8 @@ nav {
     border-radius: 1rem;
     box-shadow: 0rem 0rem 1rem var(--color-grey100);
     padding: 1.5rem 1rem;
-    gap: 1rem
+    gap: 1rem;
+    wrap: no-wrap;
 }
 
 .card-grey {
@@ -262,12 +443,17 @@ nav {
     border-radius: 1rem;
     box-shadow: 0rem 0rem 1rem var(--color-grey25);
     padding: 1.5rem 1rem;
-    gap: 1rem
+    gap: 1rem;
+    wrap: no-wrap;
 }
 
 .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: solid 1px var(--color-grey100);
     width: 100%;
+    margin: 1rem 0rem;
 }
 
 
@@ -392,99 +578,6 @@ nav {
 
 
 /* Set variables whatever the screen size */
-:root {
-    --font-size: 1.6rem;
-    --color-main25: #FFFDFC;
-    --color-main50: #FFF9F8;
-    --color-main100: #FFF2E8;
-    --color-main200: #FFE0C8;
-    --color-main300: #F0C29D;
-    --color-main400: #E3A979;
-    --color-main500: #EB9B69;
-    --color-main600: #e38c55;
-    --color-main700: #ED7752;
-    --color-main800: #CB5D39;
-    --color-main900: #C03B0F;
-    --text-color: #252628;
-    --color-grey600: #475467;
-    --color-grey500: #5E6C84;
-    --color-success25: #F6FEF9;
-    --color-success50: #ECFDF3;
-    --color-success100: #D1FADF;
-    --color-success200: #A7F5BF;
-    --color-success300: #6EEF9C;
-    --color-success400: #3DE97B;
-    --color-success500: #1DE66B;
-    --color-success600: #00D95F;
-    --color-success700: #00C14F;
-    --color-success800: #00A73F;
-    --color-success900: #008C2E;
-    --color-error25: #FFF6F6;
-    --color-error50: #FFF0F0;
-    --color-error100: #FFE3E3;
-    --color-error200: #FFC7C7;
-    --color-error300: #FF9B9B;
-    --color-error400: #FF6E6E;
-    --color-error500: #FF4D4D;
-    --color-error600: #FF2E2E;
-    --color-error700: #FF0F0F;
-    --color-error800: #E60000;
-    --color-error900: #C40000;
-    --color-warning25: #FFFDF6;
-    --color-warning50: #FFFBEF;
-    --color-warning100: #FFF7DE;
-    --color-warning200: #FFF0BD;
-    --color-warning300: #FFE79C;
-    --color-warning400: #FFD97B;
-    --color-warning500: #FFC95B;
-    --color-warning600: #FFB93A;
-    --color-warning700: #FFA91A;
-    --color-warning800: #FF9800;
-    --color-warning900: #E68400;
-    --color-info25: #F6F9FF;
-    --color-info50: #EDF3FF;
-    --color-info100: #DDE8FF;
-    --color-info200: #BDD0FF;
-    --color-info300: #9CB8FF;
-    --color-info400: #7CA0FF;
-    --color-info500: #5C88FF;
-    --color-info600: #3D70FF;
-    --color-info700: #1E58FF;
-    --color-info800: #0040FF;
-    --color-info900: #0026E6;
-    --color-grey25: #F8F8F8;
-    --color-grey50: #F1F1F1;
-    --color-grey100: #E3E3E3;
-    --color-grey200: #CFCFCF;
-    --color-grey300: #B1B1B1;
-    --color-grey400: #9E9E9E;
-    --color-grey500: #5E6C84;
-    --color-grey600: #475467;
-    --color-grey700: #343D48;
-    --color-grey800: #232F3E;
-    --color-grey900: #172B4D;
-    --color-white: #ffffff;
-    --color-black: #000000;
-    --color-transparent: #ffffff00;
-    --color-shadow: #0000001A;
-    --color-shadow-dark: #00000033;
-    --color-shadow-darker: #0000004D;
-    --color-shadow-darkest: #00000066;
-    --color-shadow-light: #0000000D;
-    --color-shadow-lighter: #0000001A;
-    --color-shadow-lightest: #00000033;
-    --color-shadow-white: #ffffff1A;
-
-    --header-height: 4rem;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-    color: var(--text-color);
-}
 
 a {
     color: var(--color-main500);
@@ -668,6 +761,22 @@ button {
 .no-wrap {
     flex-wrap: nowrap;
     white-space: nowrap;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
 }
 
 .rotate90 {
