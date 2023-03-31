@@ -28,7 +28,7 @@
 <path d="M180 540C130.294 540 90 499.706 90 450C90 400.294 130.294 360 180 360V540Z" fill="#ED7752"/>
 <circle cx="45" cy="450" r="45" fill="#F0C29D"/>
 <rect width="180" height="180" transform="translate(180 360)" fill="#F0C29D"/>
-<path d="M180 540C229.706 540 270 499.706 270 450C270 400.294 229.706 360 180 360V540Z" fill="#ED7752"/>
+<path d="M180 540C229.706 540 270 499.706 270 450C270 400.294 229.706 360 180 360V540Z" fill="white"/>
 <path d="M360 360L360 540L270 450L360 360Z" fill="white"/>
 <rect width="180" height="180" fill="white"/>
 <rect x="90" y="90" width="90" height="90" fill="#EB9B69"/>

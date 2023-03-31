@@ -1,30 +1,14 @@
 /* Style for wide screen */
-@media (min-width: 1024px) {}
-
-/* Style for mobile */
-@media (max-width: 1023px) {
-    :root {
-        --txt-size-xs: 8px;
-        --txt-size-sm: 14px;
-        --txt-size-md: 16px;
-        --txt-size-lg: 18px;
-        --txt-size-xl: 20px;
-        --txt-size-xxl: 22px;
-        --display-size-xs: 24px;
-        --display-size-sm: 30px;
-        --display-size-md: 36px;
-        --display-size-lg: 48px;
-        --display-size-xl: 60px;
-        --display-size-xxl: 72px;
-    }
-
-    .no-mobile {
-        display: none;
+@media (min-width: 1024px) {
+    .container {
+        display: flex;
+        gap: 2rem;
+        padding: 5rem;
     }
 }
 
+/* Universal styles */
 :root {
-    /* Universal styles */
     /*--txt-size-xs: 12px;
 --txt-size-sm: 14px;
 --txt-size-md: 16px;
@@ -320,12 +304,14 @@ input::placeholder {
 header {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    max-width: 100vw;
     height: var(--header-height);
     background-color: #ffffff;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
     justify-content: space-between;
     z-index: 999;
+    padding: 0rem 6rem;
+    gap: 1rem;
 }
 
 page.inactive {
@@ -348,15 +334,10 @@ page.active {
 
 
 
-.container {
-    display: flex;
-    gap: 2rem;
-    padding: 5rem;
-}
+
 
 .content {
     display: flex;
-    max-width: 50vw;
     padding: 1rem;
     gap: 1rem;
 }
@@ -406,8 +387,7 @@ page.active {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px 100px;
-    gap: 20px;
+    gap: 1rem;
     height: auto;
 }
 
@@ -803,7 +783,7 @@ button {
 /* Class for Column management */
 /* 1 Column */
 .col1 {
-    width: 100%;
+    flex-basis: 1;
 }
 
 /* 20% Width Columns */
@@ -869,4 +849,31 @@ button {
 /* 100% Width Columns */
 .col100 {
     width: 100%;
+}
+
+/* Style for mobile */
+@media (max-width: 1023px) {
+    :root {
+        --txt-size-xs: 8px;
+        --txt-size-sm: 14px;
+        --txt-size-md: 16px;
+        --txt-size-lg: 18px;
+        --txt-size-xl: 20px;
+        --txt-size-xxl: 22px;
+        --display-size-xs: 24px;
+        --display-size-sm: 30px;
+        --display-size-md: 36px;
+        --display-size-lg: 48px;
+        --display-size-xl: 60px;
+        --display-size-xxl: 72px;
+    }
+
+    .container {
+        display: flex;
+        padding: 10px;
+    }
+
+    .no-mobile {
+        display: none;
+    }
 }
