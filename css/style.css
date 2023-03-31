@@ -352,6 +352,17 @@ nav {
     color: var(--color-main600);
 }
 
+#topButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+    padding: 1.2rem;
+    border-radius: 50%;
+}
+
 /* class settings for badges */
 .badge {
     display: flex;
@@ -654,4 +665,20 @@ button {
 .no-wrap {
     flex-wrap: nowrap;
     white-space: nowrap;
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.rotate180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
