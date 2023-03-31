@@ -1,8 +1,8 @@
 /* Style for wide screen */
-@media screen and (min-width: 1024px) {}
+@media (min-width: 1024px) {}
 
 /* Style for mobile */
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
     :root {
         --txt-size-xs: 8px;
         --txt-size-sm: 14px;
@@ -204,7 +204,6 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: fit-content;
     padding: 1.5rem;
     border-radius: 0.5rem;
 }
@@ -281,9 +280,9 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2rem;
-    height: 2rem;
-    padding: 0.1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.21rem;
 }
 
 .icon-lg {
@@ -296,7 +295,7 @@ input::placeholder {
 }
 
 .icon-style-colored {
-    background-color: var(--color-main500);
+    background-color: var(--color-main400);
 }
 
 .icon-style-outlined {
@@ -372,6 +371,7 @@ page.active {
 .content-no-space {
     display: flex;
     width: 100%;
+    width: -moz-fit-content;
     width: fit-content;
     gap: 5px;
 }
@@ -431,7 +431,7 @@ nav {
     box-shadow: 0rem 0rem 1rem var(--color-grey100);
     padding: 1.5rem 1rem;
     gap: 1rem;
-    wrap: no-wrap;
+    flex-wrap: no-wrap;
 }
 
 .card-grey {
@@ -444,7 +444,7 @@ nav {
     box-shadow: 0rem 0rem 1rem var(--color-grey25);
     padding: 1.5rem 1rem;
     gap: 1rem;
-    wrap: no-wrap;
+    flex-wrap: no-wrap;
 }
 
 .divider {
@@ -549,7 +549,7 @@ nav {
     border: solid 0.12rem var(--color-main700);
 }
 
-#topButton {
+#btnToTop {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -572,6 +572,7 @@ nav {
     padding: 0.05rem 0.5rem;
     color: var(--color-main700);
     gap: 0.3rem;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -797,4 +798,75 @@ button {
 
 .round {
     border-radius: 50%;
+}
+
+/* Class for Column management */
+/* 1 Column */
+.col1 {
+    width: 100%;
+}
+
+/* 20% Width Columns */
+.col20 {
+    width: calc(20% - 20px);
+    margin-left: 20px;
+}
+
+.col20:first-child {
+    margin-left: 0;
+}
+
+/* 25% Width Columns */
+.col25 {
+    width: calc(25% - 20px);
+    margin-left: 20px;
+}
+
+.col25:first-child {
+    margin-left: 0;
+}
+
+/* 33% Width Columns */
+.col33 {
+    width: calc(33.33% - 20px);
+    margin-left: 20px;
+}
+
+.col33:first-child {
+    margin-left: 0;
+}
+
+/* 50% Width Columns */
+.col50 {
+    width: calc(50% - 20px);
+    margin-left: 20px;
+}
+
+.col50:first-child {
+    margin-left: 0;
+}
+
+/* 66% Width Columns */
+.col66 {
+    width: calc(66.66% - 20px);
+    margin-left: 20px;
+}
+
+.col66:first-child {
+    margin-left: 0;
+}
+
+/* 75% Width Columns */
+.col75 {
+    width: calc(75% - 20px);
+    margin-left: 20px;
+}
+
+.col75:first-child {
+    margin-left: 0;
+}
+
+/* 100% Width Columns */
+.col100 {
+    width: 100%;
 }

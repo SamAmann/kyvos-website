@@ -22,27 +22,24 @@ function navToPage(id) {
     }
 }
 
-// To the Top button logic, called after the page is loaded
-document.addEventListener("DOMContentLoaded", function () {
-    window.onscroll = function () {
-        var topButton = document.getElementById("topButton");
-        // When the user scrolls down from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
-        console.log(screenX)
-    };
-    function scrollFunction() {
-        var showButtonDistance = 800;
-        if (document.body.scrollTop > showButtonDistance || document.documentElement.scrollTop > showButtonDistance) {
-            topButton.style.display = "block";
-        } else {
-            topButton.style.display = "none";
-        }
+window.onscroll = function () { showTopBtn() };
+
+function showTopBtn() {
+    var btnToTop = document.getElementById("btnToTop");
+    var showButtonDistance = 800;
+    if (document.body.scrollTop > showButtonDistance || document.documentElement.scrollTop > showButtonDistance) {
+        btnToTop.style.display = "block";
+    } else {
+        btnToTop.style.display = "none";
     }
-});
+}
+
 // When the user clicks on the button, scroll to the top of the document
-function scrollToTop() {
+function scrollToElement(id) {
+    var target = document.getElementById(id);
+    var targetPosition = target?.offsetTop;
     window.scrollTo({
-        top: 0,
+        top: targetPosition,
         behavior: 'smooth'
     })
 }

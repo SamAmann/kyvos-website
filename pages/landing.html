@@ -21,33 +21,33 @@
                 <a href="../pages/landing.html"><img src="../img/logos/logo.svg" alt="logo"></a>
             </div>
             <nav>
-                <div class="btn-nav active" id="btn-accueil" onclick=navToPage("accueil")>
+                <div class="btn-nav active" id="btn-accueil" onclick="navToPage('accueil')">
                     Accueil
                 </div>
-                <div class="btn-nav" id="btn-kyvos" onclick=navToPage("kyvos")>
+                <div class="btn-nav" id="btn-kyvos" onclick="navToPage('kyvos')">
                     Kyvos
                 </div>
-                <div class="btn-nav" id="btn-kyvos-suite" onclick=navToPage("kyvos-suite")>
+                <div class=" btn-nav" id=" btn-kyvos-suite" onclick="navToPage('kyvos-suite')">
                     Kyvos Suite
                 </div>
             </nav>
         </div>
 
         <div class="nav-block">
-            <a class="btn-primary"
+            <a rel="noopener" class="btn-primary"
                 href="https://doc.clickup.com/36858679/p/134utq-19422/hospitality-dictionary/134utq-19422/hospitality-dictionary"
                 target="_blank" title="Accéder aux ressources Kyvos">
                 WiKyvos <img src="../img/icons/graduation-hat.svg" alt="graduation-hat icon" class="icon-sm">
             </a>
 
-            <div class="btn-primary" id="btn-login" onclick=navToPage("login") title="A venir !">
+            <div class="btn-primary" id="btn-login" onclick="navToPage('login')" title="A venir !">
                 Se connecter <img src="../img/icons/lock.svg" alt="lock icon" class="icon-sm">
             </div>
         </div>
 
     </header>
     <!--To the top Button-->
-    <button id="topButton" onclick="scrollToTop()" class="btn-primary content-no-space"><img
+    <button id="btnToTop" onclick="scrollToElement('header-logo')" class="btn-primary content-no-space"><img
             src="../img/icons/arrow-down.svg" alt="arrow icon" class="rotate180"></button>
 
 
@@ -58,7 +58,7 @@
                 <div id="heading-accueil" class="heading center">
                     <div class="btn-secondary font-weight-500">
                         Vous voulez participer ?
-                        <a class=" btn-secondary btn-full"
+                        <a rel="noopener" class=" btn-secondary btn-full"
                             href="https://doc.clickup.com/36858679/p/134utq-19422/hospitality-dictionary/134utq-19422/hospitality-dictionary"
                             target="_blank">Wikyvos
                             <img src="../img/icons/external-link.svg" alt="external-link icon"></a>
@@ -89,7 +89,7 @@
                     — Notre expérience d’hôteliers imprègne chacun des conseils que nous pouvons vous apporter —
                 </p>
             </div>
-            <img id="img-kyvos-hero mobile-no" src="../img/geographicSquare.svg" alt="geographical shapes">
+            <img id="img-kyvos-hero" src="../img/geographicSquare.svg" alt="geographical shapes" class="">
         </div>
 
         <!--Art de vivre-->
@@ -115,17 +115,23 @@
                     </p>
                 </div>
 
-                <a class="btn-primary txt-center content-no-space" href="#nos-prestations">
+                <div id="btn-prestations" class="btn-primary txt-center content-no-space"
+                    onclick="scrollToElement('nos-prestations')">
                     Nos prestations
                     <img src="../img/icons/arrow-down.svg" alt="arrow down icon" class="icon-xs">
-                </a>
+                </div>
+                <div id="btn-prestations" class="btn-primary txt-center content-no-space"
+                    onclick="scrollToElement('nos-tarifs')">
+                    Nos tarifs
+                    <img src="../img/icons/coin-hand.svg" alt="coins in hand icon" class="icon-xs">
+                </div>
 
             </div>
             <div class="content-large center wrap">
-                <img class="half-content-width" src="../img/lobby-hotel.jpg" alt="lobby hotel credit Rod Long"
+                <img class="half-content-width col33" src="../img/lobby-hotel.jpg" alt="lobby hotel credit Rod Long"
                     title="Credit : Rod Long">
                 <div class="content column center">
-                    <h2 class="font-style-italic txt-center">"Maîtriser pour s'affranchir"</h2>
+                    <h2 class="font-style-italic txt-center">Maîtriser pour s'affranchir</h2>
                     <p>Parce que nous sommes de formation hôtelière, nous maîtrisons les codes, les enseignements et les
                         techniques. <br> <br>
                         Parce que nous avons pratiqué cet enseignement de nombreuses années, à différents échelons, tant
@@ -192,7 +198,7 @@
 
         <!--Planification-->
         <div class="container row center">
-            <div class="content-large row center wrap">
+            <div class="content-large row center">
                 <img class="half-content-width no-mobile" src="../img/eric-rothermel.jpg" alt="Photo agenda"
                     title="Credit: Eric Rothermel">
                 <div class="content column right">
@@ -225,7 +231,7 @@
 
         <!--Déploiement-->
         <div class="container row center">
-            <div class="content-large row center wrap">
+            <div class="content-large row center ">
                 <div class="content column left">
                     <div class="icon-md round icon-style-colored"><img src="../img/icons/magic-wand.svg"
                             alt="magic wand icon">
@@ -261,7 +267,7 @@
         </div>
 
         <!--Tarifs OneShot-->
-        <div class="container column left">
+        <div id="nos-tarifs" class="container column left">
             <div class=" content-large column left">
                 <h6 class="txt-left">Tarifs</h6>
                 <h2>La Clé</h2>
@@ -275,7 +281,7 @@
 
 
             <div class="content-large row center wrap">
-                <div class="content-large column left">
+                <div class="content column left col50">
                     <div class="content-large center left">
                         <img src="../img/icons/target.svg" alt="target icon" class="icon-style-colored round icon-md">
                         <div class="content-large column left">
@@ -300,7 +306,7 @@
                     </div>
                     <div class="content-large center left">
                         <img src=" /img/icons/coin-hand.svg" alt="coin-hand icon"
-                            class="icon-style-colored round icon-md">
+                            class="icon-style-colored icon-md round">
                         <div class="content-large column left">
                             <h4>
                                 Pas de surcoût
@@ -311,52 +317,55 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-white column center ">
+                <div class="card-white column center col33 ">
                     <div class="content column center">
-                        <div class="content center">
-                            <div class="content center wide wrap">
-                                <div class="content center wrap">
-                                    <div class="badge font-weight-400 no-wrap">
-                                        <img class="icon-sm" src="../img/logos/logo-key_orange.svg" alt="">
-                                        Pratique
-                                    </div>
-                                    <h3 class="no-wrap">Plan Clé</h3>
-                                </div>
-                                <div class="content-no-space center wrap">
-                                    <div class="content-no-space center bottom no-wrap">
-                                        <div class="content-no-space display-xl">
-                                            <h3>€</h3>
-                                            <h1>500</h1>
-                                        </div>
+
+                        <div class="content center wrap col50:first-child">
+                            <div class="badge font-weight-400 no-wrap ">
+                                <img class="icon-sm" src="../img/logos/logo-key_orange.svg" alt="">
+                                Pratique
+                            </div>
+                            <div class="content-no-space center wrap">
+                                <h3 class="no-wrap">Plan Clé</h3>
+                                <div class="content-no-space bottom wrap">
+                                    <div class="content-no-space top no-wrap">
+                                        <h3>€</h3>
+                                        <h1>500</h1>
                                     </div>
                                     <p class="txt-sm no-wrap">par jour</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="content column left">
-                        <div class="content-no-space center">
-                            <img src="../img/icons/check.svg" alt="Valid icon" class="icon-xs round icon-style-valid">
-                            <p>Une analyse poussée du service ciblé</p>
-                        </div>
-                        <div class="content-no-space center">
-                            <img src="../img/icons/check.svg" alt="Valid icon" class="icon-xs round icon-style-valid">
-                            <p>Un retour détaillé</p>
-                        </div>
-                        <div class="content-no-space center">
-                            <img src="../img/icons/check.svg" alt="Valid icon" class="icon-xs round icon-style-valid">
-                            <p>Un plan d'actions précis</p>
-                        </div>
-                        <div class="content-no-space center">
-                            <img src="../img/icons/cross.svg" alt="Invalid icon" class="icon-xs round icon-style-error">
-                            <p>Pas de suivi après le déploiement</p>
+                        <div class="divider"></div>
+                        <div class="content column left">
+                            <div class="content-no-space center">
+                                <img src="../img/icons/check.svg" alt="Valid icon"
+                                    class="icon-xs round icon-style-valid">
+                                <p>Une analyse poussée du service ciblé</p>
+                            </div>
+                            <div class="content-no-space center">
+                                <img src="../img/icons/check.svg" alt="Valid icon"
+                                    class="icon-xs round icon-style-valid">
+                                <p>Un retour détaillé</p>
+                            </div>
+                            <div class="content-no-space center">
+                                <img src="../img/icons/check.svg" alt="Valid icon"
+                                    class="icon-xs round icon-style-valid">
+                                <p>Un plan d'actions précis</p>
+                            </div>
+                            <div class="content-no-space center">
+                                <img src="../img/icons/cross.svg" alt="Invalid icon"
+                                    class="icon-xs round icon-style-error">
+                                <p>Pas de suivi après le déploiement</p>
+                            </div>
                         </div>
                     </div>
                     <div class="divider"></div>
                     <div class="btn-primary wide center">Nous contacter !</div>
                 </div>
             </div>
+        </div>
+        </div>
         </div>
         </div>
 
