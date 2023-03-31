@@ -34,7 +34,6 @@
 <path d="M868 304C826.026 304 792 269.974 792 228C792 186.026 826.026 152 868 152V304Z" fill="#ED7752"/>
 <ellipse cx="906" cy="266" rx="38" ry="38" fill="#F0C29D"/>
 <rect width="152" height="152" transform="translate(640)" fill="white"/>
-<path d="M792 152C750.026 152 716 117.974 716 76C716 34.0264 750.026 0 792 0V152Z" fill="#ED7752"/>
 <circle cx="678" cy="76" r="38" fill="#F0C29D"/>
 <rect width="152" height="152" transform="translate(792)" fill="#F0C29D"/>
 <path d="M792 152C833.974 152 868 117.974 868 76C868 34.0264 833.974 0 792 0V152Z" fill="#ED7752"/>
@@ -50,3 +49,5 @@
 <path d="M1096 -3.8147e-06L1248 -1.04588e-05L1248 152L1096 -3.8147e-06Z" fill="#EB9B69"/>
 <circle cx="1172" cy="76" r="38" fill="#ED7752"/>
 </svg>
+
+

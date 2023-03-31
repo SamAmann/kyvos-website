@@ -73,8 +73,12 @@ p {
     max-width: 50vw;
 }
 
-.half-content-img {
+.half-content-width {
     width: 50%;
+}
+
+.half-content-height {
+    height: 50%;
 }
 
 /* Icons */
@@ -83,40 +87,36 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
     width: 0.8rem;
     height: 0.8rem;
-    padding: 0.2rem;
+    padding: 0.1rem;
 }
 
 .icon-sm {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
     width: 1.1rem;
     height: 1.1rem;
-    padding: 0.3rem;
+    padding: 0.1rem;
 }
 
 .icon-md {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
-    width: 3rem;
-    height: 3rem;
-    padding: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.1rem;
 }
 
 .icon-lg {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
     width: 2.5rem;
     height: 2.5rem;
-    padding: 0.7rem;
+    padding: 0.5rem;
 }
 
 .icon-style-colored {
@@ -321,14 +321,15 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.7rem 1rem;
+    padding: 0.3rem 0.7rem;
     font-weight: 600;
-    font-size: var(--txt-size-md);
+    font-size: var(--txt-size-sm);
     color: var(--color-white);
     background-color: var(--color-main600);
     border-radius: 10px;
-    gap: 0.3rem;
     white-space: nowrap;
+    cursor: pointer;
+    gap: 0.2rem;
 }
 
 .btn-primary:hover {
@@ -340,16 +341,26 @@ nav {
     display: flex;
     align-items: center;
     padding: 0.2rem 0.3rem;
-    font-size: var(--txt-size-sm);
-    color: var(--color-main700);
-    border: solid 0.12rem var(--color-main700);
+    color: var(--color-main600);
+    border: solid 0.12rem var(--color-main600);
     border-radius: 20px;
     gap: 0.5rem;
 }
 
 .btn-secondary:hover {
-    border: solid 1px var(--color-main600);
+    border: solid 0.12rem var(--color-main600);
     color: var(--color-main600);
+}
+
+.btn-full {
+    color: var(--color-white);
+    background-color: var(--color-main600);
+}
+
+.btn-full:hover {
+    background-color: var(--color-main700);
+    color: var(--color-white);
+    border: solid 0.12rem var(--color-main700);
 }
 
 #topButton {
@@ -378,15 +389,7 @@ nav {
     width: fit-content;
 }
 
-.btn-full {
-    color: white;
-    background-color: var(--color-main600);
-}
 
-.btn-full:hover {
-    background-color: var(--color-main700);
-    color: var(--color-white);
-}
 
 /* Set variables whatever the screen size */
 :root {
@@ -681,4 +684,8 @@ button {
     -o-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+.round {
+    border-radius: 50%;
 }
