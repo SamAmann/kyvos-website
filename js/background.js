@@ -1,8 +1,26 @@
+// Check the classes of icon and change their strok and fill colors
+function changeIconColor(stroke, fill) {
+    var icons = document.getElementsByClassName("icon");
+    for (var i = 0; i < icons.length; i++) {
+        icons[i].style.stroke = stroke;
+        icons[i].style.fill = fill;
+    }
+}
+
+
+//Set the page to full screen
+function fullScreen() {
+    var element = document.documentElement;
+    if (element.requestFullscreen) {
+        element.requestFullscreen();
+    } else if (element.webkitRequestFullscreen) { /* Safari */
+        element.webkitRequestFullscreen();
+    } else if (element.msRequestFullscreen) { /* IE/Edge */
+        element.msRequestFullscreen();
+    }
+}
+
 // To navigate between pages
-
-
-
-
 function navToPage(id) {
     var clickedBtn = document.getElementById("btn-" + id);
 

@@ -1,0 +1,47 @@
+<!--This is the blog website for the knowledge base of WiKyvos-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../img/logos/logo-mark.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>WiKyvos</title>
+</head>
+
+<body>
+    <header class="center-v">
+        <div id="header-logo" class=>
+            <a href="landing.html"><img src=" ../img/logos/logo.svg" alt="logo"></a>
+        </div>
+        <div class="tall">
+            <nav>
+                <div class="btn-nav active" id="btn-accueil" onclick="navToPage('accueil')">
+                    Accueil
+                </div>
+                <div class="btn-nav" id="btn-dictionary" onclick="navToPage('dictionary')">
+                    Dictionnaire
+                </div>
+                <div class=" btn-nav" id=" btn-knoledge-base" onclick="navToPage('knowledge-base')"
+                    title="Yet to come!">
+                    Ressources </div>
+            </nav>
+        </div>
+
+        <div class="nav-block">
+            <a rel="noopener" class="btn-primary no-padding" href="landing.html" title="L'univers de Kyvos">
+                Kyvos <img src="../img/logos/logo-key.svg" alt="graduation-hat icon" class="icon-md">
+            </a>
+            <div class="btn-primary mobile-only" id="btn-mobile-menu">
+                <img src="../img/icons/burger-menu.svg" alt="burger menu icon" class="icon-sm">
+            </div>
+        </div>
+
+    </header>
+
+</body>

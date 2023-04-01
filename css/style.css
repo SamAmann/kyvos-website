@@ -741,6 +741,10 @@ button {
     align-items: center;
 }
 
+.center-v {
+    align-items: center;
+}
+
 .right {
     justify-content: flex-end;
 }
@@ -749,6 +753,9 @@ button {
     justify-content: flex-start;
 }
 
+.tall {
+    height: 100%;
+}
 
 .wide {
     width: 100%;
@@ -760,7 +767,7 @@ button {
 
 .no-padding {
     display: flex;
-    padding: 0.2rem;
+    padding: 0.5rem;
     gap: 5px;
 }
 
