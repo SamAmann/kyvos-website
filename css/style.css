@@ -343,8 +343,13 @@ page.active {
     height: calc(100vh - var(--header-height));
 }
 
-
-
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "content content";
+    gap: 1rem;
+}
 
 
 .content {
@@ -491,7 +496,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.5rem 0.5rem;
+    padding: 0.8rem;
     font-weight: 500;
     color: var(--color-white);
     background-color: var(--color-main600);
