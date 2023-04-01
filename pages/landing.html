@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="../img/logos/logo-key_orange.svg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="../js/background.js"></script>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
 
@@ -16,7 +15,7 @@
 
 <body>
     <header>
-        <div class="nav-block">
+        <div class="nav-block ">
             <div id="header-logo">
                 <a href="../pages/landing.html"><img src="../img/logos/logo.svg" alt="logo"></a>
             </div>
@@ -27,7 +26,7 @@
                 <div class="btn-nav" id="btn-kyvos" onclick="navToPage('kyvos')">
                     Kyvos
                 </div>
-                <div class=" btn-nav" id=" btn-kyvos-suite" onclick="navToPage('kyvos-suite')">
+                <div class=" btn-nav" id=" btn-kyvos-suite" onclick="navToPage('kyvos-suite')" title="Yet to come!">
                     Kyvos Suite
                 </div>
             </nav>
@@ -37,11 +36,16 @@
             <a rel="noopener" class="btn-primary"
                 href="https://doc.clickup.com/36858679/p/134utq-19422/hospitality-dictionary/134utq-19422/hospitality-dictionary"
                 target="_blank" title="Accéder aux ressources Kyvos">
-                WiKyvos <img src="../img/icons/graduation-hat.svg" alt="graduation-hat icon" class="icon-sm">
+                <p class="txt-sm no-mobile">WiKyvos</p> <img src="../img/icons/graduation-hat.svg"
+                    alt="graduation-hat icon" class="icon-sm">
             </a>
 
             <div class="btn-primary" id="btn-login" onclick="navToPage('login')" title="A venir !">
-                Se connecter <img src="../img/icons/lock.svg" alt="lock icon" class="icon-sm">
+                <p class="txt-sm no-mobile">Se connecter</p> <img src="../img/icons/lock.svg" alt="lock icon"
+                    class="icon-sm">
+            </div>
+            <div class="btn-primary mobile-only" id="btn-mobile-menu">
+                <img src="../img/icons/burger-menu.svg" alt="burger menu icon" class="icon-sm">
             </div>
         </div>
 
@@ -81,7 +85,7 @@
 
         <!--HERO-->
         <div id="hero-kyvos" class="hero center wrap">
-            <div class="content-large column left">
+            <div class="content large column left">
                 <div class="heading">
                     <h1 class="txt-left">Écouter, <br> Supporter, <br> Encourager.</h1>
                 </div>
@@ -94,7 +98,7 @@
 
         <!--Art de vivre-->
         <div class="container column center wrap">
-            <div class="content-large row center wrap">
+            <div class="content large row center wrap">
                 <div class="content left column">
                     <h6>
                         Un Art de vivre
@@ -127,9 +131,9 @@
                 </div>
 
             </div>
-            <div class="content-large center wrap">
-                <img class="half-content-width col33" src="../img/lobby-hotel.jpg" alt="lobby hotel credit Rod Long"
-                    title="Credit : Rod Long">
+            <div class="content large center wrap">
+                <img class="half-content-width col33 no-mobile" src="../img/lobby-hotel.jpg"
+                    alt="lobby hotel credit Rod Long" title="Credit : Rod Long">
                 <div class="content column center">
                     <h2 class="font-style-italic txt-center">Maîtriser pour s'affranchir</h2>
                     <p>Parce que nous sommes de formation hôtelière, nous maîtrisons les codes, les enseignements et les
@@ -162,8 +166,8 @@
 
         <!--Audit-->
         <div class="container row center col1">
-            <div class="content-large row center wrap">
-                <div class="content column left col50:first-child">
+            <div class="content large row center">
+                <div class="content column left">
                     <div class="icon-md round icon-style-colored"><img src="../img/icons/search.svg" alt="search icon">
                     </div>
 
@@ -191,14 +195,14 @@
                         possibilités d’optimisation
                     </p>
                 </div>
-                <img class="col33 no-mobile" src=" ../img/scott-graham.jpg" alt="Photo bureau d'audit"
+                <img class="half-content-width no-mobile" src=" ../img/scott-graham.jpg" alt="Photo bureau d'audit"
                     title="Credit: Scott Graham">
             </div>
         </div>
 
         <!--Planification-->
         <div class="container row center">
-            <div class="content-large row center">
+            <div class="content large row center">
                 <img class="half-content-width no-mobile" src="../img/eric-rothermel.jpg" alt="Photo agenda"
                     title="Credit: Eric Rothermel">
                 <div class="content column right">
@@ -231,7 +235,7 @@
 
         <!--Déploiement-->
         <div class="container row center">
-            <div class="content-large row center ">
+            <div class="content large row center ">
                 <div class="content column left">
                     <div class="icon-md round icon-style-colored"><img src="../img/icons/magic-wand.svg"
                             alt="magic wand icon">
@@ -268,7 +272,7 @@
 
         <!--Tarifs OneShot-->
         <div id="nos-tarifs" class="container column left">
-            <div class=" content-large column left">
+            <div class=" content large column left">
                 <h6 class="txt-left">Tarifs</h6>
                 <h2>La Clé</h2>
                 <p>Nous proposons un service "Clé" qui se concentre sur un sujet en particuler.
@@ -280,11 +284,11 @@
             </div>
 
 
-            <div class="content-large row center wrap">
-                <div class="content column left col50">
-                    <div class="content-large center left">
+            <div class="content large row center wrap">
+                <div class="content column left ">
+                    <div class="content large center left">
                         <img src="../img/icons/target.svg" alt="target icon" class="icon-style-colored round icon-md">
-                        <div class="content-large column left">
+                        <div class="content large column left">
                             <h4>
                                 Une demande précise
                             </h4>
@@ -293,10 +297,10 @@
                             </p>
                         </div>
                     </div>
-                    <div class="content-large center left">
+                    <div class="content large center left">
                         <img src="../img/icons/lightstrike.svg" alt="lightstrike icon"
                             class="icon-style-colored round icon-md">
-                        <div class="content-large column left">
+                        <div class="content large column left">
                             <h4>
                                 Rapidité d’action
                             </h4>
@@ -304,10 +308,10 @@
                                 Le focus sur un sujet en particulier permet une rapidité de déploiement améliorée </p>
                         </div>
                     </div>
-                    <div class="content-large center left">
+                    <div class="content large center left">
                         <img src=" /img/icons/coin-hand.svg" alt="coin-hand icon"
                             class="icon-style-colored icon-md round">
-                        <div class="content-large column left">
+                        <div class="content large column left">
                             <h4>
                                 Pas de surcoût
                             </h4>
@@ -317,7 +321,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-white column center col33 ">
+                <div class="card-white column center">
                     <div class="content column center">
 
                         <div class="content center wrap col50:first-child">
@@ -361,7 +365,11 @@
                         </div>
                     </div>
                     <div class="divider"></div>
-                    <div class="btn-primary wide center">Nous contacter !</div>
+                    <div class="content wide">
+                        <div class="btn-primary wide center">
+                            <p class="txt-sm">Nous contacter !</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -380,8 +388,8 @@
                     Nombre de sujet (presque) illimités, pour la construction d'une vision plus globale.
                 </p>
             </div>
-            <div class="content wide">
-                <div class="card-grey top center half-content-width">
+            <div class="content wide center wrap">
+                <div class="card-grey top center ">
                     <img src="../img/icons/computer.svg" alt="computer icon" class="icon-md round icon-style-colored">
                     <div class="content column center">
                         <h5>A distance</h5>
@@ -420,7 +428,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-grey top center half-content-width">
+                <div class="card-grey top center ">
                     <img src="../img/icons/location.svg" alt="computer icon"
                         class="icon-md round icon-style-colored center">
                     <div class="content column center">
@@ -512,7 +520,7 @@
                 </form>
             </div>
             <img id="img-login" src="../img/geographicLine.svg" alt="geographical shapes"
-                class="rotate90 half-content-width">
+                class="rotate90 half-content-width  no-mobile">
         </div>
     </page>
 
@@ -520,5 +528,6 @@
 
 
 </body>
+<script src="../js/background.js"></script>
 
 </html>

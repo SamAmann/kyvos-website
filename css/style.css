@@ -1,12 +1,3 @@
-/* Style for wide screen */
-@media (min-width: 1024px) {
-    .container {
-        display: flex;
-        gap: 2rem;
-        padding: 5rem;
-    }
-}
-
 /* Universal styles */
 :root {
     /*--txt-size-xs: 12px;
@@ -180,6 +171,7 @@ p {
     padding: 0px;
 }
 
+
 /* Form, input and labels */
 
 form {
@@ -342,13 +334,6 @@ page.active {
     gap: 1rem;
 }
 
-.content-large {
-    display: flex;
-    padding: 1rem;
-    gap: 1rem;
-    max-width: 80vw;
-}
-
 .content-no-space {
     display: flex;
     width: 100%;
@@ -425,6 +410,7 @@ nav {
     padding: 1.5rem 1rem;
     gap: 1rem;
     flex-wrap: no-wrap;
+    max-width: 60vw;
 }
 
 .divider {
@@ -498,10 +484,17 @@ nav {
     gap: 0.2rem;
 }
 
+.btn-primary:disabled {
+    color: var(--color-grey300);
+    cursor: not-allowed;
+}
+
 .btn-primary:hover {
     background-color: var(--color-main700);
     color: white;
 }
+
+
 
 .btn-secondary {
     display: flex;
@@ -739,6 +732,10 @@ button {
     width: 100%;
 }
 
+.large {
+    max-width: 80vw;
+}
+
 .no-wrap {
     flex-wrap: nowrap;
     white-space: nowrap;
@@ -788,8 +785,8 @@ button {
 
 /* 20% Width Columns */
 .col20 {
-    width: calc(20% - 20px);
-    margin-left: 20px;
+    max-width: calc(20vw - 1rem);
+    margin-left: 1rem;
 }
 
 .col20:first-child {
@@ -798,8 +795,8 @@ button {
 
 /* 25% Width Columns */
 .col25 {
-    width: calc(25% - 20px);
-    margin-left: 20px;
+    max-width: calc(25vw - 1rem);
+    margin-left: 1rem;
 }
 
 .col25:first-child {
@@ -808,8 +805,8 @@ button {
 
 /* 33% Width Columns */
 .col33 {
-    width: calc(33.33% - 20px);
-    margin-left: 20px;
+    max-width: calc(33.33vw - 1rem);
+    margin-left: 1rem;
 }
 
 .col33:first-child {
@@ -818,8 +815,8 @@ button {
 
 /* 50% Width Columns */
 .col50 {
-    width: calc(50% - 20px);
-    margin-left: 20px;
+    max-width: calc(50vw - 1rem);
+    margin-left: 1rem;
 }
 
 .col50:first-child {
@@ -828,8 +825,8 @@ button {
 
 /* 66% Width Columns */
 .col66 {
-    width: calc(66.66% - 20px);
-    margin-left: 20px;
+    max-width: calc(66.66vw - 1rem);
+    margin-left: 1rem;
 }
 
 .col66:first-child {
@@ -838,8 +835,8 @@ button {
 
 /* 75% Width Columns */
 .col75 {
-    width: calc(75% - 20px);
-    margin-left: 20px;
+    max-width: calc(75vw - 1rem);
+    margin-left: 1rem;
 }
 
 .col75:first-child {
@@ -848,7 +845,20 @@ button {
 
 /* 100% Width Columns */
 .col100 {
-    width: 100%;
+    max-width: 100%;
+}
+
+/* Style for wide screen */
+@media (min-width: 1024px) {
+    .container {
+        display: flex;
+        gap: 2rem;
+        padding: 5rem;
+    }
+
+    .mobile-only {
+        display: none;
+    }
 }
 
 /* Style for mobile */
@@ -868,12 +878,51 @@ button {
         --display-size-xxl: 72px;
     }
 
+    header {
+        padding: 0.2rem
+    }
+
     .container {
         display: flex;
-        padding: 10px;
+        padding: 0.2rem;
+        max-width: 100vw;
+    }
+
+    content {
+        display: flex;
+        padding: 0.2rem;
+
+    }
+
+    nav {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: (var(--header-height));
+        text-align: center;
+        z-index: 10;
+        transition: top 0.2s ease-in-out;
+    }
+
+    nav.open {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: var(--header-height);
+        left: 0;
+        width: 100vw;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+        z-index: 998;
+        height: 4rem;
     }
 
     .no-mobile {
         display: none;
+    }
+
+    .mobile.only {
+        display: block;
     }
 }
