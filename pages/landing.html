@@ -547,12 +547,12 @@
                 <form action="#" method="get" class="no-padding left">
 
                     <label for="user_firstname" required>Votre prénom</label>
-                    <input type="text" name="user_firstname" placeholder="Tapez votre prénom" pattern="/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/
-" required>
+                    <input type="text" name="user_firstname" placeholder="Tapez votre prénom"
+                        pattern="^[a-zA-Z]{2,}(['-][a-zA-Z]+)*$" required>
 
-                    <label for="user_login" required>Votre nom</label>
-                    <input type="text" name="user_lastname" placeholder="Tapez votre nom" pattern="/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/
-" required>
+                    <label for=" user_login" required>Votre nom</label>
+                    <input type="text" name="user_lastname" placeholder="Tapez votre nom"
+                        pattern="^[a-zA-Z]{2,}([ '-][a-zA-Z]+)*$" required>
 
                     <label for=" user_login" required>Email</label>
                     <input type="email" name="user_login" placeholder="Tapez votre email" required>
