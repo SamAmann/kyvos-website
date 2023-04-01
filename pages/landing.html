@@ -511,6 +511,7 @@
                     </p>
                 </div>
                 <form action="#" method="get" class="no-padding">
+
                     <label for="user_login">Email</label>
                     <input type="email" name="user_login" placeholder="Tapez votre email" required>
 
@@ -544,21 +545,27 @@
                 </div>
                 <form action="#" method="get" class="no-padding left">
 
-                    <label for="user_firstname">Votre prénom*</label>
-                    <input type="text" name="user_firstname" placeholder="Tapez votre prénom" pattern="/^[A-Za-z]+$/"
-                        required>
+                    <label for="user_firstname" required>Votre prénom</label>
+                    <input type="text" name="user_firstname" placeholder="Tapez votre prénom" pattern="/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/
+" required>
 
-                    <label for="user_login">Votre nom*</label>
-                    <input type="text" name="user_lastname" placeholder="Tapez votre nom" pattern="/^[A-Za-z]+$/">
+                    <label for="user_login" required>Votre nom</label>
+                    <input type="text" name="user_lastname" placeholder="Tapez votre nom" pattern="/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/
+" required>
 
-                    <label for=" user_login">Email*</label>
-                    <input type="email" name="user_login" placeholder="Tapez votre email">
+                    <label for=" user_login" required>Email</label>
+                    <input type="email" name="user_login" placeholder="Tapez votre email" required>
 
-                    <label for="user_password">Password*</label>
+                    <label for="user_password" required>Mot de passe</label>
                     <input type="password" name="user_password" placeholder="••••••••" pattern="^(?=.*[A-Z])(?=.*\W)(?=.*\d)(?=.*[a-z]).{8,}$
-">
-                    <span class="input-description">Doit contenirau moins 8 caractères, une majuscule et un
-                        caractère spécial</span>
+" required>
+                    <p class="input-description">Votre mot de passe doit comporter au moins 8 caractères, incluant au
+                        moins une lettre
+                        majuscule, une lettre minuscule, un chiffre et un caractère spécial.</p>
+
+                    <label for="user_password_confirm" required>Confirmez votre mot de passe</label>
+                    <input type="password" name="user_password_confirm" placeholder="••••••••"
+                        pattern="^(?=.*[A-Z])(?=.*\W)(?=.*\d)(?=.*[a-z]).{8,}$" required>
 
                     <div class="divider"></div>
 

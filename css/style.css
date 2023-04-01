@@ -188,7 +188,6 @@ input {
     border: 0.1rem solid var(--color-grey200);
     border-radius: 0.5rem;
     font-size: var(--txt-size-sm);
-    font-weight: 100;
     color: var(--color-grey700);
     background-color: var(--color-white);
 }
@@ -198,22 +197,38 @@ input::placeholder {
 }
 
 .input-description {
-    display: flex;
+    display: none;
     font-size: var(--txt-size-xs);
+    line-height: 1rem;
     font-weight: 100;
     color: var(--color-grey400);
     text-align: left;
-    width: 100%;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-    padding-left: 0.3rem;
+    padding: 0rem 0rem;
     flex-wrap: wrap;
-    max-width: 80%;
     text-align: left;
 }
 
-input:focus {
-    border: 0.1rem solid var(--color-main700);
+.input-description::before {
+    content: "⚠";
+    color: var(--color-main600);
+    margin-right: 0.2rem;
+}
+
+input:focus-visible {
+    outline: none;
+    border: 0.1rem solid var(--color-main500);
+}
+
+input:invalid+.input-description {
+    display: block;
+}
+
+label[required]:after {
+    content: "*";
+}
+
+label[required]+input[required]:invalid:after {
+    color: var(--color-error500);
 }
 
 
