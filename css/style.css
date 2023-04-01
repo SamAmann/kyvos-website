@@ -299,7 +299,7 @@ header {
     max-width: 100vw;
     height: var(--header-height);
     background-color: #ffffff;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 2px var(--color-grey200);
     justify-content: space-between;
     z-index: 999;
     padding: 0rem 6rem;
@@ -449,6 +449,12 @@ nav {
 .btn-nav.active {
     border-bottom: solid 1px var(--color-main700);
     color: var(--color-main700);
+}
+
+.btn-nav.disabled {
+    border-bottom: solid 1px var(--color-grey50);
+    color: var(--color-grey200);
+    cursor: not-allowed;
 }
 
 .btn-text {
