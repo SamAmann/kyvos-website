@@ -581,7 +581,7 @@ a:hover {
 }
 
 a:focus {
-    color: var(--color-main800);
+    color: var(--color-main400);
 }
 
 button {
