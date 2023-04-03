@@ -52,17 +52,16 @@ function showTopBtn() {
     var btnToTop = document.getElementById("btnToTop");
     var showButtonDistance = 800;
 
-    else {
-        if (
-            document.body.scrollTop > showButtonDistance ||
-            document.documentElement.scrollTop > showButtonDistance
-        ) {
-            btnToTop.style.display = "block";
-        } else {
-            btnToTop.style.display = "none";
-        }
+    if (
+        document.body.scrollTop > showButtonDistance ||
+        document.documentElement.scrollTop > showButtonDistance
+    ) {
+        btnToTop.style.display = "block";
+    } else {
+        btnToTop.style.display = "none";
     }
 }
+
 
 // When the user clicks on the button, scroll to the top of the document
 function scrollToElement(id) {
