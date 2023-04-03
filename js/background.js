@@ -58,6 +58,8 @@ function navToPage(id) {
 
 window.onscroll = function () { showTopBtn() };
 
+
+// When the user scrolls down 800px from the top of the document, show the button
 function showTopBtn() {
     var btnToTop = document.getElementById("btnToTop");
     var showButtonDistance = 800;

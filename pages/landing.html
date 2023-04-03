@@ -36,13 +36,15 @@
         <div class="nav-block">
             <a rel="noopener" class="btn-primary no-padding" href="../pages/wikyvos.html"
                 title="Accéder aux ressources Kyvos">
-                WiKyvos <img src="../img/icons/graduation-hat.svg" alt="graduation-hat icon" class="icon-sm">
+                <span class="no-mobile">WiKyvos</span> <img src="../img/icons/graduation-hat.svg"
+                    alt="graduation-hat icon" class="icon-sm">
             </a>
 
             <div class="btn-primary no-padding" id="btn-login" onclick="navToPage('login')">
-                Se connecter <img src="../img/icons/lock.svg" alt="lock icon" class="icon-sm">
+                <span class="no-mobile">Se connecter</span> <img src="../img/icons/lock.svg" alt="lock icon"
+                    class="icon-sm">
             </div>
-            <div class="btn-primary mobile-only" id="btn-mobile-menu">
+            <div class="btn-primary mobile-only no-padding" id="btn-mobile-menu">
                 <img src="../img/icons/burger-menu.svg" alt="burger menu icon" class="icon-sm">
             </div>
         </div>
@@ -523,12 +525,12 @@
                 <form action="#" method="get" class="no-padding left">
 
                     <label for="user_firstname" required>Votre prénom</label>
-                    <input type="text" name="user_firstname" placeholder="Tapez votre prénom"
-                        pattern="^[a-zA-Z](['-][a-zA-Z]+)*$" minlenght=2 required>
+                    <input type="text" name="user_firstname" placeholder="Tapez votre prénom" pattern="/^[a-z ,'-]+$/i"
+                        minlenght=2 required>
 
                     <label for=" user_login" required>Votre nom</label>
-                    <input type="text" name="user_lastname" placeholder="Tapez votre nom"
-                        pattern="^[a-zA-Z]([ '-][a-zA-Z]+)*$" maxlength=15 required>
+                    <input type="text" name="user_lastname" placeholder="Tapez votre nom" pattern="/^[a-z ,'-]+$/i"
+                        maxlength=15 required>
 
                     <label for=" user_login" required>Email</label>
                     <input type="email" name="user_login" placeholder="Tapez votre email" required>

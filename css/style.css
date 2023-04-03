@@ -223,6 +223,10 @@ input:invalid+.input-description {
     display: block;
 }
 
+input:valid+.input-description {
+    display: none;
+}
+
 label[required]:after {
     content: "*";
 }
@@ -547,11 +551,11 @@ nav {
 #btnToTop {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 1rem;
+    right: 1rem;
     z-index: 99;
     cursor: pointer;
-    padding: 1.2rem;
+    padding: 1rem;
     border-radius: 50%;
 }
 
