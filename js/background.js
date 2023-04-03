@@ -1,21 +1,13 @@
-// Check the classes of icon and change their strok and fill colors
-function changeIconColor(stroke, fill) {
-    var icons = document.getElementsByClassName("icon");
-    for (var i = 0; i < icons.length; i++) {
-        icons[i].style.stroke = stroke;
-        icons[i].style.fill = fill;
-    }
-}
-
-
 //Set the page to full screen
 function fullScreen() {
     var element = document.documentElement;
     if (element.requestFullscreen) {
         element.requestFullscreen();
-    } else if (element.webkitRequestFullscreen) { /* Safari */
+    } else if (element.webkitRequestFullscreen) {
+        /* Safari */
         element.webkitRequestFullscreen();
-    } else if (element.msRequestFullscreen) { /* IE/Edge */
+    } else if (element.msRequestFullscreen) {
+        /* IE/Edge */
         element.msRequestFullscreen();
     }
 }
@@ -27,12 +19,7 @@ function navToPage(id) {
     var pages = document.getElementsByTagName("page");
     var btnNav = document.getElementsByClassName("btn-nav");
 
-    if (!clickedBtn) {
-        console.error(`Element with ID 'btn-${id}' not found.`);
-        return;
-    }
-
-    if (clickedBtn.classList.contains('disabled')) {
+    if (clickedBtn.classList.contains("disabled")) {
         return;
     }
 
@@ -56,17 +43,24 @@ function navToPage(id) {
     }
 }
 
-window.onscroll = function () { showTopBtn() };
-
+window.onscroll = function () {
+    showTopBtn();
+};
 
 // When the user scrolls down 800px from the top of the document, show the button
 function showTopBtn() {
     var btnToTop = document.getElementById("btnToTop");
     var showButtonDistance = 800;
-    if (document.body.scrollTop > showButtonDistance || document.documentElement.scrollTop > showButtonDistance) {
-        btnToTop.style.display = "block";
-    } else {
-        btnToTop.style.display = "none";
+
+    else {
+        if (
+            document.body.scrollTop > showButtonDistance ||
+            document.documentElement.scrollTop > showButtonDistance
+        ) {
+            btnToTop.style.display = "block";
+        } else {
+            btnToTop.style.display = "none";
+        }
     }
 }
 
@@ -76,15 +70,17 @@ function scrollToElement(id) {
     var targetPosition = target?.offsetTop;
     window.scrollTo({
         top: targetPosition,
-        behavior: 'smooth'
-    })
+        behavior: "smooth",
+    });
 }
 
 // Mobile menu management
 const btnMobileMenu = document.getElementById("btn-mobile-menu");
 const mobileMenu = document.querySelector("nav");
-const menuIcon = document.querySelector('#btn-mobile-menu img');
+const menuIcon = document.querySelector("#btn-mobile-menu img");
 
+
+// @ts-ignore
 btnMobileMenu.addEventListener("click", function () {
     mobileMenu.classList.toggle("open");
     if (mobileMenu.classList.contains("open")) {
@@ -102,18 +98,18 @@ function closeMobileMenu() {
 
 // Closes mobile menu when user clicks outside of the menu
 document.addEventListener("mousedown", function (event) {
-    if (!mobileMenu.contains(event.target) && !btnMobileMenu.contains(event.target)) {
+    if (
+        !mobileMenu.contains(event.target) &&
+        !btnMobileMenu.contains(event.target)
+    ) {
         closeMobileMenu();
     }
 });
 
 const btnNavElements = document.querySelectorAll(".btn-nav");
 
-btnNavElements.forEach(btn => {
+btnNavElements.forEach((btn) => {
     btn.addEventListener("click", function () {
         closeMobileMenu();
     });
 });
-
-
-
