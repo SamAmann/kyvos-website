@@ -213,11 +213,11 @@ input:focus-visible {
   border: 0.1rem solid var(--color-main500);
 }
 
-input:invalid + .input-description {
+input:invalid+.input-description {
   display: block;
 }
 
-input:valid + .input-description {
+input:valid+.input-description {
   display: none;
 }
 
@@ -225,7 +225,7 @@ label[required]:after {
   content: "*";
 }
 
-label[required] + input[required]:invalid:after {
+label[required]+input[required]:invalid:after {
   color: var(--color-error500);
 }
 
@@ -736,8 +736,17 @@ button {
   justify-content: flex-start;
 }
 
+.allpage {
+  height: 100vh;
+  width: 100vw;
+}
+
 .tall {
   height: 100%;
+}
+
+.high {
+  height: 90vh;
 }
 
 .wide {
@@ -872,6 +881,7 @@ button {
     display: flex;
     gap: 2rem;
     padding: 5rem;
+    max-width: 100vw;
   }
 
   .mobile-only {
@@ -881,21 +891,6 @@ button {
 
 /* Style for mobile */
 @media (max-width: 1023px) {
-  :root {
-    --txt-size-xs: 8px;
-    --txt-size-sm: 14px;
-    --txt-size-md: 16px;
-    --txt-size-lg: 18px;
-    --txt-size-xl: 20px;
-    --txt-size-xxl: 22px;
-    --display-size-xs: 24px;
-    --display-size-sm: 30px;
-    --display-size-md: 36px;
-    --display-size-lg: 48px;
-    --display-size-xl: 60px;
-    --display-size-xxl: 72px;
-  }
-
   header {
     padding: 0.2rem;
   }
