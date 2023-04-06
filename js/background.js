@@ -1,4 +1,34 @@
 // Construction of the dictionary
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
+const table = document.getElementById('dictionary-table');
+const rows = table.getElementsByTagName('tr');
+
+function filterTable() {
+    const searchText = searchInput.value.toLowerCase();
+    for (let i = 0; i < rows.length; i++) {
+        const cells = rows[i].getElementsByTagName('td');
+        let match = false;
+        for (let j = 0; j < cells.length; j++) {
+            if (j === 0 || j === 1 || j === 3) {
+                const cellText = cells[j].innerText.toLowerCase();
+                if (cellText.indexOf(searchText) > -1) {
+                    match = true;
+                    break;
+                }
+            }
+        }
+        if (match) {
+            rows[i].style.display = '';
+        } else {
+            rows[i].style.display = 'none';
+        }
+    }
+}
+
+searchInput.addEventListener('keyup', filterTable);
+
+
 // Select the table body element
 const tbody = document.querySelector('#dictionary-table tbody');
 
@@ -32,13 +62,13 @@ fetch('../json/dictionary-terms.json')
             definitionFrCell.textContent = term.definition_fr;
             row.appendChild(definitionFrCell);
 
-
             // Append the new row to the table body
-
             tbody.appendChild(row);
         });
     })
     .catch(error => console.error(error));
+
+
 
 //Set the page to full screen
 function fullScreen() {
@@ -105,7 +135,7 @@ function showTopBtn() {
 }
 
 
-// When the user clicks on the button, scroll to the top of the document
+// When the user clicks on the button, scroll to the element
 function scrollToElement(id) {
     var target = document.getElementById(id);
     var targetPosition = target?.offsetTop;
