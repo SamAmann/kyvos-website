@@ -374,6 +374,49 @@ page.active {
   max-width: 400px;
 }
 
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+thead {
+  background-color: var(--color-white);
+  color: var(--color-main600);
+  font-weight: bold;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 1rem;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  line-height: 1.5;
+}
+
+th:first-child,
+td:first-child {
+  width: 1%;
+  white-space: nowrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+th:nth-child(2),
+td:nth-child(2),
+th:nth-child(4),
+td:nth-child(4) {
+  text-align: center;
+}
+
+th:nth-child(3),
+td:nth-child(3),
+th:nth-child(5),
+td:nth-child(5) {
+  width: 37%;
+}
+
 /* class settings for navigation */
 .nav-block {
   display: flex;

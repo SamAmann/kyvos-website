@@ -1,3 +1,45 @@
+// Construction of the dictionary
+// Select the table body element
+const tbody = document.querySelector('#dictionary-table tbody');
+
+// Fetch the JSON data from the file and parse it into an array of objects
+fetch('../json/dictionary-terms.json')
+    .then(response => response.json())
+    .then(data => {
+        // Loop through each object in the array
+        data.forEach(term => {
+            // Create a new row element
+            const row = document.createElement('tr');
+
+            // Create a new cell element for each data item in the object and add it to the row
+            const acrCell = document.createElement('td');
+            acrCell.textContent = term.acr;
+            row.appendChild(acrCell);
+
+            const termEnCell = document.createElement('td');
+            termEnCell.textContent = term.term_en;
+            row.appendChild(termEnCell);
+
+            const definitionEnCell = document.createElement('td');
+            definitionEnCell.textContent = term.definition_en;
+            row.appendChild(definitionEnCell);
+
+            const termFrCell = document.createElement('td');
+            termFrCell.textContent = term.term_fr;
+            row.appendChild(termFrCell);
+
+            const definitionFrCell = document.createElement('td');
+            definitionFrCell.textContent = term.definition_fr;
+            row.appendChild(definitionFrCell);
+
+
+            // Append the new row to the table body
+
+            tbody.appendChild(row);
+        });
+    })
+    .catch(error => console.error(error));
+
 //Set the page to full screen
 function fullScreen() {
     var element = document.documentElement;

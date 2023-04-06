@@ -35,21 +35,33 @@
 
         <div class="nav-block">
             <a rel="noopener" class="btn-primary no-padding" href="landing.html" title="L'univers de Kyvos">
-                Kyvos <img src="../img/logos/logo-key.svg" alt="kyvos logo icon" class="icon-sm">
+                <span class="no-mobile">Kyvos</span> <img src="../img/logos/logo-key.svg" alt="kyvos logo icon"
+                    class="icon-sm">
             </a>
-            <div class="btn-primary mobile-only" id="btn-mobile-menu">
+            <div class="btn-primary mobile-only no-padding" id="btn-mobile-menu">
                 <img src="../img/icons/burger-menu.svg" alt="burger menu icon" class="icon-sm">
             </div>
         </div>
 
     </header>
-    <page id="page-accueil" class="active">
+    <page id="page-accueil" class="inactive">
         Accueil
     </page>
 
-    <page id="page-dictionary" class="inactive">
-        <iframe id="embed-dictionary" src="https://sharing.clickup.com/36858679/l/134utq-6122/dictionnaire-hospitalier"
-            class="center high wide"></iframe>
+    <page id="page-dictionary" class="active">
+        <table id="dictionary-table" class="col center">
+            <thead>
+                <tr>
+                    <td>Acronym</td>
+                    <td>Term</td>
+                    <td>English definition</td>
+                    <td>Le terme</td>
+                    <td>Définition française</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
 
     </page>
 
