@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="center-v">
+    <header id="header" class="center-v">
         <div id="header-logo" class=>
             <a href="landing.html"><img src=" ../img/logos/logo.svg" alt="logo"></a>
         </div>
@@ -24,10 +24,10 @@
                 <div class="btn-nav active" id="btn-accueil" onclick="navToPage('accueil')">
                     Accueil
                 </div>
-                <div class="btn-nav" id="btn-dictionary" onclick="navToPage('dictionary')">
+                <div class="btn-nav" id="btn-dictionary" onclick="navToPage('dictionary');constrDictionary();">
                     Dictionnaire
                 </div>
-                <div class=" btn-nav" id=" btn-knoledge-base" onclick="navToPage('knowledge-base')"
+                <div class=" btn-nav disabled" id=" btn-knoledge-base" onclick="navToPage('knowledge-base')"
                     title="Yet to come!">
                     Ressources </div>
             </nav>
@@ -44,13 +44,28 @@
         </div>
 
     </header>
-    <page id="page-accueil" class="active">
+
+    <!--To the top Button-->
+    <button id="btnToTop" onclick="scrollToElement('header')" class="btn-primary no-padding"><img
+            src="../img/icons/arrow-down.svg" alt="arrow icon" class="rotate180"></button>
+
+    <!--Page Accueil -->
+    <page id="page-accueil" class="inactive">
         <br>
         <br>
         Accueil
     </page>
 
-    <page id="page-dictionary" class="inactive">
+    <!--Page Dictionary -->
+    <page id="page-dictionary" class="page active column">
+        <div class="content wide center space-between no-padding right">
+            <div id="show-term-popup" class="btn-primary no-padding">Ajouter un terme
+            </div>
+            <div>
+                <label for="search-input">Rechercher:</label>
+                <input type="text" id="search-input" name="search-input">
+            </div>
+        </div>
         <table id="dictionary-table" class="col center">
             <thead>
                 <tr>
@@ -64,10 +79,36 @@
             <tbody>
             </tbody>
         </table>
+        <div id="add-term-popup" class="popup">
+            <div class="popup-content center">
+                <span id="close-AddTermPopup" class="close right">&times;</span>
+                <div class="content center column wide">
+                    <form id="add-term-form" class="center wide">
+                        <div class="content right">
+                            <h4 class="txt-center">Ajouter un terme</h4>
+                        </div>
+                        <label for="term-en">Term (English) :</label>
+                        <input type="text" id="term-en-input" name="term-en">
+                        <label for="term-fr">Terme (Français) :</label>
+                        <input type="text" id="term-fr-input" name="term-fr">
+                        <label for="definition-en">Definition (English) :</label>
+                        <textarea id="definition-en-input" name="definition-en"></textarea>
+                        <label for="definition-fr">Definition (Française) :</label>
+                        <textarea id="definition-fr-input" name="definition-fr"></textarea>
+                        <label for="acr">Acronyme :</label>
+                        <input type="text" id="acr-input" name="acr">
+                </div>
+                <div class="content center wide"><button type="submit" class="btn-primary wide center">Ajouter</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
 
     </page>
 
 </body>
-<script src="../js/background.js"></script>
+<script src=" ../js/background.js"></script>
+<script src="../js/wikyvos.js"></script>
 
 </html>
