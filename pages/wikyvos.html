@@ -87,14 +87,24 @@
                         <div class="content right">
                             <h4 class="txt-center">Ajouter un terme</h4>
                         </div>
-                        <label for="term-en">Term (English) :</label>
-                        <input type="text" id="term-en-input" name="term-en">
-                        <label for="term-fr">Terme (Français) :</label>
-                        <input type="text" id="term-fr-input" name="term-fr">
+                        <div class="wide left">
+                            <label for="term-en">Term (English) :</label>
+                            <input type="text" id="term-en-input" name="term_en">
+                            <span class="tip txt-xs txt-left" id="term-en-tip"
+                                style="color:var(--color-error600)"></span>
+                        </div>
+
+                        <div class="wide left">
+                            <label for="term-fr">Terme (Français) :</label>
+                            <input type="text" id="term-fr-input" name="term_fr">
+                            <span class="tip txt-xs txt-left" id="term-fr-tip"
+                                style="color:var(--color-error600)"></span>
+                        </div>
+
                         <label for="definition-en">Definition (English) :</label>
-                        <textarea id="definition-en-input" name="definition-en"></textarea>
+                        <textarea id="definition-en-input" name="definition_en"></textarea>
                         <label for="definition-fr">Definition (Française) :</label>
-                        <textarea id="definition-fr-input" name="definition-fr"></textarea>
+                        <textarea id="definition-fr-input" name="definition_fr"></textarea>
                         <label for="acr">Acronyme :</label>
                         <input type="text" id="acr-input" name="acr">
                 </div>

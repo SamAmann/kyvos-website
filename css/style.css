@@ -161,7 +161,7 @@ form {
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
-  max-width: 18rem;
+  width: 100%;
 }
 
 label {
@@ -173,10 +173,10 @@ label {
   width: 100%;
   padding-top: 0.8rem;
   padding-bottom: 0.2rem;
-  padding-left: 0.3rem;
 }
 
-input {
+input,
+textarea {
   display: flex;
   padding: 0.6rem;
   border: 0.1rem solid var(--color-grey200);
@@ -184,6 +184,15 @@ input {
   font-size: var(--txt-size-sm);
   color: var(--color-grey700);
   background-color: var(--color-white);
+  box-shadow: 0px 1px 2px var(--color-grey200);
+  min-width: 15rem;
+  max-width: 100%;
+  align-self: flex-start;
+}
+
+textarea {
+  height: 8rem;
+  width: 90%;
 }
 
 input::placeholder {
@@ -208,6 +217,7 @@ input::placeholder {
   margin-right: 0.2rem;
 }
 
+textarea:focus-visible,
 input:focus-visible {
   outline: none;
   border: 0.1rem solid var(--color-main500);
@@ -319,6 +329,15 @@ header {
   gap: 1rem;
 }
 
+page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  max-width: 99vw;
+}
+
 page.inactive {
   display: none;
 }
@@ -389,33 +408,77 @@ thead {
 
 th,
 td {
-  padding: 1rem;
+  padding: 0.5rem;
   vertical-align: middle;
   border: 1px solid #ccc;
   line-height: 1.5;
 }
 
-th:first-child,
-td:first-child {
+
+#dictionary-table th:first-child,
+#dictionary-table td:first-child {
   width: 1%;
   white-space: nowrap;
   font-weight: bold;
   text-align: center;
 }
 
-th:nth-child(2),
-td:nth-child(2),
-th:nth-child(4),
-td:nth-child(4) {
-  text-align: center;
+#dictionary-table th:nth-child(2),
+#dictionary-table td:nth-child(2),
+#dictionary-table th:nth-child(4),
+#dictionary-table td:nth-child(4) {
+  font-weight: 500;
 }
 
-th:nth-child(3),
-td:nth-child(3),
-th:nth-child(5),
-td:nth-child(5) {
+#dictionary-table th:nth-child(3),
+#dictionary-table td:nth-child(3),
+#dictionary-table th:nth-child(5),
+#dictionary-table td:nth-child(5) {
   width: 37%;
+  font-size: var(--txt-size-sm);
 }
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: center;
+  top: calc(var(--header-height) + 2rem);
+  width: auto;
+  max-width: 80vw;
+  min-width: 50vw;
+  height: auto;
+  overflow: auto;
+  border: 1px solid var(--color-grey200);
+  box-shadow: 0px 1px 2px var(--color-grey200);
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  overflow: auto;
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup-content {
+  padding: 2rem;
+  width: auto;
+}
+
+.close {
+  color: var(--color-grey600);
+  float: right;
+  font-size: var(--txt-size-xxl);
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--color-black);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 /* class settings for navigation */
 .nav-block {
