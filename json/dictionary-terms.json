@@ -1,6 +1,5 @@
 [
     {
-        "Task ID": "",
         "term_en": "#",
         "term_fr": "#",
         "definition_fr": "Le signe \"#\" (dièse, croisillon) est une abréviation couramment utilisée dans l'industrie hôtelière pour désigner le mot \"chambre\". En remplaçant le mot \"numéro\" par le symbole \"#\", on peut transformer la phrase \"le client de la chambre 101\" en \"Le client #101\". Le \"#\" est souvent utilisé dans la communication interne de l'hôtel, notamment pour faciliter la gestion des réservations et l'identification des chambres. .,",
@@ -8,7 +7,6 @@
         "acr": "#"
     },
     {
-        "Task ID": "860qa5gh5",
         "term_en": "All inclusive",
         "term_fr": "Tout inclus",
         "definition_fr": "Tout inclus : Lorsqu'un hôtel propose un forfait tout inclus, cela signifie que le prix de la chambre comprend tous les repas, les boissons, les activités et les services offerts par l'hôtel. Les forfaits tout inclus peuvent être avantageux pour les clients qui veulent avoir un budget fixe pour leur voyage et ne pas avoir à se soucier des dépenses supplémentaires.",
@@ -16,7 +14,6 @@
         "acr": "AI"
     },
     {
-        "Task ID": "860qaghzm",
         "term_en": "Average Room Rate",
         "term_fr": "Prix moyen par chambre",
         "definition_fr": "PM# (prix moyen par chambre) est un indicateur clé utilisé dans l'industrie hôtelière pour mesurer le prix moyen d'une chambre vendue sur une période donnée. L'ARR est calculé en divisant le chiffre d'affaires total des chambres vendues par le nombre total de chambres vendues au cours de cette période.",
@@ -24,7 +21,6 @@
         "acr": "ARR"
     },
     {
-        "Task ID": "860qa4bdb",
         "term_en": "Booking Engine",
         "term_fr": "Moteur de réservation",
         "definition_fr": "Un moteur de réservation est une application logicielle en ligne qui permet aux clients de réserver directement avec un hôtel ou un établissement d'hébergement via le site Web de l'hôtel ou d'autres canaux en ligne. Le moteur de réservation est intégré au PMS de l'hôtel, permettant une gestion en temps réel des stocks et des mises à jour de tarifs.||Le moteur de réservation offre une expérience de réservation conviviale et transparente pour les clients, tout en fournissant aux hôtels un canal de réservation directe pour augmenter les revenus et réduire les frais de commission payés aux sites de réservation tiers. De plus, le moteur de réservation permet aux hôtels d'offrir des tarifs et des forfaits personnalisés, ainsi que des possibilités de vente incitative telles que des surclassements de chambres ou des services accessoires.||Dans l'ensemble, le moteur de réservation est un outil important pour les hôtels afin d'améliorer leur présence en ligne, d'augmenter les réservations directes et d'améliorer l'expérience des clients.",
@@ -32,7 +28,6 @@
         "acr": "BE"
     },
     {
-        "Task ID": "860qa4fr5",
         "term_en": "Channel Manager",
         "term_fr": "Gestionnaire de canaux",
         "definition_fr": "Un channel manager est un logiciel utilisé dans l'industrie hôtelière pour gérer la distribution de chambres dans différents canaux de vente en ligne tels que les OTA (Online Travel Agencies), les GDS (Global Distribution System) et les sites de réservation directe.",
@@ -40,7 +35,6 @@
         "acr": "CM"
     },
     {
-        "Task ID": "860qa4ace",
         "term_en": "Property Management System",
         "term_fr": "Système de gestion hôtelière",
         "definition_fr": "Un PMS hôtelier, ou Property Management System, est un système de gestion intégré destiné aux hôtels et autres établissements d'hébergement. Il s'agit d'un logiciel qui permet de centraliser et de gérer toutes les opérations de l'hôtel, de la gestion des réservations et des chambres à la facturation et à la gestion des stocks.\n\nLe PMS hôtelier permet également de suivre les performances de l'hôtel grâce à des rapports détaillés, de gérer les relations avec les clients et de gérer le personnel. En somme, le PMS est un outil essentiel pour les hôteliers qui souhaitent optimiser leur gestion opérationnelle et améliorer l'expérience client.",
@@ -48,7 +42,6 @@
         "acr": "PMS"
     },
     {
-        "Task ID": "860qa4k4e",
         "term_en": "Upgrade",
         "term_fr": "Surclassement",
         "definition_fr": "Un upgrade est un surclassement ou une amélioration d'un produit ou d'un service proposé à un client, généralement sans frais supplémentaires. Dans le secteur hôtelier, cela peut prendre la forme d'un surclassement de chambre ou d'un service supplémentaire, tel qu'un petit-déjeuner gratuit ou une connexion Wi-Fi plus rapide.",
@@ -56,7 +49,6 @@
         "acr": "UPG"
     },
     {
-        "Task ID": "860qa5j8r",
         "term_en": "Direct booking",
         "term_fr": "Réservation directe",
         "definition_fr": "Une réservation directe est une réservation effectuée directement avec l'hôtel sans passer par un intermédiaire tel qu'une agence de voyage en ligne. Les réservations directes peuvent être effectuées via le site web de l'hôtel, par téléphone ou par e-mail. Les réservations directes peuvent offrir des avantages tels que des tarifs préférentiels, des offres spéciales et une meilleure flexibilité en termes de modification ou d'annulation de réservation.",
@@ -64,7 +56,6 @@
         "acr": "DB"
     },
     {
-        "Task ID": "860qa4h2m",
         "term_en": "Global Distribution System",
         "term_fr": "Système de distribution globale",
         "definition_fr": "Un GDS (Global Distribution System) est un réseau de réservation informatisé utilisé par les agences de voyage et les fournisseurs de services de voyage pour accéder à des inventaires de voyage en temps réel, tels que les disponibilités d'hôtels, de vols et de locations de voitures.",
@@ -72,7 +63,6 @@
         "acr": "GDS"
     },
     {
-        "Task ID": "860qa5jkw",
         "term_en": "Housekeeping",
         "term_fr": "Entretien ménager",
         "definition_fr": "Le service d'entretien ménager est responsable du nettoyage des chambres d'hôtel, des espaces publics et des zones de service. Les tâches typiques du service d'entretien ménager comprennent le remplacement des draps et des serviettes, le nettoyage des salles de bains, le dépoussiérage, l'aspirateur et la préparation de la chambre pour les nouveaux invités.",
@@ -80,7 +70,6 @@
         "acr": "HSK"
     },
     {
-        "Task ID": "860qa4fuj",
         "term_en": "Online Travel Agency",
         "term_fr": "Agence de voyage en ligne",
         "definition_fr": "Une OTA (Online Travel Agency) est une agence de voyage en ligne qui permet aux utilisateurs de réserver des chambres d'hôtel, des vols, des locations de voitures et d'autres services de voyage directement depuis son site web ou son application mobile.",
@@ -88,7 +77,6 @@
         "acr": "OTA"
     },
     {
-        "Task ID": "860qa4jb2",
         "term_en": "Revenue per available room",
         "term_fr": "Revenu par chambre disponible",
         "definition_fr": "Le RevPAR (Revenue per available room) est une mesure clé de la performance financière d'un hôtel, calculée en divisant le chiffre d'affaires total des chambres par le nombre de chambres disponibles pour la vente sur une période donnée.",
@@ -96,7 +84,6 @@
         "acr": "RevPAR"
     },
     {
-        "Task ID": "860qa4jfw",
         "term_en": "Revenue Management System",
         "term_fr": "Système de gestion des revenus",
         "definition_fr": "Un RMS (Revenue Management System) est un logiciel utilisé par les hôtels pour gérer leurs prix de vente et leurs disponibilités en temps réel afin d'optimiser leurs revenus. Le RMS analyse les données historiques de réservation, les tendances du marché et les événements locaux pour recommander les prix les plus appropriés.",
@@ -104,7 +91,6 @@
         "acr": "RMS"
     },
     {
-        "Task ID": "860qa523x",
         "term_en": "Occupancy Rate",
         "term_fr": "Taux d'occupation",
         "definition_fr": "Le taux d'occupation est un indicateur clé dans l'industrie hôtelière qui mesure le pourcentage de chambres occupées par rapport au nombre total de chambres disponibles dans un hôtel. Ce chiffre est généralement calculé sur une base journalière, hebdomadaire, mensuelle ou annuelle.",
@@ -112,7 +98,6 @@
         "acr": "TO"
     },
     {
-        "Task ID": "860qa4jpe",
         "term_en": "Upsell",
         "term_fr": "Vente additionnelle",
         "definition_fr": "L'upsell est une technique de vente consistant à proposer à un client un produit ou un service en complément, plus cher ou plus complet que celui qu'il envisageait initialement d'acheter. Dans le secteur hôtelier, cela peut prendre la forme d'une chambre de catégorie supérieure, d'un service de spa, ...",
@@ -120,7 +105,6 @@
         "acr": "UPS"
     },
     {
-        "Task ID": "860qa5u7e",
         "term_en": "Yield Management",
         "term_fr": "Gestion Yield",
         "definition_fr": "Le Yield Management est une stratégie de tarification dynamique utilisée dans l'industrie hôtelière pour maximiser les revenus. Cette stratégie consiste à ajuster les prix des chambres en fonction de la demande et des niveaux de disponibilité pour atteindre le taux d'occupation optimal et maximiser les revenus. Les hôtels utilisent souvent des outils informatiques sophistiqués pour analyser les données de réservation passées et présentes et pour prédire les tendances futures, afin d'ajuster les tarifs en conséquence.",

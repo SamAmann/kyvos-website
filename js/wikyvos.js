@@ -22,21 +22,14 @@ window.onclick = function (event) {
 
 addTermForm.addEventListener('submit', (event) => {
     event.preventDefault();
+    termEnTip.textContent = "";
+    termFrTip.textContent = "";
+
 
     if (!termEnInput.value && !termFrInput.value) {
         termEnTip.textContent = "Veuillez fournir au moins une version du terme.";
         termFrTip.textContent = "Veuillez fournir au moins une version du terme.";
         return;
-    } else if (termEnInput.value && termFrInput.value) {
-        // do something if both versions are provided
-    } else if (termEnInput.value) {
-        termEnTip.textContent = "";
-        termFrTip.textContent = "La version française du terme est recommandée.";
-        // add term with English version
-    } else if (termFrInput.value) {
-        termEnTip.textContent = "La version anglaise du terme est recommandée.";
-        termFrTip.textContent = "";
-        // add term with French version
     }
 
 
