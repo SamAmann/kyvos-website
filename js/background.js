@@ -74,36 +74,38 @@ function scrollToElement(id) {
 }
 
 // Mobile menu management
-const btnMobileMenu = document.getElementById("btn-mobile-menu");
-const mobileMenu = document.querySelector("nav");
-const menuIcon = document.querySelector("#btn-mobile-menu img");
+//Check first if the element exists, if it exists, creates the const
 
+if (document.getElementById("btn-mobile-menu")) {
+    const btnMobileMenu = document.getElementById("btn-mobile-menu");
+    const mobileMenu = document.querySelector("nav");
+    const menuIcon = document.querySelector("#btn-mobile-menu img");
 
-// @ts-ignore
-btnMobileMenu.addEventListener("click", function () {
-    mobileMenu.classList.toggle("open");
-    if (mobileMenu.classList.contains("open")) {
-        menuIcon.src = "../img/icons/cross.svg";
-        btnMobileMenu.focus();
-    } else {
+    btnMobileMenu.addEventListener("click", function () {
+        mobileMenu.classList.toggle("open");
+        if (mobileMenu.classList.contains("open")) {
+            menuIcon.src = "../img/icons/cross.svg";
+            btnMobileMenu.focus();
+        } else {
+            menuIcon.src = "../img/icons/burger-menu.svg";
+        }
+    });
+
+    function closeMobileMenu() {
+        mobileMenu.classList.remove("open");
         menuIcon.src = "../img/icons/burger-menu.svg";
     }
-});
 
-function closeMobileMenu() {
-    mobileMenu.classList.remove("open");
-    menuIcon.src = "../img/icons/burger-menu.svg";
+    // Closes mobile menu when user clicks outside of the menu
+    document.addEventListener("mousedown", function (event) {
+        if (
+            !mobileMenu.contains(event.target) &&
+            !btnMobileMenu.contains(event.target)
+        ) {
+            closeMobileMenu();
+        }
+    });
 }
-
-// Closes mobile menu when user clicks outside of the menu
-document.addEventListener("mousedown", function (event) {
-    if (
-        !mobileMenu.contains(event.target) &&
-        !btnMobileMenu.contains(event.target)
-    ) {
-        closeMobileMenu();
-    }
-});
 
 const btnNavElements = document.querySelectorAll(".btn-nav");
 
