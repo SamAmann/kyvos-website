@@ -12,6 +12,28 @@ function fullScreen() {
     }
 }
 
+//open the popup
+function openPopup(id) {
+    var popup = document.getElementById(id);
+    popup.classList.add("active");
+}
+
+// If a popup is open, listen to clicks outside the popup to close it
+window.onclick = function (event) {
+    var popups = document.getElementsByClassName("popup");
+    for (var i = 0; i < popups.length; i++) {
+        if (
+            event.target !== popups[i] &&
+            !popups[i].contains(event.target) &&
+            popups[i].classList.contains("active")
+        ) {
+            popups[i].classList.remove("active");
+        }
+    }
+};
+
+
+
 // To navigate between pages
 function navToPage(id) {
     var clickedBtn = document.getElementById("btn-" + id);
@@ -34,11 +56,11 @@ function navToPage(id) {
     }
     for (var i = 0; i < btnNav.length; i++) {
         if (btnNav[i].id == "btn-" + id) {
-            btnNav[i].classList.add("active");
-            btnNav[i].classList.remove("inactive");
+            btnNav[i].classList.add("selected");
+            btnNav[i].classList.remove("unselected");
         } else {
-            btnNav[i].classList.add("inactive");
-            btnNav[i].classList.remove("active");
+            btnNav[i].classList.add("unselected");
+            btnNav[i].classList.remove("selected");
         }
     }
 }

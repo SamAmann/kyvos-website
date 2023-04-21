@@ -151,8 +151,6 @@ p {
   padding: 0px;
 }
 
-/* Set the colors for svg icons */
-
 /* Form, input and labels */
 
 form {
@@ -468,6 +466,7 @@ td {
   font-size: var(--txt-size-sm);
 }
 
+/* 
 .popup {
   display: none;
   position: absolute;
@@ -484,7 +483,28 @@ td {
   background-color: var(--color-white);
   border-radius: 0.5rem;
   overflow: auto;
+} */
+
+/* class settings for popup that places it on the middle of the current screen*/
+.popup {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  max-width: 80vw;
+  min-width: 50vw;
+  height: auto;
+  overflow: auto;
+  border: 1px solid var(--color-grey200);
+  box-shadow: 0px 1px 2px var(--color-grey200);
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  overflow: auto;
 }
+
 
 .popup.active {
   display: block;
@@ -579,6 +599,7 @@ nav {
 
 /* class settings for button */
 .btn-nav {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -588,28 +609,65 @@ nav {
   font-size: var(--txt-size-sm);
   color: var(--color-grey600);
   background-color: #ffffff00;
-  border: solid 1px #ffffff00;
+  /* transparent border to keep the height of the button */
+  border-bottom: solid 1px #ffffff00;
   flex: none;
   height: 100%;
   cursor: pointer;
 }
 
+.btn-nav::before,
+.btn-nav::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  transition: width 0.3s ease-out;
+  background-color: var(--color-main700);
+}
+
+.btn-nav::before {
+  left: 0;
+}
+
+.btn-nav::after {
+  right: 0;
+}
+
+.btn-nav:hover::before,
+.btn-nav:hover::after,
+.btn-nav.selected::after {
+  width: 50%;
+}
+
 .btn-nav:hover {
-  border-bottom: solid 1.5px var(--color-main700);
   color: var(--color-main700);
   background-color: #e38b550a;
   text-decoration: none;
 }
 
-.btn-nav.active {
-  border-bottom: solid 2px var(--color-main400);
+.btn-nav.selected {
   color: var(--color-main700);
 }
 
+.btn-nav.selected::before {
+  width: 50%;
+}
+
 .btn-nav.disabled {
-  border-bottom: solid 1px var(--color-grey50);
   color: var(--color-grey200);
   cursor: not-allowed;
+}
+
+.btn-nav.disabled:hover {
+  background-color: var(--color-grey200);
+  color: var(--color-white);
+}
+
+.btn-nav.disabled::before,
+.btn-nav.disabled::after {
+  display: none;
 }
 
 .btn-text {
@@ -854,6 +912,15 @@ button {
 
 .font-circular {
   font-family: "Circular", sans-serif;
+}
+
+/* class for states */
+.active {
+  display: flex;
+}
+
+.inactive {
+  display: none;
 }
 
 /* positioning classes */

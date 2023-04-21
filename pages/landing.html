@@ -20,7 +20,7 @@
                 <a href="landing.html"><img src="../img/logos/logo.svg" alt="logo"></a>
             </div>
             <nav>
-                <div class="btn-nav active" id="btn-accueil" onclick="navToPage('accueil')">
+                <div class="btn-nav selected" id="btn-accueil" onclick="navToPage('accueil')">
                     Accueil
                 </div>
                 <div class="btn-nav" id="btn-kyvos" onclick="navToPage('kyvos')">
@@ -34,10 +34,10 @@
         </div>
 
         <div class="nav-block">
-            <div rel="noopener" class="btn-primary" href="wikyvos.html" title="Accéder aux ressources Kyvos"><img
-                    src="../img/icons/graduation-hat.svg" alt="graduation-hat icon" class="icon-sm">
+            <a rel="noopener" class="btn-primary" href="../pages/wikyvos.html" title="Accéder aux ressources Kyvos">
+                <img src="../img/icons/graduation-hat.svg" alt="graduation-hat icon" class="icon-sm">
                 <span class="no-mobile">WiKyvos</span>
-            </div>
+            </a>
 
             <div class="btn-primary" id="btn-login" onclick="navToPage('login')">
                 <img src="../img/icons/lock.svg" alt="lock icon" class="icon-sm"> <span class="no-mobile">Se
@@ -381,12 +381,12 @@
                             </div>
                         </div>
                         <div class="divider"></div>
-                        <div class="content wide no-padding no-gap">
-                            <a class="btn-primary wide center"
-                                href="mailto:discutons@kyvos.me?subject=Demande%20d'informations%20-%20Forfait%20Clé&body=Bonjour,%0A%0AJe souhaiterai vous contacter pour plus d'informations à propos de votre forfait.%0A%0ALa mission concernerait : %0AJ'estime le temps à y consacré à :  jours%0A%0AD'avance merci pour votre retour.%0A%0ACordialement,%0A%0A">
-                                <p class="txt-md">Nous contacter !</p>
-                            </a>
+                        <div class="content wide no-padding">
+                            <div class="btn-primary wide center" onclick="openPopup('contact-popup')">
+                                <p class="txt-md">Nous contacter </p>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -571,6 +571,19 @@
                             onclick="navToPage('login')">Se
                             connecter</a></p>
                 </form>
+            </div>
+        </div>
+        <div id="contact-popup" class="popup inactive">
+            <div id="cle-contact-buttons-div" class="content wide active space-between">
+                <a class="btn-primary wide center"
+                    href="mailto:discutons@kyvos.me?subject=Demande%20d'informations%20-%20Forfait%20Clé&body=Bonjour,%0A%0AJe souhaiterai vous contacter pour plus d'informations à propos de votre forfait.%0A%0ALa mission concernerait : %0AJ'estime le temps à y consacré à :  jours%0A%0AD'avance merci pour votre retour.%0A%0ACordialement,%0A%0A">
+                    <p class="txt-md">Par mail</p>
+                    <img src="../img/icons/send.svg" alt="send mail icon">
+                </a>
+                <a class="btn-primary wide center" href=" ">
+                    <p class="txt-md">Je réserve un rendez-vous</p>
+                    <img src="../img/icons/calendar.svg" alt="calendar icon">
+                </a>
             </div>
         </div>
     </page>
