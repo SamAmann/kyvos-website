@@ -466,34 +466,13 @@ td {
   font-size: var(--txt-size-sm);
 }
 
-/* 
 .popup {
   display: none;
-  position: absolute;
-  z-index: 99;
-  left: center;
-  top: calc(var(--header-height) + 2rem);
-  width: auto;
-  max-width: 80vw;
-  min-width: 50vw;
-  height: auto;
-  overflow: auto;
-  border: 1px solid var(--color-grey200);
-  box-shadow: 0px 1px 2px var(--color-grey200);
-  background-color: var(--color-white);
-  border-radius: 0.5rem;
-  overflow: auto;
-} */
-
-/* class settings for popup that places it on the middle of the current screen*/
-.popup {
-  display: none;
-  position: absolute;
+  position: fixed;
   z-index: 99;
   left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   top: 50%;
-  transform: translate(-50%, -50%);
-  width: auto;
   max-width: 80vw;
   min-width: 50vw;
   height: auto;
@@ -504,7 +483,6 @@ td {
   border-radius: 0.5rem;
   overflow: auto;
 }
-
 
 .popup.active {
   display: block;

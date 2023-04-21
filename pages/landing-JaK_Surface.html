@@ -382,7 +382,7 @@
                         </div>
                         <div class="divider"></div>
                         <div class="content wide no-padding">
-                            <div class="btn-primary wide center open-popup" onclick="openPopup('contact-popup')">
+                            <div class="btn-primary wide center" onclick="openPopup('contact-popup')">
                                 <p class="txt-md">Nous contacter </p>
                             </div>
                         </div>
@@ -575,16 +575,18 @@
         </div>
 
     </page>
-    <div id="contact-popup" class="content popup">
-        <a class="btn-primary center col50"
-            href="mailto:discutons@kyvos.me?subject=Demande%20d'informations%20-%20Forfait%20Clé&body=Bonjour,%0A%0AJe souhaiterai vous contacter pour plus d'informations à propos de votre forfait.%0A%0ALa mission concernerait : %0AJ'estime le temps à y consacré à :  jours%0A%0AD'avance merci pour votre retour.%0A%0ACordialement,%0A%0A">
-            <img src="../img/icons/send.svg" alt="send mail icon">
-            <p class="txt-md">Par mail</p>
-        </a>
-        <a class="btn-primary center" href=" ">
-            <img src="../img/icons/calendar.svg" alt="calendar icon">
-            <p class="txt-md">Prendre rendez-vous</p>
-        </a>
+    <div id="contact-popup" class="popup active">
+        <div id="cle-contact-buttons-div" class="content wide active space-between">
+            <a class="btn-primary wide center"
+                href="mailto:discutons@kyvos.me?subject=Demande%20d'informations%20-%20Forfait%20Clé&body=Bonjour,%0A%0AJe souhaiterai vous contacter pour plus d'informations à propos de votre forfait.%0A%0ALa mission concernerait : %0AJ'estime le temps à y consacré à :  jours%0A%0AD'avance merci pour votre retour.%0A%0ACordialement,%0A%0A">
+                <p class="txt-md">Par mail</p>
+                <img src="../img/icons/send.svg" alt="send mail icon">
+            </a>
+            <a class="btn-primary wide center" href=" ">
+                <p class="txt-md">Je réserve un rendez-vous</p>
+                <img src="../img/icons/calendar.svg" alt="calendar icon">
+            </a>
+        </div>
     </div>
 </body>
 <script src="../js/background.js"></script>

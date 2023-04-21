@@ -10,15 +10,15 @@ const closeBtn = document.getElementById('close-AddTermPopup');
 const termEnTip = document.getElementById('term-en-tip');
 const termFrTip = document.getElementById('term-fr-tip');
 
-window.onclick = function (event) {
-    if ((event.target !== addTermPopup && !addTermPopup.contains(event.target) & addTermPopup.classList.contains('active')) || (event.target === closeBtn && addTermPopup.classList.contains('active'))) {
-        addTermForm.reset();
-        addTermPopup.classList.remove('active');
-    } else if (event.target === showTermPopupBtn) {
-        addTermPopup.classList.add('active');
-        termEnInput?.focus();
-    }
-}
+// window.onclick = function (event) {
+//     if ((event.target !== addTermPopup && !addTermPopup.contains(event.target) & addTermPopup.classList.contains('active')) || (event.target === closeBtn && addTermPopup.classList.contains('active'))) {
+//         addTermForm.reset();
+//         addTermPopup.classList.remove('active');
+//     } else if (event.target === showTermPopupBtn) {
+//         addTermPopup.classList.add('active');
+//         termEnInput?.focus();
+//     }
+// }
 
 addTermForm.addEventListener('submit', (event) => {
     event.preventDefault();

@@ -59,7 +59,8 @@
     <!--Page Dictionary -->
     <page id="page-dictionary" class="page inactive column">
         <div class="content wide center space-between no-padding right">
-            <div id="show-term-popup" class="btn-primary no-padding">Ajouter un terme
+            <div id="show-term-popup" class="btn-primary open-popup" onclick="openPopup('add-term-popup')">Ajouter un
+                terme
             </div>
             <div>
                 <label for="search-input">Rechercher:</label>
@@ -81,7 +82,7 @@
         </table>
         <div id="add-term-popup" class="popup">
             <div class="popup-content center">
-                <span id="close-AddTermPopup" class="close right">&times;</span>
+                <span id="close-AddTermPopup" class="close right" onclick="closePopup('add-term-popup')">&times;</span>
                 <div class="content center column wide">
                     <form id="add-term-form" class="center wide">
                         <div class="content right">
