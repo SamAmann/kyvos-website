@@ -7,11 +7,11 @@
   --txt-size-xl: 1.25rem;
   --txt-size-xxl: 1.375rem;
   --display-size-xs: 1.5rem;
-  --display-size-sm: 1.875rem;
-  --display-size-md: 2.25rem;
-  --display-size-lg: 3rem;
-  --display-size-xl: 3.75rem;
-  --display-size-xxl: 4.5rem;
+  --display-size-sm: 1.75rem;
+  --display-size-md: 2rem;
+  --display-size-lg: 2.5rem;
+  --display-size-xl: 3.5rem;
+  --display-size-xxl: 4rem;
 
   --font-size: 1.6rem;
   --color-main25: #fffdfc;
@@ -108,26 +108,26 @@ body {
 
 /*set the font family for the title*/
 h1 {
-  font-size: var(--display-size-lg);
+  font-size: var(--display-size-xl);
   font-weight: 500;
 }
 
 /*set the font family for the heading*/
 h2 {
   font-family: "Circular", sans-serif;
-  font-size: var(--display-size-md);
+  font-size: var(--display-size-lg);
   font-weight: 600;
 }
 
 h3 {
   font-family: "Circular", sans-serif;
-  font-size: var(--display-size-sm);
+  font-size: var(--display-size-md);
   font-weight: 600;
 }
 
 h4 {
   font-family: "Circular", sans-serif;
-  font-size: var(--txt-size-xl);
+  font-size: var(--txt-display-sm);
   font-weight: 600;
 }
 
@@ -146,7 +146,7 @@ h6 {
 }
 
 p {
-  font-size: var(--txt-size-xl);
+  font-size: var(--txt-size-md);
   line-height: 30px;
   padding: 0px;
 }
@@ -157,6 +157,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 1rem;
   width: 100%;
 }
@@ -466,6 +467,23 @@ td {
   font-size: var(--txt-size-sm);
 }
 
+
+/* Popup */
+#popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 90;
+}
+
+#popup-overlay.active {
+  display: block;
+}
+
 .popup {
   display: none;
   position: fixed;
@@ -474,7 +492,6 @@ td {
   transform: translateX(-50%) translateY(-50%);
   top: 50%;
   max-width: 80vw;
-  min-width: 50vw;
   height: auto;
   overflow: auto;
   border: 1px solid var(--color-grey200);
@@ -482,14 +499,14 @@ td {
   background-color: var(--color-white);
   border-radius: 0.5rem;
   overflow: auto;
+  padding: 2rem;
 }
 
 .popup.active {
-  display: block;
+  display: flex;
 }
 
 .popup-content {
-  padding: 2rem;
   width: auto;
 }
 
@@ -502,7 +519,7 @@ td {
 
 .close:hover,
 .close:focus {
-  color: var(--color-black);
+  color: var(--color-main600);
   text-decoration: none;
   cursor: pointer;
 }
@@ -760,9 +777,7 @@ a:hover {
   text-decoration: underline;
 }
 
-a:focus {
-  color: var(--color-main400);
-}
+a:focus {}
 
 button {
   background-color: #ffffff00;
@@ -925,6 +940,10 @@ button {
 
 .center-v {
   align-items: center;
+}
+
+.center-h {
+  justify-content: center;
 }
 
 .right {

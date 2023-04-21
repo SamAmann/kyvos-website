@@ -15,6 +15,10 @@
 </head>
 
 <body>
+    <!-- Adds an overlay when a popup is called-->
+    <div id="popup-overlay"></div>
+
+    <!--Header-->
     <header id="header" class="center-v">
         <div id="header-logo" class=>
             <a href="landing.html"><img src=" ../img/logos/logo.svg" alt="logo"></a>
@@ -34,9 +38,9 @@
         </div>
 
         <div class="nav-block">
-            <a rel="noopener" class="btn-primary no-padding" href="landing.html" title="L'univers de Kyvos">
-                <span class="no-mobile">Kyvos</span> <img src="../img/logos/logo-key.svg" alt="kyvos logo icon"
-                    class="icon-sm">
+            <a rel="noopener" class="btn-primary " href="landing.html" title="L'univers de Kyvos">
+                <img src="../img/logos/logo-key.svg" alt="kyvos logo icon" class="icon-sm">
+                <span class="no-mobile">Kyvos</span>
             </a>
             <div class="btn-primary mobile-only no-padding" id="btn-mobile-menu">
                 <img src="../img/icons/burger-menu.svg" alt="burger menu icon" class="icon-sm">
@@ -81,13 +85,16 @@
             </tbody>
         </table>
         <div id="add-term-popup" class="popup outside-click-no-close">
-            <div class="popup-content center">
+            <div class="popup-content center column">
                 <span id="close-AddTermPopup" class="close right" onclick="closePopup('add-term-popup')">&times;</span>
-                <div class="content center column wide">
+                <div class="content center column">
+                    <div class="right column">
+                        <h3 class="txt-center">Ajouter un terme</h3>
+                        <p>Participez à enrichir ce dictionnaire en soumettant vos
+                            lexique
+                            et définitions !</p>
+                    </div>
                     <form id="add-term-form" class="center wide">
-                        <div class="content right">
-                            <h4 class="txt-center">Ajouter un terme</h4>
-                        </div>
                         <div class="wide left">
                             <label for="term-en">Term (English) :</label>
                             <input type="text" id="term-en-input" name="term_en">
@@ -108,8 +115,10 @@
                         <textarea id="definition-fr-input" name="definition_fr"></textarea>
                         <label for="acr">Acronyme :</label>
                         <input type="text" id="acr-input" name="acr">
-                </div>
-                <div class="content center wide"><button type="submit" class="btn-primary wide center">Ajouter</button>
+                        <div class="content center wide">
+                            <button type="submit" class="btn-primary wide center txt-md">Ajouter au
+                                dictionnaire</button>
+                        </div>
                     </form>
                 </div>
             </div>

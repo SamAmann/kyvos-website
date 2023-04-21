@@ -42,16 +42,21 @@ document.addEventListener('click', function (event) {
 });
 
 
-//open the popup
+//open the popup and sets the popup-overlay active
 function openPopup(id) {
     var popup = document.getElementById(id);
     popup.classList.add("active");
+    var popupOverlay = document.getElementById("popup-overlay");
+    popupOverlay.classList.add("active");
+
 }
 
 //close the popup
 function closePopup(id) {
     var popup = document.getElementById(id);
     popup.classList.remove("active");
+    var popupOverlay = document.getElementById("popup-overlay");
+    popupOverlay.classList.remove("active");
 }
 
 
