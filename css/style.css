@@ -285,7 +285,7 @@ label[required]+input[required]:invalid:after {
   align-items: center;
   width: 2.5rem;
   height: 2.5rem;
-  padding: 0.5rem;
+  padding: 0.4rem;
 }
 
 .icon-style-colored {
@@ -546,7 +546,7 @@ nav {
   align-items: center;
   background-color: var(--color-white);
   border-radius: 1rem;
-  box-shadow: 0rem 0rem 1rem var(--color-grey100);
+  box-shadow: 0rem 0rem 0.5rem var(--color-grey300);
   padding: 1.5rem 1rem;
   gap: 1rem;
   flex-wrap: no-wrap;
@@ -559,11 +559,12 @@ nav {
   align-items: center;
   background-color: var(--color-grey50);
   border-radius: 1rem;
-  box-shadow: 0rem 0rem 1rem var(--color-grey25);
+  box-shadow: 0rem 0rem 0.5rem var(--color-grey300);
   padding: 1.5rem 1rem;
   gap: 1rem;
   flex-wrap: no-wrap;
-  max-width: 60vw;
+  max-width: 40vw;
+  min-height: 30rem;
 }
 
 .divider {
@@ -596,6 +597,7 @@ nav {
   border-bottom: solid 1.5px var(--color-main700);
   color: var(--color-main700);
   background-color: #e38b550a;
+  text-decoration: none;
 }
 
 .btn-nav.active {
@@ -650,6 +652,7 @@ nav {
 .btn-primary:hover {
   background-color: var(--color-main700);
   color: white;
+  text-decoration: none;
 }
 
 .btn-secondary {
@@ -663,8 +666,9 @@ nav {
 }
 
 .btn-secondary:hover {
-  border: solid 0.12rem var(--color-main600);
+  border: solid 0.13rem var(--color-main600);
   color: var(--color-main600);
+  text-decoration: none;
 }
 
 .btn-full {
@@ -675,7 +679,8 @@ nav {
 .btn-full:hover {
   background-color: var(--color-main700);
   color: var(--color-white);
-  border: solid 0.12rem var(--color-main700);
+  border: solid 0.13rem var(--color-main700);
+  text-decoration: none;
 }
 
 #btnToTop {
@@ -715,6 +720,7 @@ a {
 
 a:hover {
   color: var(--color-main600);
+  text-decoration: underline;
 }
 
 a:focus {
@@ -915,7 +921,11 @@ button {
 .no-padding {
   display: flex;
   padding: 0px;
-  gap: 5px;
+  gap: 1rem;
+}
+
+.no-gap {
+  gap: 0px;
 }
 
 .no-wrap {

@@ -34,16 +34,16 @@
         </div>
 
         <div class="nav-block">
-            <a rel="noopener" class="btn-primary" href="wikyvos.html" title="Accéder aux ressources Kyvos"><img
+            <div rel="noopener" class="btn-primary" href="wikyvos.html" title="Accéder aux ressources Kyvos"><img
                     src="../img/icons/graduation-hat.svg" alt="graduation-hat icon" class="icon-sm">
                 <span class="no-mobile">WiKyvos</span>
-            </a>
+            </div>
 
             <div class="btn-primary" id="btn-login" onclick="navToPage('login')">
                 <img src="../img/icons/lock.svg" alt="lock icon" class="icon-sm"> <span class="no-mobile">Se
                     connecter</span>
             </div>
-            <div class="btn-primary mobile-only no-padding" id="btn-mobile-menu">
+            <div class="btn-primary mobile-only" id="btn-mobile-menu">
                 <img src="../img/icons/burger-menu.svg" alt="burger menu icon" class="icon-sm">
             </div>
         </div>
@@ -64,7 +64,8 @@
                         <a rel="noopener" class=" btn-secondary btn-full"
                             href="https://doc.clickup.com/36858679/p/134utq-19422/hospitality-dictionary/134utq-19422/hospitality-dictionary"
                             target="_blank">Wikyvos
-                            <img src="../img/icons/external-link.svg" alt="external-link icon"></a>
+                            <img src="../img/icons/external-link.svg" alt="external-link icon">
+                        </a>
                     </div>
                     <h1>Parlons d'hôtellerie, ensemble</h1>
                     <p class="supporting txt-center">
@@ -80,7 +81,7 @@
     </page>
 
     <!--Page Kyvos-->
-    <page id="page-kyvos" class="inactive">
+    <page id="page-kyvos" class="inactive center">
 
         <!--HERO-->
         <div id="hero-kyvos" class="hero center wrap">
@@ -96,7 +97,7 @@
         </div>
 
         <!--Art de vivre-->
-        <div class="container column center wrap">
+        <div class="column center wrap">
             <div class="content large row center wrap">
                 <div id="btn-prestations" class="btn-primary txt-center" onclick="scrollToElement('nos-prestations')">
                     <img src="../img/icons/arrow-down.svg" alt="arrow down icon" class="icon-xs">
@@ -107,7 +108,7 @@
                         Un Art de vivre
                     </h6>
                     <h2>
-                        Un <span>savoir faire</span> et un <span>savoir être hôtelier</span>,
+                        Un <span>savoir-faire</span> et un <span>savoir être hôtelier</span>,
                         <br>
                         au service de votre entreprise.
                     </h2>
@@ -116,25 +117,22 @@
                         milieu
                         particulier dans lequel évolue votre entreprise.
                     </p>
-                    <p>Fort de nos expériences professionnelles respectives, nous saurons décortiquer, analyser et
+                    <p>Fort de nos expériences professionnelles respectives, nous saurons compartimenter, analyser et
                         optimiser
                         vos opérations.
                     </p>
                 </div>
-
-                <div id="btn-prestations" class="btn-primary txt-center" onclick="scrollToElement('nos-tarifs')">
-                    Nos tarifs
-                    <img src="../img/icons/coin-hand.svg" alt="coins in hand icon" class="icon-xs">
-                </div>
-
+                <img class=" col33 no-mobile center" src="../img/lobby-hotel.jpg" alt="lobby hotel credit Rod Long"
+                    title="Credit : Rod Long">
             </div>
-            <div class="content large center wrap">
-                <img class="half-content-width col33 no-mobile" src="../img/lobby-hotel.jpg"
-                    alt="lobby hotel credit Rod Long" title="Credit : Rod Long">
-                <div class="content column center">
-                    <h2 class="font-style-italic txt-center">Maîtriser pour s'affranchir</h2>
-                    <p>Parce que nous sommes de formation hôtelière, nous maîtrisons les codes, les enseignements et les
-                        techniques. <br> <br>
+            <div class="content column center">
+                <div class="content large center wrap">
+                    <h2 class="txt-center">Maîtriser pour s'affranchir</h2>
+                    <p>Parce que nous sommes de formation hôtelière, nous en maîtrisons les codes, les enseignements et
+                        les
+                        techniques. <br> <br> C'est cette maîtrise des codes qui nous permet de savoir s'y tenir et
+                        quand
+                        s'en affranchir pour s'adapter à la précision que requiert un service sur-mesure. <br>
                         Parce que nous avons pratiqué cet enseignement de nombreuses années, à différents échelons, tant
                         opérationnels
                         qu’administratifs, nous connaissons la réalité du terrain. <br> <br>
@@ -165,31 +163,37 @@
         <div class="container row center col1">
             <div class="content large row center">
                 <div class="content column left">
-                    <div class="icon-md round icon-style-colored"><img src="../img/icons/search.svg" alt="search icon">
+                    <div class="icon-lg round icon-style-colored"><img src="../img/icons/search.svg" alt="search icon">
                     </div>
 
                     <h2>Audits qualifiés</h2>
                     <p>
-                        D'une durée variable, selon la profondeur avec laquelle vous souhaitez instrospecter votre
+                        D'une durée variable, selon la profondeur avec laquelle vous souhaitez analyser votre
                         entreprise.
                     </p>
 
-                    <p class="content row">
+                    <p class="content row center left">
                         <img src="../img/icons/check.svg" alt="check icon"
                             class="icon-sm round icon-style-colored">S'imprégner
                         des valeurs et du
                         fonctionnement de l'entreprise
                     </p>
-                    <p class="content row">
+                    <p class="content row center left">
                         <img src="../img/icons/check.svg" alt="check icon"
                             class="icon-sm round icon-style-colored">Évaluer les
                         compétences et les ressources de
                         l’entreprise
-                    <p class="content row">
+                    </p>
+                    <p class="content row center left">
                         <img src="../img/icons/check.svg" alt="check icon"
                             class="icon-sm round icon-style-colored">Identifier
-                        les points douloureux et les
-                        possibilités d’optimisation
+                        les situations impactantes et les
+                        possibilités d’optimisations
+                    </p>
+                    <p class="content row center left">
+                        <img src="../img/icons/check.svg" alt="check icon"
+                            class="icon-sm round icon-style-colored">Insister sur les points de frustration, notamment
+                        du quotidien
                     </p>
                 </div>
                 <img class="half-content-width no-mobile" src=" ../img/scott-graham.jpg" alt="Photo bureau d'audit"
@@ -203,27 +207,33 @@
                 <img class="half-content-width no-mobile" src="../img/eric-rothermel.jpg" alt="Photo agenda"
                     title="Credit: Eric Rothermel">
                 <div class="content column right">
-                    <div class="icon-md round icon-style-colored"><img src="../img/icons/map.svg" alt="map icon">
+                    <div class="icon-lg round icon-style-colored"><img src="../img/icons/map.svg" alt="map icon">
                     </div>
                     <h2>Planification</h2>
                     <p>
-                        Afin de garantir la plus grande chance de succès possible du déploiement ainsi qu’une
-                        meilleure chance d’acceptation par
-                        les équipes </p>
-                    <p class="content row">
+                        La planification est le point d'origine du succès du déploiement. Elle doit être précise avec de
+                        garantir un embarquement réussi des équipes.</p>
+                    <p class="content row center left">
                         <img src="../img/icons/check.svg" alt="check icon"
                             class="icon-sm round icon-style-colored">Délimiter la
                         portée du déploiement
                     </p>
-                    <p class="content row">
+                    <p class="content row center left">
                         <img src="../img/icons/check.svg" alt="check icon"
                             class="icon-sm round icon-style-colored">Identifier
                         les impacts, anticiper les
                         imprévus
-                    <p class="content row">
+                    </p>
+                    <p class="content row center left">
                         <img src="../img/icons/check.svg" alt="check icon"
                             class="icon-sm round icon-style-colored">Préparer au
                         mieux le terrain, informer les
+                        équipes
+                    </p>
+                    <p class="content row center left">
+                        <img src="../img/icons/check.svg" alt="check icon"
+                            class="icon-sm round icon-style-colored">Établir les critères de performances et fixer les
+                        valeurs de réussite
                         équipes
                     </p>
                 </div>
@@ -234,27 +244,33 @@
         <div class="container row center">
             <div class="content large row center ">
                 <div class="content column left">
-                    <div class="icon-md round icon-style-colored"><img src="../img/icons/magic-wand.svg"
+                    <div class="icon-lg round icon-style-colored"><img src="../img/icons/graduation-hat.svg"
                             alt="magic wand icon">
                     </div>
                     <h2>Déploiement et formation</h2>
                     <p>
                         Partager le déploiement selon les forces de chacun et impliquer au maximum les équipes impactées
                     </p>
-                    <p class="content row">
+                    <p class="content row center left">
                         <img src="../img/icons/check.svg" alt="check icon"
                             class="icon-sm round icon-style-colored">Communiquer
                         clairement les rôles
                         et les
                         responsabilités
                     </p>
-                    <p class=" content row">
+                    <p class=" content row center left">
                         <img src="../img/icons/check.svg" alt="check icon"
                             class="icon-sm round icon-style-colored">Former
                         et
                         développer les
                         compétences
-                    <p class=" content row">
+                    </p>
+                    <p class=" content row center left">
+                        <img src="../img/icons/check.svg" alt="check icon"
+                            class="icon-sm round icon-style-colored">Déléguer pour que les équipes s’approprient le
+                        résultat et l'améliore au quotidien
+                    </p>
+                    <p class=" content row center left">
                         <img src="../img/icons/check.svg" alt="check icon"
                             class="icon-sm round icon-style-colored">Suivre
                         régulièrement l’avancée
@@ -268,26 +284,30 @@
         </div>
 
         <!--Tarifs OneShot-->
-        <div id="nos-tarifs" class="container column left">
-            <div class=" content large column left">
+        <div class="container column">
+            <div class="content column large">
                 <h6 class="txt-left">Tarifs</h6>
-                <h2>La Clé</h2>
-                <p>Nous proposons un service "Clé" qui se concentre sur un sujet en particuler.
+                <div class="content no-padding row">
+                    <h2 class="txt-center">Clé</h2>
+                    <div class="badge txt-sm font-weight-500 no-wrap center">
+                        Pratique
+                    </div>
+                </div>
+                <p class="txt-left">Nous proposons un service qui se concentre sur un sujet en particuler.
                     <br>
                     Sans occulter les autres aspects de votre entreprise, nous nous concentrons sur l'optimisation
                     du
-                    sujet principal, le plus efficacement possible et à moindre coût.
+                    sujet principal, le plus efficacement possible.
                 </p>
             </div>
 
 
-            <div class="content large row center wrap">
-                <div class="content column left ">
-                    <div class="badge font-weight-500 no-wrap center">
-                        Pratique
-                    </div>
+            <div class="content row center wrap">
+                <div class="content col33:first-child column left wrap">
+
                     <div class="content large center left">
-                        <img src="../img/icons/target.svg" alt="target icon" class="icon-style-colored round icon-md">
+                        <img src="../img/icons/target.svg" alt="target icon"
+                            class="icon-style-colored round icon-lg no-mobile">
                         <div class="content large column left">
                             <h4>
                                 Une demande précise
@@ -299,7 +319,7 @@
                     </div>
                     <div class="content large center left">
                         <img src="../img/icons/lightstrike.svg" alt="lightstrike icon"
-                            class="icon-style-colored round icon-md">
+                            class="icon-style-colored round icon-lg no-mobile">
                         <div class="content large column left">
                             <h4>
                                 Rapidité d’action
@@ -310,26 +330,26 @@
                     </div>
                     <div class="content large center left">
                         <img src=" /img/icons/coin-hand.svg" alt="coin-hand icon"
-                            class="icon-style-colored icon-md round">
+                            class="icon-style-colored icon-lg round no-mobile">
                         <div class="content large column left">
                             <h4>
                                 Pas de surcoût
                             </h4>
                             <p>
-                                Conçu pour ne pas nécessiter de suivi ultérieur, maîtrise des coûts de
+                                Conçu pour ne pas nécessiter de suivi ultérieur et maîtriser les coûts de
                                 l’opération </p>
                         </div>
                     </div>
                 </div>
-                <div class="card-white column center">
-                    <div class="content column center">
+                <div class="card-white column center ">
+                    <div class="content column center no-gap">
 
                         <div class="content center wrap col50:first-child">
 
-                            <div class="no-padding center wrap">
-                                <h3 class="no-wrap">Plan Clé</h3>
+                            <div class="no-padding center bottom wrap">
+                                <h3 class="no-wrap bottom">Plan Clé</h3>
                                 <div class="no-padding bottom wrap">
-                                    <div class="no-padding top no-wrap">
+                                    <div class="no-padding no-gap top no-wrap">
                                         <h3>€</h3>
                                         <h1>500</h1>
                                     </div>
@@ -360,46 +380,45 @@
                                 <p>Pas de suivi après le déploiement</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="content wide">
-                        <a class="btn-primary wide center"
-                            href="mailto:discutons@kyvos.me?subject=Demande%20d'informations%20-%20Forfait%20Clé&body=Bonjour,%0A%0AJe souhaiterai vous contacter pour plus d'informations à propos de votre forfait.%0A%0ALa mission concernerait : %0AJ'estime le temps à y consacré à :  jours%0A%0AD'avance merci pour votre retour.%0A%0ACordialement,%0A%0A">
-                            <p class="txt-sm">Nous contacter !</p>
-                        </a>
+                        <div class="divider"></div>
+                        <div class="content wide no-padding no-gap">
+                            <a class="btn-primary wide center"
+                                href="mailto:discutons@kyvos.me?subject=Demande%20d'informations%20-%20Forfait%20Clé&body=Bonjour,%0A%0AJe souhaiterai vous contacter pour plus d'informations à propos de votre forfait.%0A%0ALa mission concernerait : %0AJ'estime le temps à y consacré à :  jours%0A%0AD'avance merci pour votre retour.%0A%0ACordialement,%0A%0A">
+                                <p class="txt-md">Nous contacter !</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-        </div>
-        </div>
+
 
         <!--Tarifs Projet-->
         <div class="container center wrap">
-            <div class="content column">
+            <div class="content column large">
                 <h6 class="txt-left">Tarifs projets</h6>
-                <h2>Le trousseau</h2>
+                <h2>Projet</h2>
                 <p>Offre une solution complète de consultations pour améliorer les peformances opérationnelles et
                     administratives.
-                    <br> <br>
+                    <br>
                     Nombre de sujet (presque) illimités, pour la construction d'une vision plus globale.
                 </p>
             </div>
-            <div class="content wide center wrap">
-                <div class="card-grey top center grid">
-                    <img src="../img/icons/computer.svg" alt="computer icon" class="icon-md round icon-style-colored">
+            <div class="content large center wrap space-between">
+                <div class="card-grey center grid ">
                     <div class="content column center">
+                        <img src="../img/icons/computer.svg" alt="computer icon"
+                            class="icon-md round icon-style-colored">
                         <h5>A distance</h5>
-                        <div class="no-padding column">
+                        <div class="no-padding column center">
                             <div class="no-padding bottom">
-                                <div class="no-padding display-xl">
+                                <div class="no-padding no-gap top no-wrap">
                                     <h3>€</h3>
                                     <h1>500</h1>
                                 </div>
                                 <p class="txt-sm no-wrap">par jour</p>
                             </div>
-                            <p><br> </p>
+                            <p class="txt-sm">Sans frais annexe</p>
                         </div>
                         <div class="divider"></div>
                         <div class="content column left">
@@ -426,14 +445,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-grey top center grid">
+                <div class="card-grey  center grid">
                     <img src="../img/icons/location.svg" alt="computer icon"
                         class="icon-md round icon-style-colored center">
                     <div class="content column center">
                         <h5>Sur place</h5>
                         <div class="no-padding column center">
                             <div class="no-padding bottom">
-                                <div class="no-padding display-xl">
+                                <div class="no-padding no-gap top no-wrap">
                                     <h3>€</h3>
                                     <h1>750</h1>
                                 </div>
