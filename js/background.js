@@ -33,12 +33,14 @@ document.addEventListener('click', function (event) {
             event.target !== popups[i] &&
             !popups[i].contains(event.target) &&
             popups[i].classList.contains("active") &&
-            event.target.closest('.open-popup') == null
+            event.target.closest('.open-popup') == null &&
+            !popups[i].classList.contains("outside-click-no-close")
         ) {
             closePopup(popups[i].id);
         }
     }
 });
+
 
 //open the popup
 function openPopup(id) {
