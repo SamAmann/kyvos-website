@@ -54,9 +54,6 @@ function toggleDisplay(id) {
     }
 }
 
-
-
-
 // Popup management
 document.addEventListener('click', function (event) {
     var popups = document.getElementsByClassName("popup");
