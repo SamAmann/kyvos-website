@@ -18,9 +18,9 @@
     <div id="popup-overlay"></div>
 
     <!--Header-->
-    <header id="header" class="space-between center-v">
-        <div id="header-logo">
-            <a href="landing.html"><img src="../img/logos/logo.svg" alt="logo"></a>
+    <header id="header" class="center space-between">
+        <div id=" header-logo">
+            <a href="landing.html"><img src="../img/logos/logo.svg" alt="logo" class="col33:first-child"></a>
         </div>
         <div class="nav-block space-between">
             <nav>
@@ -30,14 +30,14 @@
                 <div class="btn-nav" id="btn-kyvos" onclick="navToPage('kyvos')">
                     Kyvos
                 </div>
-                <div class=" btn-nav disabled" id=" btn-kyvos-suite" onclick="navToPage('kyvos-suite')"
+                <!-- <div class=" btn-nav disabled" id=" btn-kyvos-suite" onclick="navToPage('kyvos-suite')"
                     title="Yet to come!">
                     Kyvos Suite
-                </div>
+                </div> -->
             </nav>
         </div>
 
-        <div class="nav-block">
+        <div class="nav-block col33">
             <!-- <a rel="noopener" class="btn-primary" href="wikyvos.html" title="Accéder aux ressources Kyvos">
                 <img src="../img/icons/graduation-hat.svg" alt="graduation-hat icon" class="icon-sm">
                 <span class="no-mobile">WiKyvos</span>
@@ -64,12 +64,12 @@
         <div id="hero-accueil" class="hero column center">
             <div class="content column center">
                 <div id="heading-accueil" class="heading center">
-                    <div class="btn-secondary font-weight-500">
+                    <!-- <div class="btn-secondary font-weight-500">
                         Vous voulez participer ?
                         <a rel="noopener" class=" btn-secondary btn-full" href="wikyvos.html" target="_blank">Wikyvos
                             <img src="../img/icons/external-link.svg" alt="external-link icon">
                         </a>
-                    </div>
+                    </div> -->
                     <h1>Parlons d'hôtellerie, ensemble</h1>
                     <p class="supporting txt-center">
                         — Dans un secteur en perpétuelle (r)évolution, <span>Kyvos</span> propose une plateforme
@@ -87,24 +87,27 @@
     <page id="page-kyvos" class="inactive left">
 
         <!--HERO-->
-        <div id="hero-kyvos" class="hero center wrap">
-            <div class="content large column left">
-                <div class="heading">
-                    <h1 class="txt-left">Écouter, <br> Supporter, <br> Encourager.</h1>
+        <div id="hero-kyvos" class="hero center column">
+            <div class="content no-padding center">
+                <div class="content large column left">
+                    <div class="heading">
+                        <h1 class="txt-left">Écouter, <br> Supporter, <br> Encourager.</h1>
+                    </div>
+                    <span id="supporting-kyvos" class="supporting txt-left">
+                        — Notre expérience d’hôteliers accompagne chacun des conseils que nous pouvons vous apporter —
+                    </span>
                 </div>
-                <span id="supporting-kyvos" class="supporting txt-left">
-                    — Notre expérience d’hôteliers accompagne chacun des conseils que nous pouvons vous apporter —
-                </span>
+                <img id="img-kyvos-hero" src="../img/geographicSquare.svg" alt="geographical shapes" class="">
             </div>
-            <img id="img-kyvos-hero" src="../img/geographicSquare.svg" alt="geographical shapes" class="">
+            <div id="btn-prestations" class="content btn-primary txt-center center"
+                onclick="scrollToElement('nos-prestations')">
+                <img src="../img/icons/arrow-down.svg" alt="arrow down icon" class="icon-md">
+                Nos prestations
+            </div>
         </div>
 
         <!--Art de vivre-->
-        <div id="btn-prestations" class="btn-primary txt-center" onclick="scrollToElement('nos-prestations')">
-            <img src="../img/icons/arrow-down.svg" alt="arrow down icon" class="icon-xs">
-            Nos prestations
-        </div>
-        <div class="column center wrap no-padding">
+        <div class="column center wrap no-padding space-gap">
             <div class="content large column center wrap no-padding">
                 <div class="content left column no-padding">
                     <h6>

@@ -19,34 +19,39 @@
     <div id="popup-overlay"></div>
 
     <!--Header-->
-    <header id="header" class="center-v">
-        <div id="header-logo" class=>
-            <a href="landing.html"><img src=" ../img/logos/logo.svg" alt="logo"></a>
+    <header id="header" class="center space-between">
+        <div id=" header-logo">
+            <a href="landing.html"><img src="../img/logos/logo.svg" alt="logo" class="col33:first-child"></a>
         </div>
-        <div class="tall">
+        <div class="nav-block space-between">
             <nav>
-                <div class="btn-nav active" id="btn-accueil" onclick="navToPage('accueil')">
+                <div class="btn-nav selected" id="btn-accueil" onclick="navToPage('accueil')">
                     Accueil
                 </div>
-                <div class="btn-nav" id="btn-dictionary" onclick="navToPage('dictionary');constrDictionary();">
+                <div class="btn-nav" id="btn-dictionary" onclick="navToPage('dictionary')">
                     Dictionnaire
                 </div>
-                <div class=" btn-nav disabled" id=" btn-knoledge-base" onclick="navToPage('knowledge-base')"
-                    title="Yet to come!">
-                    Ressources </div>
+                <!-- <div class=" btn-nav disabled" id=" btn-kyvos-suite" onclick="navToPage('kyvos-suite')"
+                        title="Yet to come!">
+                        Kyvos Suite
+                    </div> -->
             </nav>
         </div>
 
-        <div class="nav-block">
-            <a rel="noopener" class="btn-primary " href="landing.html" title="L'univers de Kyvos">
-                <img src="../img/logos/logo-key.svg" alt="kyvos logo icon" class="icon-sm">
-                <span class="no-mobile">Kyvos</span>
-            </a>
-            <div class="btn-primary mobile-only no-padding" id="btn-mobile-menu">
+        <div class="nav-block col33">
+            <!-- <a rel="noopener" class="btn-primary" href="wikyvos.html" title="Accéder aux ressources Kyvos">
+                    <img src="../img/icons/graduation-hat.svg" alt="graduation-hat icon" class="icon-sm">
+                    <span class="no-mobile">WiKyvos</span>
+                </a>
+    
+                <div class="btn-primary" id="btn-login" onclick="navToPage('login')">
+                    <img src="../img/icons/lock.svg" alt="lock icon" class="icon-sm"> <span class="no-mobile">Se
+                        connecter</span>
+                </div> -->
+            <div class="btn-primary mobile-only" id="btn-mobile-menu">
                 <img src="../img/icons/burger-menu.svg" alt="burger menu icon" class="icon-sm">
             </div>
         </div>
-
     </header>
 
     <!--To the top Button-->
