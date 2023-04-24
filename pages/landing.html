@@ -55,7 +55,7 @@
 
     <!--To the top Button-->
     <button id="btnToTop" onclick="scrollToElement('header')" class="btn-primary center"><img
-            src="../img/icons/large-arrow.svg" alt="arrow icon" class="icon-md">
+            src="../img/icons/arrow-down.svg" alt="arrow icon" class="icon-md rotate180">
     </button>
 
 
@@ -163,7 +163,7 @@
         </div>
 
         <!--Prestations-->
-        <div id="nos-prestations" class="container center column">
+        <div id="nos-prestations" class="container center column no-gap">
             <div class=" content column left">
                 <h6 class="txt-center">
                     Prestations </h6>
@@ -176,13 +176,15 @@
                 </div>
             </div>
             <!--Audit-->
-            <div class="container row center wide rounded-corner colored-bkg">
-                <div class="content row center">
-                    <div class="content column left no-padding wide ">
-                        <div class="icon-lg round icon-style-colored"><img src="../img/icons/search.svg"
-                                alt="search icon">
+            <div class="container row center wide">
+                <div class="content row center rounded-corner colored-bkg gap-lg">
+                    <div class="content column left wide ">
+                        <div class="content no-padding center-v">
+                            <div class="icon-lg round icon-style-colored"><img src="../img/icons/search.svg"
+                                    alt="search icon">
+                            </div>
+                            <h3>Audits qualifiés</h3>
                         </div>
-                        <h3>Audits qualifiés</h3>
                         <p class="txt-justify">
                             D'une durée variable, selon la profondeur avec laquelle vous souhaitez analyser votre
                             entreprise.
@@ -214,25 +216,28 @@
                             du quotidien
                         </p>
                     </div>
+                    <img class="rounded-corner half-content-width no-mobile" src=" ../img/scott-graham.jpg"
+                        alt="Photo bureau d'audit" title="Credit: Scott Graham">
                 </div>
-                <img class="rounded-corner half-content-width no-mobile" src=" ../img/scott-graham.jpg"
-                    alt="Photo bureau d'audit" title="Credit: Scott Graham">
             </div>
 
             <!--Planification-->
             <div class="container row center wide">
-                <div class="content row center no-padding">
+                <div class="content row center gap-lg">
                     <img class="rounded-corner half-content-width no-mobile" src="../img/eric-rothermel.jpg"
                         alt="Photo agenda" title="Credit: Eric Rothermel">
-                    <div class="content column right no-padding wide">
-                        <div class="icon-lg round icon-style-colored"><img src="../img/icons/map.svg" alt="map icon">
+                    <div class="content column right wide">
+                        <div class="content center-v no-padding">
+                            <div class="icon-lg round icon-style-colored"><img src="../img/icons/map.svg"
+                                    alt="map icon">
+                            </div>
+                            <h3>Planification</h3>
                         </div>
-                        <h3>Planification</h3>
                         <p class="txt-justify">
                             La planification est le point d'origine du succès du déploiement. Elle doit être précise
                             avec de
                             garantir un embarquement réussi des équipes.</p>
-                        <p class="content row center left no-padding">
+                        <p class="content row  rigth no-padding">
                             <img src="../img/icons/check.svg" alt="check icon"
                                 class="icon-sm round icon-style-colored">Délimiter la
                             portée du déploiement
@@ -262,12 +267,14 @@
 
             <!--Déploiement-->
             <div class="container row center wide">
-                <div class="content row center rounded-corner colored-bkg">
-                    <div class="content column left no-padding wide">
-                        <div class="icon-lg round icon-style-colored"><img src="../img/icons/graduation-hat.svg"
-                                alt="magic wand icon">
+                <div class="content row center rounded-corner colored-bkg gap-lg">
+                    <div class="content column left wide">
+                        <div class="content center-v no-padding">
+                            <div class="icon-lg round icon-style-colored"><img src="../img/icons/graduation-hat.svg"
+                                    alt="graduation hat icon">
+                            </div>
+                            <h3>Déploiement </h3>
                         </div>
-                        <h3>Déploiement et formation</h3>
                         <p class="txt-justify">
                             Partager le déploiement selon les forces de chacun et impliquer au maximum les équipes
                             impactées
@@ -307,16 +314,16 @@
 
 
         <!--Tarifs OneShot-->
-        <div class="container column">
-            <div class="content column large no-padding">
+        <div class="container wide column center">
+            <div class="content column wide center">
                 <h6 class="txt-left">Tarifs</h6>
                 <div class="content no-padding center-v wrap">
-                    <h2 class="txt-left">Un tarif "Clé"</h2>
+                    <h2 class="txt-center">Un tarif "Clé"</h2>
                     <div class="badge txt-sm font-weight-500 no-wrap center">
-                        Pratique
+                        Ciblé
                     </div>
                 </div>
-                <p class="txt-left">Nous proposons un service qui se concentre sur un sujet en particuler.
+                <p class="txt-justify">Nous proposons un service qui se concentre sur un sujet en particuler.
                     <br>
                     Sans occulter les autres aspects de votre entreprise, nous nous concentrons sur l'optimisation
                     du
@@ -325,13 +332,12 @@
             </div>
 
 
-            <div class="content row center wrap no-padding">
-                <div class="content col33:first-child column left wrap no-padding">
+            <div class="content wide row center-h wrap no-padding">
+                <div class="content col33:first-child column left wrap no-padding padding-top-xl">
 
                     <div class="content large center left no-padding">
-                        <img src="../img/icons/target.svg" alt="target icon"
-                            class="icon-style-colored round icon-md no-mobile">
-                        <div class="content large column left">
+                        <img src="../img/icons/target.svg" alt="target icon" class="icon-style-colored round icon-md">
+                        <div class="content large column left no-padding">
                             <h4>
                                 Une demande précise
                             </h4>
@@ -342,8 +348,8 @@
                     </div>
                     <div class="content large center left no-padding">
                         <img src="../img/icons/lightstrike.svg" alt="lightstrike icon"
-                            class="icon-style-colored round icon-md no-mobile">
-                        <div class="content large column left">
+                            class="icon-style-colored round icon-md">
+                        <div class="content large column left no-padding">
                             <h4>
                                 Rapidité d’action
                             </h4>
@@ -354,8 +360,8 @@
                     </div>
                     <div class="content large center left no-padding">
                         <img src=" /img/icons/coin-hand.svg" alt="coin-hand icon"
-                            class="icon-style-colored icon-md round no-mobile">
-                        <div class="content large column left">
+                            class="icon-style-colored icon-md round">
+                        <div class="content large column left no-padding">
                             <h4>
                                 Pas de surcoût
                             </h4>
@@ -365,55 +371,76 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-white column center ">
-                    <div class="content column center no-gap">
 
-                        <div class="content center-v wrap">
+                <!--Carte Clé-->
+                <div class="card-white center no-gap">
+                    <div class="content column center wide">
 
-                            <div class="no-padding bottom wrap">
-                                <h3 class="no-wrap">Plan Clé</h3>
-                                <div class="no-padding wrap bottom">
-                                    <div class="no-padding no-gap top no-wrap">
-                                        <h5>€</h5>
-                                        <h3>550</h3>
-                                    </div>
-                                    <h5 class="txt-sm no-wrap">par jour</h5>
+                        <div class="content column center wrap no-padding wide gap-sm">
+
+                            <h3 class="flex no-wrap">Plan Clé</h3>
+                            <div class="no-padding wrap">
+                                <div class="flex wrap">
+                                    <h5 class="flex no-padding no-gap no-wrap top">€</h5>
+                                    <h3>550</h3>
+                                    <h5 class="txt-sm no-wrap bottom">par jour</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="divider"></div>
-                        <div class="content column left">
-                            <div class="no-padding center left">
+                        <div class="content column center no-padding">
+                            <div class="content no-padding center left wide">
                                 <img src="../img/icons/check.svg" alt="Valid icon"
                                     class="icon-xs round icon-style-valid">
                                 <p>Une analyse poussée du service ciblé</p>
                             </div>
-                            <div class="no-padding center left">
+                            <div class="content no-padding center left wide">
                                 <img src="../img/icons/check.svg" alt="Valid icon"
                                     class="icon-xs round icon-style-valid">
                                 <p>Un retour détaillé</p>
                             </div>
-                            <div class="no-padding center left">
+                            <div class="content no-padding center left wide">
                                 <img src="../img/icons/check.svg" alt="Valid icon"
                                     class="icon-xs round icon-style-valid">
                                 <p>Un plan d'actions précis</p>
                             </div>
-                            <div class="no-padding center left">
+                            <div class="content no-padding center left wide">
                                 <img src="../img/icons/cross.svg" alt="Invalid icon"
                                     class="icon-xs round icon-style-error">
                                 <p>Pas de suivi après le déploiement</p>
                             </div>
                         </div>
-                        <div class="divider"></div>
-                        <div class="content wide no-padding">
-                            <div class="btn-primary wide center open-popup" onclick="openPopup('contact-popup')">
-                                <p class="txt-md">Nous contacter </p>
-                            </div>
-                        </div>
+                    </div>
 
+                    <div class="divider"></div>
+
+                    <div class="content center wide z-index99">
+                        <div class=" btn-primary center wide" onclick="toggleDisplay('contact-cle')">
+                            <p class="txt-md">Nous contacter </p>
+                        </div>
+                    </div>
+                    <div id="contact-cle" class="content inactive center column no-padding animation-top">
+                        <h5 class="txt-center
+                                    ">Comment souhaitez-vous nous contacter ?</h5>
+                        <div class="content column">
+                            <a class="btn-primary center"
+                                href="mailto:discutons@kyvos.me?subject=Demande%20d'informations&body=Bonjour,%0A%0AJe souhaiterais vous contacter pour plus d'informations.%0A%0ALa mission concernerait : %0AJ'estime le temps à y consacré à :  jours%0A%0AD'avance merci pour votre retour.%0A%0ACordialement,%0A%0A">
+                                <img src="../img/icons/send.svg" alt="send mail icon">
+                                <p class="txt-sm">Par email</p>
+                            </a>
+                            <a class="btn-primary center"
+                                href='https://outlook.office365.com/owa/calendar/Kyvos2@kyvos.me/bookings/'
+                                target="_blank">
+                                <img src="../img/icons/calendar.svg" alt="calendar icon">
+                                <p class="txt-sm">Prendre rendez-vous</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
             </div>
+        </div>
+        </div>
         </div>
 
 
@@ -432,91 +459,149 @@
                 </p>
             </div>
             <div class="content wide center wrap center">
-                <div class="card-grey center grid">
-                    <div class="content column center">
-                        <img src="../img/icons/computer.svg" alt="computer icon"
-                            class="icon-md round icon-style-colored">
-                        <h5>A distance</h5>
-                        <div class="no-padding column center">
-                            <div class="no-padding bottom">
-                                <div class="no-padding no-gap top no-wrap">
-                                    <h5>€</h5>
+
+                <!--Carte A distance-->
+                <div class="card-white center no-gap">
+                    <div class="content column center wide">
+
+                        <div class="content column center wrap no-padding wide gap-sm">
+
+                            <h5 class="flex no-wrap">A distance</h5>
+                            <div class="no-padding wrap">
+                                <div class="flex wrap">
+                                    <h5 class="flex no-padding no-gap no-wrap top">€</h5>
                                     <h3>500</h3>
+                                    <h5 class="txt-sm no-wrap bottom">par jour</h5>
                                 </div>
-                                <p class="txt-sm no-wrap">par jour</p>
+                                <p class="txt-sm">Sans frais supplémentaires</p>
+
                             </div>
-                            <p class="txt-sm">Sans frais annexe</p>
                         </div>
                         <div class="divider"></div>
-                        <div class="content column left">
-                            <div class="no-padding center left">
+                        <div class="content column center no-padding">
+                            <div class="content no-padding center left wide">
                                 <img src="../img/icons/check.svg" alt="Valid icon"
                                     class="icon-xs round icon-style-colored">
                                 <p>Facile et flexible</p>
                             </div>
-                            <div class="no-padding center left">
+                            <div class="content no-padding center left wide">
                                 <img src="../img/icons/check.svg" alt="Valid icon"
                                     class="icon-xs round icon-style-colored">
                                 <p>Mise à disposition d’une plateforme spécifique</p>
                             </div>
-                            <div class="no-padding center left">
+                            <div class="content no-padding center left wide">
                                 <img src="../img/icons/check.svg" alt="Valid icon"
                                     class="icon-xs round icon-style-colored">
-                                <p>Pas de parasitage des opérations</p>
+                                <p>Pas de parasitage des opérations
+                                </p>
                             </div>
-                            <div class="no-padding center left">
-                                <img src="../img/icons/check.svg" alt="Valid icon"
+                            <div class="content no-padding center left wide">
+                                <img src="../img/icons/check.svg" alt="Invalid icon"
                                     class="icon-xs round icon-style-colored">
-                                <p>Support personnalisé</p>
+                                <p>Support personnalisé
+                                </p>
                             </div>
                         </div>
                     </div>
+
+                    <div class="divider"></div>
+
+                    <div class="content center wide z-index99">
+                        <div class=" btn-primary center wide" onclick="toggleDisplay('contact-a-distance')">
+                            <p class="txt-md">Nous contacter </p>
+                        </div>
+                    </div>
+                    <div id="contact-a-distance" class="content inactive center column no-padding animation-top">
+                        <h5 class="txt-center
+                                                    ">Comment souhaitez-vous nous contacter ?</h5>
+                        <div class="content column">
+                            <a class="btn-primary center"
+                                href="mailto:discutons@kyvos.me?subject=Demande%20d'informations&body=Bonjour,%0A%0AJe souhaiterais vous contacter pour plus d'informations.%0A%0ALa mission concernerait : %0AJ'estime le temps à y consacré à :  jours%0A%0AD'avance merci pour votre retour.%0A%0ACordialement,%0A%0A">
+                                <img src="../img/icons/send.svg" alt="send mail icon">
+                                <p class="txt-sm">Par email</p>
+                            </a>
+                            <a class="btn-primary center"
+                                href='https://outlook.office365.com/owa/calendar/Kyvos2@kyvos.me/bookings/'
+                                target="_blank">
+                                <img src="../img/icons/calendar.svg" alt="calendar icon">
+                                <p class="txt-sm">Prendre rendez-vous</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-grey center grid">
-                    <img src="../img/icons/location.svg" alt="computer icon"
-                        class="icon-md round icon-style-colored center">
-                    <div class="content column center">
-                        <h5>Sur place</h5>
-                        <div class="no-padding column center">
-                            <div class="no-padding bottom">
-                                <div class="no-padding no-gap top no-wrap">
-                                    <h5>€</h5>
+                <!--Carte Sur place-->
+                <div class="card-white center no-gap">
+                    <div class="content column center wide">
+
+                        <div class="content column center wrap no-padding wide gap-sm">
+
+                            <h5 class="flex no-wrap">Sur place</h5>
+                            <div class="no-padding wrap">
+                                <div class="flex wrap center">
+                                    <h5 class="flex no-padding no-gap no-wrap top">€</h5>
                                     <h3>750</h3>
+                                    <h5 class="txt-sm no-wrap bottom">par jour</h5>
                                 </div>
-                                <p class="txt-sm no-wrap">par jour</p>
+                                <p class="txt-sm">Des frais de déplacements peuvent s'ajouter</p>
                             </div>
-                            <p class="txt-sm">Hors frais de déplacement</p>
                         </div>
                         <div class="divider"></div>
-                        <div class="content column left">
-                            <div class="no-padding center left">
+                        <div class="content column center no-padding">
+                            <div class="content no-padding center left wide">
                                 <img src="../img/icons/check.svg" alt="Valid icon"
                                     class="icon-xs round icon-style-colored">
-                                <p>Journée dédiée en présentielle</p>
+                                <p>Journée dédiée en présentielle
+                                </p>
                             </div>
-                            <div class="no-padding center left">
+                            <div class="content no-padding center left wide">
                                 <img src="../img/icons/check.svg" alt="Valid icon"
                                     class="icon-xs round icon-style-colored">
-                                <p>Une meilleure interaction</p>
+                                <p>Journée dédiée en présentielle
+                                </p>
                             </div>
-                            <div class="no-padding center left">
+                            <div class="content no-padding center left wide">
                                 <img src="../img/icons/check.svg" alt="Valid icon"
                                     class="icon-xs round icon-style-colored">
-                                <p>Des solutions immédiates</p>
+                                <p>Des solutions immédiates
+
+                                </p>
                             </div>
-                            <div class="no-padding center left">
-                                <img src="../img/icons/check.svg" alt="Valid icon"
+                            <div class="content no-padding center left wide">
+                                <img src="../img/icons/check.svg" alt="Invalid icon"
                                     class="icon-xs round icon-style-colored">
-                                <p>Permet d’établir une relation de confiance</p>
+                                <p>Permet d’établir une relation de confiance
+
+                                </p>
                             </div>
                         </div>
                     </div>
+
+                    <div class="divider"></div>
+
+                    <div class="content center wide z-index99">
+                        <div class=" btn-primary center wide" onclick="toggleDisplay('contact-sur-place')">
+                            <p class="txt-md">Nous contacter </p>
+                        </div>
+                    </div>
+                    <div id="contact-sur-place" class="content inactive center column no-padding animation-top">
+                        <h5 class="txt-center
+                                                    ">Comment souhaitez-vous nous contacter ?</h5>
+                        <div class="content column">
+                            <a class="btn-primary center"
+                                href="mailto:discutons@kyvos.me?subject=Demande%20d'informations&body=Bonjour,%0A%0AJe souhaiterais vous contacter pour plus d'informations.%0A%0ALa mission concernerait : %0AJ'estime le temps à y consacré à :  jours%0A%0AD'avance merci pour votre retour.%0A%0ACordialement,%0A%0A">
+                                <img src="../img/icons/send.svg" alt="send mail icon">
+                                <p class="txt-sm">Par email</p>
+                            </a>
+                            <a class="btn-primary center"
+                                href='https://outlook.office365.com/owa/calendar/Kyvos2@kyvos.me/bookings/'
+                                target="_blank">
+                                <img src="../img/icons/calendar.svg" alt="calendar icon">
+                                <p class="txt-sm">Prendre rendez-vous</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="content no-padding">
-                <div class="btn-primary wide center open-popup" onclick="openPopup('contact-popup')">
-                    <p class="txt-md">Nous contacter </p>
-                </div>
+
             </div>
         </div>
     </page>
@@ -617,8 +702,8 @@
         <div class="content column">
             <a class="btn-primary center"
                 href="mailto:discutons@kyvos.me?subject=Demande%20d'informations&body=Bonjour,%0A%0AJe souhaiterais vous contacter pour plus d'informations.%0A%0ALa mission concernerait : %0AJ'estime le temps à y consacré à :  jours%0A%0AD'avance merci pour votre retour.%0A%0ACordialement,%0A%0A">
-                <p class="txt-md">Par mail</p>
                 <img src="../img/icons/send.svg" alt="send mail icon">
+                <p class="txt-md">Par email</p>
             </a>
             <a class="btn-primary center" href='https://outlook.office365.com/owa/calendar/Kyvos2@kyvos.me/bookings/'
                 target="_blank">

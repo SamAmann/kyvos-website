@@ -36,6 +36,17 @@ function exitFullScreen() {
 //         console.error('Error:', error);
 //     });
 
+// Function to toggle the display of an element
+function toggleDisplay(id) {
+    var element = document.getElementById(id);
+    if (element.classList.contains("active")) {
+        element.classList.remove("active");
+        element?.classList.add("inactive");
+    } else {
+        element.classList.add("active");
+        element?.classList.remove("inactive");
+    }
+}
 
 
 // Popup management
@@ -71,9 +82,6 @@ function closePopup(id) {
     var popupOverlay = document.getElementById("popup-overlay");
     popupOverlay.classList.remove("active");
 }
-
-
-
 
 
 
