@@ -398,7 +398,7 @@ page {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 0rem 2rem;
   max-width: 100vw;
   gap: 5rem;
 }
@@ -1073,38 +1073,23 @@ button {
   gap: 1rem;
 }
 
-.padding-top-sm,
-.padding-bot-sm,
-.padding-left-sm,
-.padding-right-sm {
+.padding-top-sm {
   padding-top: var(--padding-sm);
 }
 
-.padding-top-md,
-.padding-bot-md,
-.padding-left-md,
-.padding-right-md {
+.padding-top-md {
   padding-top: var(--padding-md);
 }
 
-.padding-top-lg,
-.padding-bot-lg,
-.padding-left-lg,
-.padding-right-lg {
+.padding-top-lg {
   padding-top: var(--padding-lg);
 }
 
-.padding-top-xl,
-.padding-bot-xl,
-.padding-left-xl,
-.padding-right-xl {
+.padding-top-xl {
   padding-top: var(--padding-xl);
 }
 
-.padding-top-xxl,
-.padding-bot-xxl,
-.padding-left-xxl,
-.padding-right-xxl {
+.padding-top-xxl {
   padding-top: var(--padding-xxl);
 }
 
@@ -1152,6 +1137,42 @@ button {
 
 .round {
   border-radius: 50%;
+}
+
+/* Flex basis */
+.flex25 {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.flex33 {
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+}
+
+.flex50 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.flex66 {
+  flex-basis: 66.66%;
+  max-width: 66.66%;
+}
+
+.flex75 {
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+.flex100 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.wide-flex50 {
+  flex-basis: 50%;
+  max-width: 50%;
 }
 
 /* Class for Column management */
@@ -1282,7 +1303,7 @@ button {
 @media (max-width: 975px) {
 
   page {
-    gap: 5rem;
+    gap: 10rem;
   }
 
   header {
@@ -1302,7 +1323,7 @@ button {
   }
 
   .hero {
-    gap: 0.5rem;
+    gap: 2rem;
   }
 
   .card-grey {
@@ -1337,6 +1358,11 @@ button {
 
   header .nav-block {
     min-width: 50px;
+  }
+
+  .wide-flex50 {
+    flex-basis: 100%;
+    max-width: 100%;
   }
 
   .no-mobile {
