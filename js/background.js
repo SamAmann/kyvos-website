@@ -42,12 +42,14 @@ function toggleDisplay(id) {
     if (element.classList.contains("active")) {
         element.classList.remove("active", "animation-top");
         element.classList.add("animation-top-reverse");
+        scrollToElement(element);
         setTimeout(function () {
             element.classList.add("inactive");
         }, 300); // adjust the timing to match the animation duration
     } else {
         element.classList.remove("inactive", "animation-top-reverse");
         element.classList.add("animation-top");
+        scrollToElement(element);
         setTimeout(function () {
             element.classList.add("active");
         }, 300); // adjust the timing to match the animation duration
@@ -144,7 +146,7 @@ function showTopBtn() {
 // When the user clicks on the button, scroll to the element
 function scrollToElement(id) {
     var target = document.getElementById(id);
-    var targetPosition = target?.offsetTop;
+    var targetPosition = (target?.offsetTop);
     window.scrollTo({
         top: targetPosition,
         behavior: "smooth",
