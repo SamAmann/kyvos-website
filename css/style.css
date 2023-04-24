@@ -811,7 +811,11 @@ nav {
 }
 
 .animation-top {
-  animation: slide-top 0.3s ease-out;
+  animation: slide-top 0.5s ease-in-out;
+}
+
+.animation-top-reverse {
+  animation: slide-top-reverse 0.3s ease-in-out;
 }
 
 @keyframes slide-top {
@@ -826,8 +830,16 @@ nav {
   }
 }
 
-.animation-bottom {
-  animation: slide-bottom 0.5s ease-out;
+@keyframes slide-top-reverse {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 }
 
 z-index99 {

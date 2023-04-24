@@ -40,13 +40,21 @@ function exitFullScreen() {
 function toggleDisplay(id) {
     var element = document.getElementById(id);
     if (element.classList.contains("active")) {
-        element.classList.remove("active");
-        element?.classList.add("inactive");
+        element.classList.remove("active", "animation-top");
+        element.classList.add("animation-top-reverse");
+        setTimeout(function () {
+            element.classList.add("inactive");
+        }, 300); // adjust the timing to match the animation duration
     } else {
-        element.classList.add("active");
-        element?.classList.remove("inactive");
+        element.classList.remove("inactive", "animation-top-reverse");
+        element.classList.add("animation-top");
+        setTimeout(function () {
+            element.classList.add("active");
+        }, 300); // adjust the timing to match the animation duration
     }
 }
+
+
 
 
 // Popup management
