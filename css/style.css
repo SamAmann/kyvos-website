@@ -355,9 +355,10 @@ header {
   background-color: var(--color-white);
   box-shadow: 0px 0px 2px var(--color-grey300);
   justify-content: space-between;
-  z-index: 1;
+  z-index: 999;
   padding: 0rem 2rem;
   gap: 1rem;
+  position: relative;
 }
 
 page {
@@ -544,6 +545,8 @@ sidebar {
   gap: 1rem;
   height: 100%;
   padding: 0px;
+  z-index: 999;
+  /* change z-index to 999 */
 }
 
 nav {
@@ -552,6 +555,7 @@ nav {
   justify-content: center;
   align-items: center;
   height: 100%;
+  z-index: 1;
 }
 
 /* Cards */
@@ -609,6 +613,7 @@ nav {
   flex: none;
   height: 100%;
   cursor: pointer;
+  z-index: -1;
 }
 
 .btn-nav::before,
@@ -1139,27 +1144,33 @@ button {
     padding: 0.2rem;
   }
 
+  .card-grey {
+    max-width: 100%;
+  }
+
+
   nav {
     position: fixed;
-    top: -100%;
-    left: 0;
+    top: var(--header-height);
+    right: -100%;
     width: 100%;
     height: var(--header-height);
     text-align: center;
-    z-index: 10;
-    transition: top 0.2s ease-in-out;
+    z-index: 999;
+    background-color: var(--color-white);
+    transition: right 0.3s ease-in-out;
   }
 
   nav.open {
     display: flex;
     flex-direction: row;
-    position: absolute;
+    position: fixed;
     top: var(--header-height);
-    left: 0;
-    width: 100vw;
-    background-color: #ffffff00;
+    right: 0;
+    width: 100%;
+    background-color: var(--color-white);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
-    z-index: -10;
+    z-index: 999;
     height: var(--header-height);
   }
 
