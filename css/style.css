@@ -248,8 +248,12 @@ label[required]+input[required]:invalid:after {
 }
 
 .colored-bkg {
-  background-color: var(--color-main400);
+  background-color: var(--color-main500);
   color: var(--color-white);
+}
+
+.colored-border {
+  border: 0.1rem solid var(--color-main500);
 }
 
 /* Icons */
@@ -406,9 +410,9 @@ page.active {
 .hero {
   display: flex;
   width: 100%;
+  max-width: 100vw;
   height: calc(100vh - var(--header-height));
   gap: 5rem;
-  justify-content: space-between;
 }
 
 .grid {
@@ -1160,7 +1164,7 @@ button {
 }
 
 /* Style for wide screen */
-@media (min-width: 1024px) {
+@media (min-width: 976px) {
 
   .header {
     padding: 0rem 5rem;
@@ -1186,17 +1190,31 @@ button {
 }
 
 /* Style for mobile */
-@media (max-width: 1023px) {
+@media (max-width: 975px) {
+
+  page {
+    gap: 10rem;
+  }
+
+  header {
+    padding: 0rem 0.5rem;
+    max-width: 100vw;
+    margin: none;
+  }
 
   .container {
     display: flex;
     padding: 0.2rem;
-    max-width: 100vw;
+    width: 100vw;
   }
 
   content {
     display: flex;
-    padding: 0.2rem;
+    padding: 1rem;
+  }
+
+  .hero {
+    gap: 0.5rem;
   }
 
   .card-grey {
