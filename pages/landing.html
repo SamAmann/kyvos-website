@@ -55,7 +55,8 @@
 
     <!--To the top Button-->
     <button id="btnToTop" onclick="scrollToElement('header')" class="btn-primary no-padding"><img
-            src="../img/icons/arrow-down.svg" alt="arrow icon" class="rotate180"></button>
+            src="../img/icons/arrow-down.svg" alt="arrow icon" class="rotate180">
+    </button>
 
 
     <!--Page Accueil -->
@@ -119,7 +120,8 @@
                         milieu
                         particulier dans lequel évolue votre entreprise.
                     </p>
-                    <p>Fort de nos expériences professionnelles respectives, nous saurons compartimenter, analyser et
+                    <p>Fort de nos expériences professionnelles respectives, nous saurons compartimenter, analyser
+                        et
                         optimiser
                         vos opérations.
                     </p>
@@ -130,12 +132,14 @@
             <div class="content column center no-padding">
                 <div class="content large center wrap no-padding">
                     <h2 class="txt-center">Maîtriser pour s'affranchir</h2>
-                    <p>Parce que nous sommes de formation hôtelière, nous en maîtrisons les codes, les enseignements et
+                    <p>Parce que nous sommes de formation hôtelière, nous en maîtrisons les codes, les enseignements
+                        et
                         les
                         techniques. <br> <br> C'est cette maîtrise des codes qui nous permet de savoir s'y tenir et
                         quand
                         s'en affranchir pour s'adapter à la précision que requiert un service sur-mesure. <br>
-                        Parce que nous avons pratiqué cet enseignement de nombreuses années, à différents échelons, tant
+                        Parce que nous avons pratiqué cet enseignement de nombreuses années, à différents échelons,
+                        tant
                         opérationnels
                         qu’administratifs, nous connaissons la réalité du terrain. <br> <br>
                         Alors nous avons construit notre motto sur notre expérience : <br> <br>
@@ -194,7 +198,8 @@
                     </p>
                     <p class="content row center left no-padding">
                         <img src="../img/icons/check.svg" alt="check icon"
-                            class="icon-sm round icon-style-colored">Insister sur les points de frustration, notamment
+                            class="icon-sm round icon-style-colored">Insister sur les points de frustration,
+                        notamment
                         du quotidien
                     </p>
                 </div>
@@ -213,7 +218,8 @@
                     </div>
                     <h2>Planification</h2>
                     <p>
-                        La planification est le point d'origine du succès du déploiement. Elle doit être précise avec de
+                        La planification est le point d'origine du succès du déploiement. Elle doit être précise
+                        avec de
                         garantir un embarquement réussi des équipes.</p>
                     <p class="content row center left no-padding">
                         <img src="../img/icons/check.svg" alt="check icon"
@@ -234,7 +240,8 @@
                     </p>
                     <p class="content row center left no-padding">
                         <img src="../img/icons/check.svg" alt="check icon"
-                            class="icon-sm round icon-style-colored">Établir les critères de performances et fixer les
+                            class="icon-sm round icon-style-colored">Établir les critères de performances et fixer
+                        les
                         valeurs de réussite
                         équipes
                     </p>
@@ -251,7 +258,8 @@
                     </div>
                     <h2>Déploiement et formation</h2>
                     <p>
-                        Partager le déploiement selon les forces de chacun et impliquer au maximum les équipes impactées
+                        Partager le déploiement selon les forces de chacun et impliquer au maximum les équipes
+                        impactées
                     </p>
                     <p class="content row center left no-padding">
                         <img src="../img/icons/check.svg" alt="check icon"
@@ -327,7 +335,8 @@
                                 Rapidité d’action
                             </h4>
                             <p>
-                                Le focus sur un sujet en particulier permet une rapidité de déploiement améliorée </p>
+                                Le focus sur un sujet en particulier permet une rapidité de déploiement améliorée
+                            </p>
                         </div>
                     </div>
                     <div class="content large center left no-padding">
@@ -526,7 +535,8 @@
 
                     <div class="divider"></div>
 
-                    <button type="submit" id="login-btn" class="btn-primary wide center txt-sm">Se connecter</button>
+                    <button type="submit" id="login-btn" class="btn-primary wide center txt-sm">Se
+                        connecter</button>
 
                     <p class="txt-xs txt-center">Vous n'avez pas encore de compte ? <a id="btn-signup"
                             onclick="navToPage('signup')">S'inscrire</a>
@@ -565,7 +575,8 @@
                     <label for="user_password" required>Mot de passe</label>
                     <input type="password" name="user_password" placeholder="••••••••" pattern="^(?=.*[A-Z])(?=.*\W)(?=.*\d)(?=.*[a-z]).{8,}$
 " maxlength=40 required>
-                    <p class="input-description">Votre mot de passe doit comporter au moins 8 caractères, incluant au
+                    <p class="input-description">Votre mot de passe doit comporter au moins 8 caractères, incluant
+                        au
                         moins une lettre
                         majuscule, une lettre minuscule, un chiffre et un caractère spécial.</p>
 
@@ -603,7 +614,38 @@
             </a>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="content center">
+            <p class="txt-xs">© 2023 Kyvos</p>
+        </div>
+        <div class="content no-padding">
+            <a href="../pages/legal.html">Mentions Légales</a>
+            <a href="../pages/protection-donnees.html">Protection des données</a>
+        </div>
+        <div class="content row center">
+            <a href="https://www.linkedin.com/company/kyvos/" target="_blank">
+                <img src="../img/icons/linkedin.svg" alt="linkedin icon">
+            </a>
+        </div>
+    </footer>
 </body>
+
+<!--Scripts-->
 <script src="../js/background.js"></script>
+
+<!--Cookies-->
+<script>
+    window.axeptioSettings = {
+        clientId: "64463ac66dad110b4eb5047d",
+    };
+
+    (function (d, s) {
+        var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+        e.async = true; e.src = "//static.axept.io/sdk.js";
+        t.parentNode.insertBefore(e, t);
+    })(document, "script");
+</script>
 
 </html>

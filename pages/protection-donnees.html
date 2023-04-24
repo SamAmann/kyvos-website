@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../img/logos/logo-key.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Kyvos</title>
+</head>
+
+<body>
+    <!-- Adds an overlay when a popup is called-->
+    <div id="popup-overlay"></div>
+
+    <!--Header-->
+    <header id="header">
+        <div class="nav-block ">
+            <div id="header-logo">
+                <a href="landing.html"><img src="../img/logos/logo.svg" alt="logo"></a>
+            </div>
+            <nav>
+                <div class="btn-nav selected" id="btn-accueil" onclick="navToPage('accueil')">
+                    Accueil
+                </div>
+                <div class="btn-nav" id="btn-kyvos" onclick="navToPage('kyvos')">
+                    Kyvos
+                </div>
+                <div class=" btn-nav disabled" id=" btn-kyvos-suite" onclick="navToPage('kyvos-suite')"
+                    title="Yet to come!">
+                    Kyvos Suite
+                </div>
+            </nav>
+        </div>
+
+        <div class="nav-block">
+            <a rel="noopener" class="btn-primary" href="wikyvos.html" title="Accéder aux ressources Kyvos">
+                <img src="../img/icons/graduation-hat.svg" alt="graduation-hat icon" class="icon-sm">
+                <span class="no-mobile">WiKyvos</span>
+            </a>
+
+            <div class="btn-primary" id="btn-login" onclick="navToPage('login')">
+                <img src="../img/icons/lock.svg" alt="lock icon" class="icon-sm"> <span class="no-mobile">Se
+                    connecter</span>
+            </div>
+            <div class="btn-primary mobile-only" id="btn-mobile-menu">
+                <img src="../img/icons/burger-menu.svg" alt="burger menu icon" class="icon-sm">
+            </div>
+        </div>
+    </header>
+
+    <!--To the top Button-->
+    <button id="btnToTop" onclick="scrollToElement('header')" class="btn-primary no-padding"><img
+            src="../img/icons/arrow-down.svg" alt="arrow icon" class="rotate180">
+    </button>
+
+</body>
+
+<!--Scripts-->
+<script src="../js/background.js"></script>
+
+</html>
