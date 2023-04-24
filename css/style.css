@@ -243,7 +243,7 @@ label[required]+input[required]:invalid:after {
 }
 
 #img-kyvos-hero {
-  width: 50vw;
+  min-width: 50vw;
   height: 50vh;
 }
 
@@ -359,6 +359,10 @@ header {
   padding: 0rem 5rem;
   gap: 1rem;
   position: relative;
+}
+
+#header {
+  height: var(--header-height);
 }
 
 footer {
@@ -597,7 +601,7 @@ nav {
   padding: 1.5rem 1rem;
   gap: 1rem;
   flex-wrap: no-wrap;
-  max-width: 40vw;
+  max-width: 20vw;
   min-height: 30rem;
 }
 
@@ -1141,7 +1145,9 @@ button {
   }
 
   .card-grey {
-    max-width: 25vw;
+    min-width: 30vw;
+    max-width: 50vw;
+    ;
   }
 
   .mobile-only {

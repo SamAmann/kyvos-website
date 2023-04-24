@@ -18,11 +18,11 @@
     <div id="popup-overlay"></div>
 
     <!--Header-->
-    <header id="header">
-        <div class="nav-block ">
-            <div id="header-logo">
-                <a href="landing.html"><img src="../img/logos/logo.svg" alt="logo"></a>
-            </div>
+    <header id="header" class="space-between center-v">
+        <div id="header-logo">
+            <a href="landing.html"><img src="../img/logos/logo.svg" alt="logo"></a>
+        </div>
+        <div class="nav-block space-between">
             <nav>
                 <div class="btn-nav selected" id="btn-accueil" onclick="navToPage('accueil')">
                     Accueil
@@ -38,7 +38,7 @@
         </div>
 
         <div class="nav-block">
-            <a rel="noopener" class="btn-primary" href="wikyvos.html" title="Accéder aux ressources Kyvos">
+            <!-- <a rel="noopener" class="btn-primary" href="wikyvos.html" title="Accéder aux ressources Kyvos">
                 <img src="../img/icons/graduation-hat.svg" alt="graduation-hat icon" class="icon-sm">
                 <span class="no-mobile">WiKyvos</span>
             </a>
@@ -46,7 +46,7 @@
             <div class="btn-primary" id="btn-login" onclick="navToPage('login')">
                 <img src="../img/icons/lock.svg" alt="lock icon" class="icon-sm"> <span class="no-mobile">Se
                     connecter</span>
-            </div>
+            </div> -->
             <div class="btn-primary mobile-only" id="btn-mobile-menu">
                 <img src="../img/icons/burger-menu.svg" alt="burger menu icon" class="icon-sm">
             </div>
@@ -84,7 +84,7 @@
     </page>
 
     <!--Page Kyvos-->
-    <page id="page-kyvos" class="inactive center">
+    <page id="page-kyvos" class="inactive left">
 
         <!--HERO-->
         <div id="hero-kyvos" class="hero center wrap">
@@ -100,12 +100,12 @@
         </div>
 
         <!--Art de vivre-->
+        <div id="btn-prestations" class="btn-primary txt-center" onclick="scrollToElement('nos-prestations')">
+            <img src="../img/icons/arrow-down.svg" alt="arrow down icon" class="icon-xs">
+            Nos prestations
+        </div>
         <div class="column center wrap no-padding">
             <div class="content large column center wrap no-padding">
-                <div id="btn-prestations" class="btn-primary txt-center" onclick="scrollToElement('nos-prestations')">
-                    <img src="../img/icons/arrow-down.svg" alt="arrow down icon" class="icon-xs">
-                    Nos prestations
-                </div>
                 <div class="content left column no-padding">
                     <h6>
                         Un Art de vivre
@@ -166,46 +166,44 @@
         </div>
 
         <!--Audit-->
-        <div class="container row center col1">
-            <div class="content large row center no-padding">
-                <div class="content column left no-padding">
-                    <div class="icon-lg round icon-style-colored"><img src="../img/icons/search.svg" alt="search icon">
-                    </div>
-
-                    <h2>Audits qualifiés</h2>
-                    <p>
-                        D'une durée variable, selon la profondeur avec laquelle vous souhaitez analyser votre
-                        entreprise.
-                    </p>
-
-                    <p class="content row center left">
-                        <img src="../img/icons/check.svg" alt="check icon"
-                            class="icon-sm round icon-style-colored">S'imprégner
-                        des valeurs et du
-                        fonctionnement de l'entreprise
-                    </p>
-                    <p class="content row center left no-padding">
-                        <img src="../img/icons/check.svg" alt="check icon"
-                            class="icon-sm round icon-style-colored">Évaluer les
-                        compétences et les ressources de
-                        l’entreprise
-                    </p>
-                    <p class="content row center left no-padding">
-                        <img src="../img/icons/check.svg" alt="check icon"
-                            class="icon-sm round icon-style-colored">Identifier
-                        les situations impactantes et les
-                        possibilités d’optimisations
-                    </p>
-                    <p class="content row center left no-padding">
-                        <img src="../img/icons/check.svg" alt="check icon"
-                            class="icon-sm round icon-style-colored">Insister sur les points de frustration,
-                        notamment
-                        du quotidien
-                    </p>
+        <div class="content large row center no-padding">
+            <div class="content column left no-padding wide">
+                <div class="icon-lg round icon-style-colored"><img src="../img/icons/search.svg" alt="search icon">
                 </div>
-                <img class="half-content-width no-mobile" src=" ../img/scott-graham.jpg" alt="Photo bureau d'audit"
-                    title="Credit: Scott Graham">
+
+                <h2>Audits qualifiés</h2>
+                <p>
+                    D'une durée variable, selon la profondeur avec laquelle vous souhaitez analyser votre
+                    entreprise.
+                </p>
+
+                <p class="content row center left no-padding">
+                    <img src="../img/icons/check.svg" alt="check icon"
+                        class="icon-sm round icon-style-colored">S'imprégner
+                    des valeurs et du
+                    fonctionnement de l'entreprise
+                </p>
+                <p class="content row center left no-padding">
+                    <img src="../img/icons/check.svg" alt="check icon" class="icon-sm round icon-style-colored">Évaluer
+                    les
+                    compétences et les ressources de
+                    l’entreprise
+                </p>
+                <p class="content row center left no-padding">
+                    <img src="../img/icons/check.svg" alt="check icon"
+                        class="icon-sm round icon-style-colored">Identifier
+                    les situations impactantes et les
+                    possibilités d’optimisations
+                </p>
+                <p class="content row center left no-padding">
+                    <img src="../img/icons/check.svg" alt="check icon" class="icon-sm round icon-style-colored">Insister
+                    sur les points de frustration,
+                    notamment
+                    du quotidien
+                </p>
             </div>
+            <img class="half-content-width no-mobile" src=" ../img/scott-graham.jpg" alt="Photo bureau d'audit"
+                title="Credit: Scott Graham">
         </div>
 
         <!--Planification-->
@@ -213,7 +211,7 @@
             <div class="content large row center no-padding">
                 <img class="half-content-width no-mobile" src="../img/eric-rothermel.jpg" alt="Photo agenda"
                     title="Credit: Eric Rothermel">
-                <div class="content column right no-padding">
+                <div class="content column right no-padding wide">
                     <div class="icon-lg round icon-style-colored"><img src="../img/icons/map.svg" alt="map icon">
                     </div>
                     <h2>Planification</h2>
@@ -252,7 +250,7 @@
         <!--Déploiement-->
         <div class="container row center">
             <div class="content large row center no-padding">
-                <div class="content column left no-padding">
+                <div class="content column left no-padding wide">
                     <div class="icon-lg round icon-style-colored"><img src="../img/icons/graduation-hat.svg"
                             alt="magic wand icon">
                     </div>
@@ -405,7 +403,7 @@
 
 
         <!--Tarifs Projet-->
-        <div class="container column large center">
+        <div class="container column wide center">
             <div class="content column wide center">
                 <div class="content no-padding center-v wrap">
                     <h2>Un forfait pour vos "Projets"</h2>
@@ -418,8 +416,8 @@
                     Nombre de sujet (presque) illimités, pour la construction d'une vision plus globale.
                 </p>
             </div>
-            <div class="content wide center wrap space-around">
-                <div class="card-grey center grid wide">
+            <div class="content wide center wrap center">
+                <div class="card-grey center grid">
                     <div class="content column center">
                         <img src="../img/icons/computer.svg" alt="computer icon"
                             class="icon-md round icon-style-colored">
@@ -616,20 +614,8 @@
     </div>
 
     <!-- Footer -->
-    <footer>
-        <div class="content center">
-            <p class="txt-xs">© 2023 Kyvos</p>
-        </div>
-        <div class="content no-padding">
-            <a href="../pages/legal.html">Mentions Légales</a>
-            <a href="../pages/protection-donnees.html">Protection des données</a>
-        </div>
-        <div class="content row center">
-            <a href="https://www.linkedin.com/company/kyvos/" target="_blank">
-                <img src="../img/icons/linkedin.svg" alt="linkedin icon">
-            </a>
-        </div>
-    </footer>
+    <footer id="footer"></footer>
+
 </body>
 
 <!--Scripts-->

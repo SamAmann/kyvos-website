@@ -25,6 +25,19 @@ function exitFullScreen() {
     }
 }
 
+// // Fetch the Header and Footer
+// const headerDiv = document.querySelector('#header');
+// fetch('/pages/header.html')
+//     .then(response => response.text())
+//     .then(data => {
+//         headerDiv.innerHTML = data;
+//     })
+//     .catch(error => {
+//         console.error('Error:', error);
+//     });
+
+
+
 // Popup management
 document.addEventListener('click', function (event) {
     var popups = document.getElementsByClassName("popup");
