@@ -121,7 +121,7 @@ function showTopBtn() {
         document.body.scrollTop > showButtonDistance ||
         document.documentElement.scrollTop > showButtonDistance
     ) {
-        btnToTop.style.display = "block";
+        btnToTop.style.display = "flex";
     } else {
         btnToTop.style.display = "none";
     }

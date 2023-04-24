@@ -248,7 +248,7 @@ label[required]+input[required]:invalid:after {
 }
 
 .colored-bkg {
-  background-color: var(--color-main500);
+  background-color: var(--color-main400);
   color: var(--color-white);
 }
 
@@ -407,7 +407,7 @@ page.active {
   display: flex;
   width: 100%;
   height: calc(100vh - var(--header-height));
-  gap: 15rem;
+  gap: 5rem;
   justify-content: space-between;
 }
 
@@ -772,8 +772,10 @@ nav {
   right: 1rem;
   z-index: 99;
   cursor: pointer;
-  padding: 1rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
+  padding: 1rem;
 }
 
 /* class settings for badges */
@@ -1133,8 +1135,28 @@ button {
   max-width: 100%;
 }
 
-.space-gap {
+.gap-sm {
+  gap: 0.5rem;
+}
+
+.gap-md {
+  gap: 1rem;
+}
+
+.gap-lg {
+  gap: 2rem;
+}
+
+.gap-xl {
   gap: 5rem;
+}
+
+.gap-xxl {
+  gap: 10rem;
+}
+
+.rounded-corner {
+  border-radius: 1rem;
 }
 
 /* Style for wide screen */
