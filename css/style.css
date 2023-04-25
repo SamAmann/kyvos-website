@@ -308,18 +308,22 @@ label[required]+input[required]:invalid:after {
 
 .icon-style-outlined {
   border: 0.15rem solid var(--color-main600);
+  padding: 0.2rem;
 }
 
 .icon-style-valid {
   background-color: var(--color-success500);
+  padding: 0.2rem;
 }
 
 .icon-style-warning {
   background-color: var(--color-warning500);
+  padding: 0.2rem;
 }
 
 .icon-style-error {
   background-color: var(--color-error500);
+  padding: 0.2rem;
 }
 
 .sidebar-icon {
