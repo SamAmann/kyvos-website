@@ -95,7 +95,6 @@ function closePopup(id) {
 // To navigate between pages
 function navToPage(id) {
     var clickedBtn = document.getElementById("btn-" + id);
-
     var pages = document.getElementsByTagName("page");
     var btnNav = document.getElementsByClassName("btn-nav");
 
@@ -107,6 +106,7 @@ function navToPage(id) {
         if (pages[i].id == `page-${id}`) {
             pages[i].classList.add("active");
             pages[i].classList.remove("inactive");
+            scrollToElement('header');
         } else {
             pages[i].classList.add("inactive");
             pages[i].classList.remove("active");
