@@ -26,39 +26,39 @@
   --color-main800: #cb5d39;
   --color-main900: #c03b0f;
   --text-color: #252628;
-  --color-success25: #f6fef9;
-  --color-success50: #ecfdf3;
-  --color-success100: #d1fadf;
-  --color-success200: #a7f5bf;
-  --color-success300: #6eef9c;
-  --color-success400: #3de97b;
-  --color-success500: #1de66b;
-  --color-success600: #00d95f;
-  --color-success700: #00c14f;
-  --color-success800: #00a73f;
-  --color-success900: #008c2e;
-  --color-error25: #fff6f6;
-  --color-error50: #fff0f0;
-  --color-error100: #ffe3e3;
-  --color-error200: #ffc7c7;
-  --color-error300: #ff9b9b;
-  --color-error400: #ff6e6e;
-  --color-error500: #ff4d4d;
-  --color-error600: #ff2e2e;
-  --color-error700: #ff0f0f;
-  --color-error800: #e60000;
-  --color-error900: #c40000;
-  --color-warning25: #fffdf6;
-  --color-warning50: #fffbef;
-  --color-warning100: #fff7de;
-  --color-warning200: #fff0bd;
-  --color-warning300: #ffe79c;
-  --color-warning400: #ffd97b;
-  --color-warning500: #ffc95b;
-  --color-warning600: #ffb93a;
-  --color-warning700: #ffa91a;
-  --color-warning800: #ff9800;
-  --color-warning900: #e68400;
+  --color-success25: #F6FEF9;
+  --color-success50: #ECFDF3;
+  --color-success100: #D1FADF;
+  --color-success200: #A6F4C5;
+  --color-success300: #6CE9A6;
+  --color-success400: #32D583;
+  --color-success500: #12B76A;
+  --color-success600: #039855;
+  --color-success700: #027A48;
+  --color-success800: #05603A;
+  --color-success900: #054F31;
+  --color-error25: #FFFBFA;
+  --color-error50: #FEF3F2;
+  --color-error100: #FEE4E2;
+  --color-error200: #FECDCA;
+  --color-error300: #FDA29B;
+  --color-error400: #F97066;
+  --color-error500: #F04438;
+  --color-error600: #D92D20;
+  --color-error700: #B42318;
+  --color-error800: #912018;
+  --color-error900: #7A271A;
+  --color-warning25: #FFFCF5;
+  --color-warning50: #FFFAEB;
+  --color-warning100: #FEF0C7;
+  --color-warning200: #FEDF89;
+  --color-warning300: #FEC84B;
+  --color-warning400: #FDB022;
+  --color-warning500: #F79009;
+  --color-warning600: #DC6803;
+  --color-warning700: #B54708;
+  --color-warning800: #93370D;
+  --color-warning900: #7A2E0E;
   --color-info25: #f6f9ff;
   --color-info50: #edf3ff;
   --color-info100: #dde8ff;
@@ -111,12 +111,14 @@ body {
   color: var(--text-color);
   max-width: 100vw;
   gap: 0px;
+  margin: 0px;
 }
 
 /*set the font family for the title*/
 h1 {
   font-size: var(--display-size-xl);
   font-weight: 500;
+  margin: 1rem;
 }
 
 /*set the font family for the heading*/
@@ -124,12 +126,14 @@ h2 {
   font-family: "Circular", sans-serif;
   font-size: var(--display-size-lg);
   font-weight: 600;
+  margin: 0.5rem;
 }
 
 h3 {
   font-family: "Circular", "Inter", sans-serif;
   font-size: var(--display-size-md);
   font-weight: 600;
+  margin: 0%;
 }
 
 h4 {
@@ -139,9 +143,10 @@ h4 {
 }
 
 h5 {
-  font-family: "Circular", sans-serif;
+  font-family: "Circular", "Inter", sans-serif;
   font-size: var(--display-size-xs);
   font-weight: 600;
+  margin: 0px;
 }
 
 h6 {
@@ -150,12 +155,14 @@ h6 {
   font-weight: 600;
   color: var(--color-main700);
   padding: 0px;
+  margin: 0px;
 }
 
 p {
   font-size: var(--txt-size-md);
   line-height: 30px;
   padding: 0px;
+  margin: 0px;
 }
 
 .quote {
@@ -259,8 +266,12 @@ label[required]+input[required]:invalid:after {
   height: 50vh;
 }
 
-.colored-bkg {
+.colored-bkg-light {
   background-color: var(--color-main100);
+}
+
+.colored-bkg-dark {
+  background-color: var(--color-main600);
 }
 
 .colored-border {
@@ -312,17 +323,17 @@ label[required]+input[required]:invalid:after {
 }
 
 .icon-style-valid {
-  background-color: var(--color-success500);
+  background-color: var(--color-success300);
   padding: 0.2rem;
 }
 
 .icon-style-warning {
-  background-color: var(--color-warning500);
+  background-color: var(--color-warning300);
   padding: 0.2rem;
 }
 
 .icon-style-error {
-  background-color: var(--color-error500);
+  background-color: var(--color-error400);
   padding: 0.2rem;
 }
 
@@ -386,7 +397,7 @@ header .nav-block {
 
 footer {
   display: flex;
-  width: 100vw;
+  width: 99vw;
   height: var(--footer-height);
   background-color: var(--color-white);
   box-shadow: 0px 0px 2px var(--color-grey300);
@@ -432,8 +443,7 @@ page.active {
   display: flex;
   width: 100%;
   max-width: 100vw;
-  height: calc(100vh - var(--header-height));
-  gap: 3rem;
+  height: calc(99vh - var(--header-height));
 }
 
 .grid {
@@ -856,22 +866,24 @@ nav {
 }
 
 .animation-top {
-  animation: slide-top 0.8s ease-in-out;
+  animation: slide-top 0.5s ease-in-out;
 }
 
 .animation-top-reverse {
-  animation: slide-top-reverse 0.8s ease-in-out;
+  animation: slide-top-reverse 0.5s ease-in-out;
 }
 
 @keyframes slide-top {
   from {
     opacity: 0;
     height: 0px;
+    background-opacity: 0%;
   }
 
   to {
     opacity: 1;
     height: 100%;
+    background-opacity: 100%;
   }
 }
 
@@ -1471,6 +1483,12 @@ button {
     max-width: 40vw;
   }
 
+  .wide-left {
+    text-align: start;
+    justify-content: start;
+    align-items: start;
+  }
+
   .mobile-only {
     display: none;
   }
@@ -1509,11 +1527,6 @@ button {
   .hero {
     gap: 2rem;
     ;
-  }
-
-  #hero-kyvos {
-    padding-bottom: 5rem;
-    gap: 3rem;
   }
 
   .card-white {
@@ -1557,6 +1570,12 @@ button {
   .wide-flex50 {
     flex-basis: 100%;
     max-width: 100%;
+  }
+
+  .mob-center {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .mob-txt-left {

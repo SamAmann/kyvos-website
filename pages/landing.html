@@ -13,6 +13,7 @@
     <title>Kyvos</title>
 </head>
 
+
 <body>
     <!-- Adds an overlay when a popup is called-->
     <div id="popup-overlay"></div>
@@ -89,7 +90,7 @@
     <page id="page-kyvos" class="inactive left">
 
         <!--HERO-->
-        <div id="hero-kyvos" class="hero center column space-around padding-top-xl">
+        <div id="hero-kyvos" class="hero center column space-around padding-y-lg">
             <div class="content no-padding center wrap">
                 <div class="content large column left">
                     <div class="heading">
@@ -185,7 +186,7 @@
             </div>
             <!--Audit-->
             <div class="container row center wide">
-                <div class="content row center rounded-corner colored-bkg gap-lg">
+                <div class="content row center rounded-corner colored-bkg-light gap-lg">
                     <div class="content column left wide ">
                         <div class="content no-padding center-v">
                             <div class="icon-lg round icon-style-colored"><img src="../img/icons/search.svg"
@@ -274,7 +275,7 @@
 
             <!--Déploiement-->
             <div class="container row center wide">
-                <div class="content row center rounded-corner colored-bkg gap-lg">
+                <div class="content row center rounded-corner colored-bkg-light gap-lg">
                     <div class="content column left wide">
                         <div class="content center-v no-padding">
                             <div class="icon-lg round icon-style-colored"><img src="../img/icons/graduation-hat.svg"
@@ -326,7 +327,7 @@
                 <h6 class="txt-left">Tarifs</h6>
                 <div class="content no-padding center-v wrap">
                     <h2 class="txt-center">Un tarif "Clé"</h2>
-                    <div class="badge txt-sm font-weight-500 no-wrap center">
+                    <div class="badge txt-md font-weight-500 no-wrap center">
                         Ciblé
                     </div>
                 </div>
@@ -340,41 +341,41 @@
 
             <!--Plan Clé-->
             <div class="content wide row center-h wrap gap-xl">
-                <div class="content col33:first-child column left wrap no-padding padding-top-xl gap-lg">
-                    <div class="content center left no-padding wrap">
+                <div class="content col25:first-child column left wrap no-padding padding-top-xl gap-lg">
+                    <div class="content wide-left mob-center wrap">
                         <div class="icon-lg round icon-style-colored center"><img src="../img/icons/target.svg"
                                 alt="target icon">
                         </div>
                         <div class="content column left no-padding no-gap">
-                            <h4>
+                            <h5>
                                 Une demande précise
-                            </h4>
+                            </h5>
                             <p>
                                 Dans le cadre du service "Clé", seul le sujet choisi est audité
                             </p>
                         </div>
                     </div>
-                    <div class="content center left no-padding wrap">
+                    <div class="content center wide-left mob-center wrap">
                         <div class="icon-lg round icon-style-colored center"><img src="../img/icons/lightstrike.svg"
                                 alt="search icon">
                         </div>
                         <div class="content column left no-padding no-gap">
-                            <h4>
+                            <h5>
                                 Rapidité d’action
-                            </h4>
+                            </h5>
                             <p>
                                 Le focus sur un sujet en particulier permet une rapidité de déploiement améliorée
                             </p>
                         </div>
                     </div>
-                    <div class="content large center left no-padding wrap">
+                    <div class="content center wide-left mob-center wrap">
                         <div class="icon-lg round icon-style-colored center"><img src="../img/icons/coin-hand.svg"
                                 alt="search icon">
                         </div>
-                        <div class="content large column left no-padding no-gap">
-                            <h4>
+                        <div class="content column left no-padding no-gap">
+                            <h5>
                                 Pas de surcoût
-                            </h4>
+                            </h5>
                             <p>
                                 Conçu pour ne pas nécessiter de suivi ultérieur et maîtriser les coûts de
                                 l’opération </p>
@@ -388,13 +389,15 @@
 
                         <div class="content column center wrap no-padding wide gap-sm">
 
-                            <h3 class="flex no-wrap">Plan Clé</h3>
+                            <h5 class="flex no-wrap">A distance</h5>
                             <div class="no-padding wrap">
-                                <div class="flex wrap">
-                                    <h5 class="flex no-padding no-gap no-wrap top">€</h5>
+                                <div class="flex wrap center gap-sm">
+                                    <h5 class="no-padding no-gap no-wrap top txt-md">€</h5>
                                     <h3>550</h3>
                                     <h5 class="txt-sm no-wrap bottom">par jour</h5>
                                 </div>
+                                <p class="txt-sm">Sans frais supplémentaires</p>
+
                             </div>
                         </div>
                         <div class="divider"></div>
@@ -424,25 +427,25 @@
 
                     <div class="divider"></div>
 
-                    <div class="content center wide">
+                    <div class="content center no-padding">
                         <div class=" btn-primary center wide" onclick="toggleDisplay('contact-cle')">
-                            <p class="txt-md">Nous contacter </p>
+                            Nous contacter
                         </div>
                     </div>
                     <div id="contact-cle" class="content inactive center column no-padding animation-top">
-                        <p class="txt-center">Comment souhaitez-vous nous contacter ?</p>
+                        <p class="txt-center no-padding padding-top-sm">Comment souhaitez-vous nous contacter ?</p>
                         <div class="content no-padding">
                             <a class="btn-primary"
                                 href="mailto:discutons@kyvos.me?subject=Demande%20d'informations%20|%20Clé&body=Bonjour,%0A%0AJe souhaiterais vous contacter pour avoir plus d'informations concernant votre proposition Clé.%0A%0ALa mission concernerait : ... %0AJ'estime le temps à y consacré à : XX jours%0A%0AD'avance merci pour votre retour.%0ACordialement,%0A%0A">
-                                <img src="../img/icons/send.svg" alt="send mail icon" class="icon">
+                                <img src="../img/icons/send.svg" alt="send mail icon" class="icon-sm">
                                 Par email
                             </a>
 
                             <a class="btn-primary center"
                                 href='https://outlook.office365.com/owa/calendar/Kyvos2@kyvos.me/bookings/'
                                 target="_blank">
-                                <img src="../img/icons/calendar.svg" alt="calendar icon">
-                                <p class="txt-md">Prendre rendez-vous</p>
+                                <img src="../img/icons/calendar.svg" alt="calendar icon" class="icon-sm">
+                                Prendre rendez-vous
                             </a>
                         </div>
                     </div>
@@ -459,7 +462,7 @@
             <div class="content column center">
                 <div class="content center-v wrap">
                     <h2>Un forfait pour vos "Projets"</h2>
-                    <div class="badge txt-sm font-weight-500 no-wrap center">
+                    <div class="badge txt-md font-weight-500 no-wrap center">
                         Complet
                     </div>
                 </div>
@@ -478,8 +481,8 @@
 
                             <h5 class="flex no-wrap">A distance</h5>
                             <div class="no-padding wrap">
-                                <div class="flex wrap">
-                                    <h5 class="flex no-padding no-gap no-wrap top">€</h5>
+                                <div class="flex wrap center gap-sm">
+                                    <h5 class="flex no-padding no-gap no-wrap top txt-md">€</h5>
                                     <h3>500</h3>
                                     <h5 class="txt-sm no-wrap bottom">par jour</h5>
                                 </div>
@@ -516,23 +519,23 @@
 
                     <div class="divider"></div>
 
-                    <div class="content center wide">
-                        <div class=" btn-primary center wide" onclick="toggleDisplay('contact-a-distance')">
-                            <p class="txt-md">Nous contacter </p>
+                    <div class="content center column no-padding">
+                        <div class=" btn-primary center column" onclick="toggleDisplay('contact-a-distance')">
+                            Nous contacter
                         </div>
                     </div>
                     <div id="contact-a-distance" class="content inactive center column no-padding animation-top">
-                        <p class="txt-center">Comment souhaitez-vous nous contacter ?</p>
-                        <div class="content no-padding">
+                        <p class="txt-center no-padding padding-top-sm">Comment souhaitez-vous nous contacter ?</p>
+                        <div class=" content no-padding">
                             <a class="btn-primary"
                                 href="mailto:discutons@kyvos.me?subject=Demande%20d'informations%20|%20Projet%20à%20distance&body=Bonjour,%0A%0AJe souhaiterais vous contacter pour avoir plus d'informations concernant votre proposition Projet à Distance.%0A%0ALa mission concernerait : ... %0AJ'estime le temps à y consacré à : XX jours%0A%0AD'avance merci pour votre retour.%0ACordialement,%0A%0A">
-                                <img src="../img/icons/send.svg" alt="send mail icon">
+                                <img src="../img/icons/send.svg" alt="send mail icon" class="icon-sm">
                                 Par email
                             </a>
                             <a class="btn-primary"
                                 href='https://outlook.office365.com/owa/calendar/Kyvos2@kyvos.me/bookings/'
                                 target="_blank">
-                                <img src="../img/icons/calendar.svg" alt="calendar icon">
+                                <img src="../img/icons/calendar.svg" alt="calendar icon" class="icon-sm">
                                 Prendre rendez-vous
                             </a>
                         </div>
@@ -546,8 +549,8 @@
 
                             <h5 class="flex no-wrap">Sur place</h5>
                             <div class="no-padding wrap">
-                                <div class="flex wrap center">
-                                    <h5 class="flex no-padding no-gap no-wrap top">€</h5>
+                                <div class="flex wrap center gap-sm">
+                                    <h5 class="no-padding no-gap no-wrap top txt-md">€</h5>
                                     <h3>750</h3>
                                     <h5 class="txt-sm no-wrap bottom">par jour</h5>
                                 </div>
@@ -587,23 +590,23 @@
 
                     <div class="divider"></div>
 
-                    <div class="content center wide">
-                        <div class=" btn-primary center wide" onclick="toggleDisplay('contact-sur-place')">
-                            <p class="txt-md">Nous contacter </p>
+                    <div class="content center no-padding">
+                        <div class=" btn-primary center" onclick="toggleDisplay('contact-sur-place')">
+                            Nous contacter
                         </div>
                     </div>
                     <div id="contact-sur-place" class="content inactive center column no-padding animation-top">
-                        <p class="txt-center">Comment souhaitez-vous nous contacter ?</p>
+                        <p class="txt-center no-padding padding-top-sm">Comment souhaitez-vous nous contacter ?</p>
                         <div class="content no-padding">
                             <a class="btn-primary"
                                 href="mailto:discutons@kyvos.me?subject=Demande%20d'informations%20|%20Projet%20Sur%Place&body=Bonjour,%0A%0AJe souhaiterais vous contacter pour avoir plus d'informations concernant votre proposition Projet Sur Place.%0A%0ALa mission concernerait : ... %0AJ'estime le temps à y consacré à : XX jours%0A%0AD'avance merci pour votre retour.%0ACordialement,%0A%0A">
-                                <img src="../img/icons/send.svg" alt="send mail icon">
+                                <img src="../img/icons/send.svg" alt="send mail icon" class="icon-sm">
                                 Par email
                             </a>
                             <a class="btn-primary center"
                                 href='https://outlook.office365.com/owa/calendar/Kyvos2@kyvos.me/bookings/'
                                 target="_blank">
-                                <img src="../img/icons/calendar.svg" alt="calendar icon">
+                                <img src="../img/icons/calendar.svg" alt="calendar icon" class="icon-sm">
                                 Prendre rendez-vous
                             </a>
                         </div>
@@ -765,60 +768,64 @@
 
         <!--Propriété intellectuelle-->
         <div class="container center-h column padding-x-xl">
-            <h5 class="txt-left">
-                Respect de la propriété intellectuelle
-            </h5>
-            <p class="txt-justify">
-                Toutes les marques, photographies, textes, commentaires, illustrations, images animées ou non,
-                séquences
-                vidéo, sons,
-                ainsi que toutes les applications informatiques qui pourraient être utilisées pour faire fonctionner
-                le
-                Site et plus
-                généralement tous les éléments reproduits ou utilisés sur le Site sont protégés par les lois en
-                vigueur
-                au titre de la
-                propriété intellectuelle. Ils sont la propriété pleine et entière de l'Éditeur ou de ses
-                partenaires,
-                sauf mentions
-                particulières. Toute reproduction, représentation, utilisation ou adaptation, sous quelque forme que
-                ce
-                soit, de tout ou
-                partie de ces éléments, y compris les applications informatiques, sans l'accord préalable et écrit
-                de
-                l'Éditeur, sont
-                strictement interdites. Le fait pour l'Éditeur de ne pas engager de procédure dès la prise de
-                connaissance de ces
-                utilisations non autorisées ne vaut pas acceptation desdites utilisations et renonciation aux
-                poursuites. Seule
-                l'utilisation pour un usage privé dans un cercle de famille est autorisée et toute autre utilisation
-                est
-                constitutive de
-                contrefaçon et/ou d'atteinte aux droits voisins, sanctionnées par Code de la propriété
-                intellectuelle.
-                La reprise de
-                tout ou partie de ce contenu nécessite l'autorisation préalable de l'Éditeur ou du titulaire des
-                droits
-                sur ce contenu.
-            </p>
+            <div class="content column padding-x-md">
+                <h5 class="txt-left">
+                    Respect de la propriété intellectuelle
+                </h5>
+                <p class="txt-justify">
+                    Toutes les marques, photographies, textes, commentaires, illustrations, images animées ou non,
+                    séquences
+                    vidéo, sons,
+                    ainsi que toutes les applications informatiques qui pourraient être utilisées pour faire fonctionner
+                    le
+                    Site et plus
+                    généralement tous les éléments reproduits ou utilisés sur le Site sont protégés par les lois en
+                    vigueur
+                    au titre de la
+                    propriété intellectuelle. Ils sont la propriété pleine et entière de l'Éditeur ou de ses
+                    partenaires,
+                    sauf mentions
+                    particulières. Toute reproduction, représentation, utilisation ou adaptation, sous quelque forme que
+                    ce
+                    soit, de tout ou
+                    partie de ces éléments, y compris les applications informatiques, sans l'accord préalable et écrit
+                    de
+                    l'Éditeur, sont
+                    strictement interdites. Le fait pour l'Éditeur de ne pas engager de procédure dès la prise de
+                    connaissance de ces
+                    utilisations non autorisées ne vaut pas acceptation desdites utilisations et renonciation aux
+                    poursuites. Seule
+                    l'utilisation pour un usage privé dans un cercle de famille est autorisée et toute autre utilisation
+                    est
+                    constitutive de
+                    contrefaçon et/ou d'atteinte aux droits voisins, sanctionnées par Code de la propriété
+                    intellectuelle.
+                    La reprise de
+                    tout ou partie de ce contenu nécessite l'autorisation préalable de l'Éditeur ou du titulaire des
+                    droits
+                    sur ce contenu.
+                </p>
+            </div>
         </div>
 
         <!--Liens hypertextes-->
         <div class="container center-h column padding-x-xl">
-            <h5 class="txt-left">
-                Liens hypertextes </h5>
-            <p class="txt-justify">
-                Le Site peut contenir des liens hypertexte donnant accès à d'autres sites web édités et gérés par
-                des
-                tiers et non par
-                l'Éditeur. L'Éditeur ne pourra être tenu responsable directement ou indirectement dans le cas où
-                lesdits
-                sites tiers ne
-                respecteraient pas les dispositions légales. La création de liens hypertexte vers le Site ne peut
-                être
-                faite qu'avec
-                l'autorisation écrite et préalable de l'Éditeur.
-            </p>
+            <div class="content column padding-x-md">
+                <h5 class="txt-left">
+                    Liens hypertextes </h5>
+                <p class="txt-justify">
+                    Le Site peut contenir des liens hypertexte donnant accès à d'autres sites web édités et gérés par
+                    des
+                    tiers et non par
+                    l'Éditeur. L'Éditeur ne pourra être tenu responsable directement ou indirectement dans le cas où
+                    lesdits
+                    sites tiers ne
+                    respecteraient pas les dispositions légales. La création de liens hypertexte vers le Site ne peut
+                    être
+                    faite qu'avec
+                    l'autorisation écrite et préalable de l'Éditeur.
+                </p>
+            </div>
         </div>
 
     </page>
@@ -848,7 +855,7 @@
         </div>
         <div class="content no-padding">
             <a id="btn-legal-mention" onclick="navToPage('legal-mention')">Mentions Légales</a>
-            <a href="../pages/protection-donnees.html">Protection des données</a>
+            <a href="../pages/protection-donnees.html">Politique de confidentialité</a>
         </div>
         <div class="content row center">
             <a href="https://www.linkedin.com/company/kyvos/" target="_blank">
