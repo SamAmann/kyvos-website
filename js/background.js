@@ -45,14 +45,14 @@ function toggleDisplay(id) {
         scrollToElement(element);
         setTimeout(function () {
             element.classList.add("inactive");
-        }, 300); // adjust the timing to match the animation duration
+        }, 500); // adjust the timing to match the animation duration
     } else {
         element.classList.remove("inactive", "animation-top-reverse");
         element.classList.add("animation-top");
         scrollToElement(element);
         setTimeout(function () {
             element.classList.add("active");
-        }, 300); // adjust the timing to match the animation duration
+        }, 800); // adjust the timing to match the animation duration
     }
 }
 

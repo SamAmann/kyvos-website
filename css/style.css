@@ -808,34 +808,34 @@ nav {
 }
 
 .animation-top {
-  animation: slide-top 0.5s ease-in-out;
+  animation: slide-top 0.8s ease-in-out;
 }
 
 .animation-top-reverse {
-  animation: slide-top-reverse 0.3s ease-in-out;
+  animation: slide-top-reverse 0.8s ease-in-out;
 }
 
 @keyframes slide-top {
   from {
-    opacity: 0.5;
-    transform: translateY(-10px);
+    opacity: 0;
+    height: 0px;
   }
 
   to {
     opacity: 1;
-    transform: translateY(0);
+    height: 100%;
   }
 }
 
 @keyframes slide-top-reverse {
   from {
     opacity: 1;
-    transform: translateY(0);
+    height: 100%;
   }
 
   to {
     opacity: 0;
-    transform: translateY(-10px);
+    height: 0px;
   }
 }
 
