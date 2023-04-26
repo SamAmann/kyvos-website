@@ -559,19 +559,23 @@ td {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   top: 50%;
-  max-width: 80vw;
-  height: auto;
   overflow: auto;
   border: 1px solid var(--color-grey200);
   box-shadow: 0px 1px 2px var(--color-grey200);
   background-color: var(--color-white);
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   overflow: auto;
   padding: 2rem;
+  width: 100%;
+  max-width: 80vw;
 }
 
 .popup.active {
   display: flex;
+}
+
+.popup-content {
+  /* width: auto; */
 }
 
 .popup-content {
@@ -1460,7 +1464,7 @@ button {
 }
 
 /* Style for wide screen */
-@media (min-width: 976px) {
+@media (min-width: 756px) {
 
   .header {
     padding: 0rem 5rem;
@@ -1495,7 +1499,7 @@ button {
 }
 
 /* Style for mobile */
-@media (max-width: 975px) {
+@media (max-width: 755px) {
 
   page {
     gap: 5rem;
