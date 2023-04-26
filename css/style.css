@@ -258,6 +258,10 @@ label[required]+input[required]:invalid:after {
 }
 
 /* Images */
+.linkedin-icon:hover path {
+  fill: #0a66c2 !important;
+}
+
 #img-accueil {
   width: 100%;
 }
