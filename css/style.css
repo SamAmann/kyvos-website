@@ -388,7 +388,10 @@ header {
   z-index: 999;
   padding: 0rem 5rem;
   gap: 1rem;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 header .nav-block {
