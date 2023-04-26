@@ -566,8 +566,6 @@ td {
   border-radius: 0.3rem;
   overflow: auto;
   padding: 2rem;
-  width: 100%;
-  max-width: 80vw;
 }
 
 .popup.active {
@@ -575,11 +573,8 @@ td {
 }
 
 .popup-content {
-  /* width: auto; */
-}
-
-.popup-content {
-  width: auto;
+  max-width: 100%;
+  min-width: 50vw;
 }
 
 .close {
