@@ -148,7 +148,7 @@ function showTopBtn() {
 // When the user clicks on the button, scroll to the element
 function scrollToElement(id) {
     var target = document.getElementById(id);
-    var targetPosition = (target?.offsetTop);
+    var targetPosition = (target?.offsetTop) - 100;
     window.scrollTo({
         top: targetPosition,
         behavior: "smooth",

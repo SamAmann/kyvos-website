@@ -154,8 +154,9 @@ h6 {
   font-size: var(--txt-size-xl);
   font-weight: 600;
   color: var(--color-main700);
-  padding: 0px;
-  margin: 0px;
+  background-image: url("/img/kyvos-emblem2.svg");
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 p {
@@ -262,8 +263,8 @@ label[required]+input[required]:invalid:after {
 }
 
 #img-kyvos-hero {
-  min-width: 50vw;
-  height: 50vh;
+  width: 40vw;
+  min-height: 30vh;
 }
 
 .colored-bkg-light {
@@ -447,6 +448,10 @@ page.active {
   width: 100%;
   max-width: 100vw;
   height: calc(99vh - var(--header-height));
+  gap: 2rem;
+  padding: 0rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid {
@@ -1528,7 +1533,6 @@ button {
 
   .hero {
     gap: 2rem;
-    ;
   }
 
   .card-white {
