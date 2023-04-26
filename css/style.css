@@ -155,7 +155,7 @@ h6 {
   font-size: var(--txt-size-xl);
   font-weight: 600;
   color: var(--color-main700);
-  background-image: url("/img/kyvos-emblem2.svg");
+  background-image: url("../img/kyvos-emblem2.svg");
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -586,6 +586,7 @@ td {
 }
 
 .popup-content {
+  width: auto;
   max-width: 100%;
   min-width: 40vw;
 }
@@ -1581,6 +1582,10 @@ button {
   .wide-flex50 {
     flex-basis: 100%;
     max-width: 100%;
+  }
+
+  .popup {
+    width: 80vw;
   }
 
   .mob-center {
