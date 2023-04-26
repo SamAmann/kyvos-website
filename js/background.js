@@ -40,19 +40,16 @@ function exitFullScreen() {
 function toggleDisplay(id) {
     var element = document.getElementById(id);
     if (element.classList.contains("active")) {
-        element.classList.remove("active", "animation-top");
-        element.classList.add("animation-top-reverse");
         scrollToElement(element);
         setTimeout(function () {
             element.classList.add("inactive");
         }, 300); // adjust the timing to match the animation duration
     } else {
-        element.classList.remove("inactive", "animation-top-reverse");
-        element.classList.add("animation-top");
+        element.classList.remove("inactive");
         scrollToElement(element);
         setTimeout(function () {
             element.classList.add("active");
-        }, 300); // adjust the timing to match the animation duration
+        }, 300);
     }
 }
 
@@ -76,8 +73,8 @@ document.addEventListener('click', function (event) {
 //open the popup and sets the popup-overlay active
 function openPopup(id) {
     var popup = document.getElementById(id);
-    popup.classList.add("active");
     var popupOverlay = document.getElementById("popup-overlay");
+    popup.classList.add("active");
     popupOverlay.classList.add("active");
 
 }
