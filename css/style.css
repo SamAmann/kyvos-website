@@ -852,7 +852,7 @@ nav {
   display: none;
   position: fixed;
   bottom: 4rem;
-  right: 1rem;
+  right: 2rem;
   z-index: 9999;
   cursor: pointer;
   height: 3rem;
