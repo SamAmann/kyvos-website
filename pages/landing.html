@@ -90,9 +90,9 @@
     <page id="page-kyvos" class="inactive left">
 
         <!--HERO-->
-        <div id="hero-kyvos" class="hero center column space-around padding-y-lg">
+        <div id="hero-kyvos" class="hero center column space-around padding-y-xxl">
             <div class="content no-padding center wrap">
-                <div class="content large column left">
+                <div class="content column left">
                     <div class="heading">
                         <h1 class="txt-left">Écouter, <br> Supporter, <br> Encourager.</h1>
                     </div>
@@ -183,11 +183,12 @@
         <div id="nos-prestations" class="center no-gap">
             <h6 class="txt-center">
                 Prestations </h6>
-            <div class="content column left txt-center no-padding">
+            <div class="content column left">
                 <h2 class="mob-txt-left">
                     Un accompagnement sur-mesure
                 </h2>
-                <p class=" mob-txt-left">Nous attachons une attention particulière à dessiner l’accompagnement dont
+                <p class=" mob-txt-left padding-sm">Nous attachons une attention particulière à dessiner
+                    l’accompagnement dont
                     vous avez besoin.
                 </p>
             </div>
@@ -346,7 +347,7 @@
                 </div>
             </div>
         </div>
-        <div class="content column center">
+        <div class="content column center no-padding">
             <p class="txt-justify">Nous proposons un service qui se concentre sur un sujet en particuler.
                 <br>
                 Sans occulter les autres aspects de votre entreprise, nous nous concentrons sur l'optimisation
@@ -356,7 +357,7 @@
         </div>
 
         <!--Plan Clé-->
-        <div class="content wide row center-h wrap gap-xl">
+        <div class="content wide row center-h wrap gap-xl no-padding">
             <div class="content col25:first-child column left wrap no-padding padding-top-xl mob-no-padding gap-lg">
                 <div class="content wide-left mob-center wrap no-padding">
                     <div class="icon-lg round icon-style-colored center"><img src="../img/icons/target.svg"
@@ -734,12 +735,13 @@
     </page>
 
     <!--Mentions Légales-->
-    <page id="page-legal-mention" class="padding-top-xl gap-xl inactive page-bkg1">
+    <page id="page-legal-mention" class="padding-top-xl inactive page-bkg1">
 
-        <!--Mentions Légales-->
-        <div class="container center column wide wrap">
+        <!-- Mentions Légales -->
+        <div class="container center column wide wrap padding-top-xl no-padding">
             <h5 class="title">Mentions Légales</h5>
             <div class="grid top">
+
                 <!--L'Hébergeur-->
                 <div class="content column grid-item">
                     <h6>L'Hébergeur</h6>
@@ -783,17 +785,19 @@
                         <strong>Responsable de la publication : M. Samuel Amann</strong>
 
 
-                        <a href="mailto:contact@kyvos.me" class="btn-secondary rounded-corner center">Nous
-                            écrire</a>
+                        <div onclick="openPopup('contact-popup')"
+                            class="btn-secondary open-popup rounded-corner center">Nous
+                            écrire</div>
                         <a href="tel:+33784519713" class="btn-secondary rounded-corner center"> Nous téléphoner</a>
 
                     </div>
                 </div>
+
             </div>
         </div>
 
         <!--Propriété intellectuelle-->
-        <div class="container center-h column padding-x-xl">
+        <div class="container center-h column ">
             <div class="content column padding-x-md">
                 <h5 class="txt-left">
                     Respect de la propriété intellectuelle
@@ -835,7 +839,7 @@
         </div>
 
         <!--Liens hypertextes-->
-        <div class="container center-h column padding-x-xl">
+        <div class="container center-h column">
             <div class="content column padding-x-md">
                 <h5 class="txt-left">
                     Liens hypertextes </h5>
@@ -856,6 +860,9 @@
 
     </page>
 
+    <!--Politique de Confidentialité-->
+    <page id="page-privacy" class="inactive padding-top-xl page-bkg1"></page>
+
     <!--Contact Popup-->
     <div id="contact-popup" class="popup hide-footer hide-header column">
         <iframe class="clickup-embed popup-content no-padding"
@@ -870,7 +877,8 @@
         </div>
         <div class="content no-padding">
             <a id="btn-legal-mention" onclick="navToPage('legal-mention')" class="txt-sm">Mentions Légales</a>
-            <a href="../pages/protection-donnees.html" class="txt-sm">Politique de confidentialité</a>
+            <a id="btn-privacy" onclick="navToPage('privacy')" class="txt-sm">Politique de
+                confidentialité</a>
         </div>
         <div class="content center">
             <a href="https://www.linkedin.com/company/kyvos/" target="_blank" class="linkedin-icon">
