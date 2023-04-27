@@ -116,7 +116,7 @@ function openPopup(id) {
         hideHeader();
     }
     if (popup.classList.contains("hide-footer")) {
-        desactiveFooter();
+        hideFooter();
     }
 }
 
@@ -131,7 +131,7 @@ function closePopup(id) {
         showHeader();
     }
     if (popup.classList.contains("hide-footer")) {
-        activeFooter();
+        showFooter();
     }
 }
 
@@ -148,13 +148,13 @@ function showHeader() {
 }
 
 // Inactive the footer
-function desactiveFooter() {
+function hideFooter() {
     var footer = document.getElementById("footer");
     footer.classList.add("inactive");
 }
 
 // Active the footer
-function activeFooter() {
+function showFooter() {
     var footer = document.getElementById("footer");
     footer.classList.remove("inactive");
 }
