@@ -57,8 +57,12 @@ function toggleDisplay(id, animation) {
 }
 
 // Popup management
+
+// Closes popup when user clicks outside of the popup, 
+// unless the popup has the class "outside-click-no-close"
 document.addEventListener('click', function (event) {
     var popups = document.getElementsByClassName("popup");
+
     for (var i = 0; i < popups.length; i++) {
         if (
             event.target !== popups[i] &&
@@ -73,23 +77,60 @@ document.addEventListener('click', function (event) {
 });
 
 
-//open the popup and sets the popup-overlay active
+// open the popup
+// sets the popup-overlay active
 function openPopup(id) {
     var popup = document.getElementById(id);
-    popup.classList.add("active");
     var popupOverlay = document.getElementById("popup-overlay");
+    popup.classList.add("active");
     popupOverlay.classList.add("active");
 
+    if (popup.classList.contains("hide-header")) {
+        hideHeader();
+    }
+    if (popup.classList.contains("hide-footer")) {
+        desactiveFooter();
+    }
 }
 
 //close the popup
+// sets the popup-overlay inactive
 function closePopup(id) {
     var popup = document.getElementById(id);
-    popup.classList.remove("active");
     var popupOverlay = document.getElementById("popup-overlay");
+    popup.classList.remove("active");
     popupOverlay.classList.remove("active");
+    if (popup.classList.contains("hide-header")) {
+        showHeader();
+    }
+    if (popup.classList.contains("hide-footer")) {
+        activeFooter();
+    }
 }
 
+// Inactive the header
+function hideHeader() {
+    var header = document.getElementById("header");
+    header.classList.add("inactive");
+}
+
+// Active the header
+function showHeader() {
+    var header = document.getElementById("header");
+    header.classList.remove("inactive");
+}
+
+// Inactive the footer
+function desactiveFooter() {
+    var footer = document.getElementById("footer");
+    footer.classList.add("inactive");
+}
+
+// Active the footer
+function activeFooter() {
+    var footer = document.getElementById("footer");
+    footer.classList.remove("inactive");
+}
 
 
 // To navigate between pages
