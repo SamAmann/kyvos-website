@@ -1464,6 +1464,10 @@ button {
   max-width: 100%;
 }
 
+.gap-xs {
+  gap: 0.2rem;
+}
+
 .gap-sm {
   gap: 0.5rem;
 }
@@ -1602,6 +1606,10 @@ button {
 
   .popup {
     min-width: 80vw;
+  }
+
+  .mob-no-padding {
+    padding: 0;
   }
 
   .mob-center {
