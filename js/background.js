@@ -38,7 +38,11 @@ function exitFullScreen() {
 
 function toggleDisplay(id, animation = "") {
     var element = document.getElementById(id);
-    var animationReverse = animation + "-reverse";
+    if animation != "" {
+        var animationReverse = animation + "-reverse";
+    } else {
+        var animationReverse = "";
+    }
     console.log(animationReverse);
     if (element.classList.contains("active")) {
         element.classList.remove("active", animation);
