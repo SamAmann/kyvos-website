@@ -38,26 +38,49 @@ function exitFullScreen() {
 
 function toggleDisplay(id, animation = "") {
     var element = document.getElementById(id);
-    if animation != "" {
-        var animationReverse = animation + "-reverse";
+    var animationReverse = "";
+    if (animation !== "") {
+        animationReverse = animation + "-reverse";
     } else {
-        var animationReverse = "";
+        animationReverse = "";
     }
-    console.log(animationReverse);
     if (element.classList.contains("active")) {
-        element.classList.remove("active", animation);
-        element.classList.add(animationReverse);
-        setTimeout(function () {
+        element.classList.remove("active");
+        if (animation !== "") {
+            if (element.classList.contains(animation)) {
+                element.classList.remove(animation);
+            }
+            element.classList.add(animationReverse);
+            element.addEventListener("animationend", function () {
+                element.classList.add("inactive");
+                element.classList.remove(animationReverse);
+                element.removeEventListener("animationend", arguments.callee);
+            });
+        } else {
             element.classList.add("inactive");
-        }, 300); // adjust the timing to match the animation duration
+        }
     } else {
-        element.classList.remove("inactive", animationReverse);
-        element.classList.add(animation);
-        setTimeout(function () {
+        element.classList.remove("inactive");
+        if (animation !== "") {
+            if (element.classList.contains(animationReverse)) {
+                element.classList.remove(animationReverse);
+            }
+            element.classList.add(animation);
+            element.addEventListener("animationend", function () {
+                element.classList.add("active");
+                element.classList.remove(animation);
+                element.removeEventListener("animationend", arguments.callee);
+            });
+        } else {
             element.classList.add("active");
-        }, 500); // adjust the timing to match the animation duration
+        }
     }
 }
+
+
+
+
+
 
 
 // Popup management
