@@ -36,8 +36,7 @@ function exitFullScreen() {
 //         console.error('Error:', error);
 //     });
 
-// Function to toggle the display of an element
-function toggleDisplay(id, animation) {
+function toggleDisplay(id, animation = "") {
     var element = document.getElementById(id);
     var animationReverse = animation + "-reverse";
     console.log(animationReverse);
@@ -56,10 +55,11 @@ function toggleDisplay(id, animation) {
     }
 }
 
+
 // Popup management
 
-// Closes popup when user clicks outside of the popup, 
-// unless the popup has the class "outside-click-no-close"
+// Listen when user clicks outside of the popup, 
+// close it unless the popup has the class "outside-click-no-close"
 document.addEventListener('click', function (event) {
     var popups = document.getElementsByClassName("popup");
 
