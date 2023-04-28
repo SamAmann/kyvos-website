@@ -594,6 +594,8 @@ td {
 .popup-content {
   max-width: 80vw;
   min-width: 40vw;
+  max-height: 80vh;
+  width: fit-content;
 }
 
 .close {
@@ -1607,10 +1609,6 @@ button {
   .wide-flex50 {
     flex-basis: 100%;
     max-width: 100%;
-  }
-
-  .popup {
-    min-width: 80vw;
   }
 
   .mob-no-padding {
