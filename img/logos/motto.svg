@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 403.41 101.4">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-3 {
+        fill: #a4bcc0;
+        font-family: Gambetta-Regular, Gambetta;
+        font-size: 50px;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <text class="cls-3" transform="translate(0 36.3)"><tspan x="0" y="0">Maîtriser pour</tspan></text>
+    <text class="cls-3" transform="translate(152.41 88.75)"><tspan class="cls-1" x="0" y="0">s</tspan><tspan class="cls-2" x="20.7" y="0">’</tspan><tspan class="cls-4" x="29.05" y="0">affranchir</tspan></text>
+  </g>
+</svg>
