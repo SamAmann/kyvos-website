@@ -25,6 +25,31 @@
   --color-main700: #ed7752;
   --color-main800: #cb5d39;
   --color-main900: #c03b0f;
+  --color-green: #a4ceb9;
+  --color-green25: #F6FEF9;
+  --color-green50: #ECFDF3;
+  --color-green100: #D1FADF;
+  --color-green200: #A6F4C5;
+  --color-green300: #a4ceb9;
+  --color-green400: #32D583;
+  --color-green500: #12B76A;
+  --color-green600: #039855;
+  --color-green700: #027A48;
+  --color-green800: #05603A;
+  --color-green900: #054F31;
+  --color-blue: #a0b2da;
+  --color-blue25: #f6f9ff;
+  --color-blue50: #edf3ff;
+  --color-blue100: #dde8ff;
+  --color-blue200: #bdd0ff;
+  --color-blue300: #9cb8ff;
+  --color-blue400: #7ca0ff;
+  --color-blue500: #5c88ff;
+  --color-blue600: #3d70ff;
+  --color-blue700: #1e58ff;
+  --color-blue800: #0040ff;
+  --color-blue900: #0026e6;
+
   --text-color: #252628;
   --color-success25: #F6FEF9;
   --color-success50: #ECFDF3;
@@ -918,6 +943,36 @@ nav {
   border: solid 0.15rem var(--color-main600);
   padding: 0.3rem 0.5rem;
   color: var(--color-main600);
+  gap: 0.3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.badge-green {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  border-radius: 20px;
+  border: solid 0.15rem var(--color-green);
+  padding: 0.3rem 0.5rem;
+  color: var(--color-green);
+  gap: 0.3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.badge-blue {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  border-radius: 20px;
+  border: solid 0.15rem var(--color-blue);
+  padding: 0.3rem 0.5rem;
+  color: var(--color-blue);
   gap: 0.3rem;
   width: -moz-fit-content;
   width: fit-content;
