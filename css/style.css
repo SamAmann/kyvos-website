@@ -170,7 +170,7 @@ h1 {
 
 /*set the font family for the heading*/
 h2 {
-  font-family: "Circular", sans-serif;
+  font-family: "Circular", "Inter", sans-serif;
   font-size: var(--display-size-lg);
   font-weight: 600;
   margin: 0.5rem;
@@ -184,21 +184,21 @@ h3 {
 }
 
 h4 {
-  font-family: "Circular", sans-serif;
+  font-family: "Circular", "Inter", sans-serif;
   font-size: var(--display-size-sm);
-  font-weight: 600;
+  font-weight: 500;
   margin: 0px;
 }
 
 h5 {
   font-family: "Circular", "Inter", sans-serif;
   font-size: var(--display-size-xs);
-  font-weight: 600;
+  font-weight: 500;
   margin: 0px;
 }
 
 h6 {
-  font-family: "Circular", sans-serif;
+  font-family: "Circular", "Inter", sans-serif;
   font-size: var(--txt-size-xl);
   font-weight: 600;
   color: var(--color-main700);
