@@ -1230,6 +1230,10 @@ button {
   width: 100%;
 }
 
+.w85 {
+  width: 85%;
+}
+
 .large {
   max-width: 80vw;
 }
