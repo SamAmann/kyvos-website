@@ -199,10 +199,11 @@ window.onscroll = function () {
 function showTopBtn() {
     var btnToTop = document.getElementById("btnToTop");
     var showButtonDistance = 800;
+    var screenWidth = window.innerWidth;
 
     if (
         document.body.scrollTop > showButtonDistance ||
-        document.documentElement.scrollTop > showButtonDistance
+        document.documentElement.scrollTop > showButtonDistance && screenWidth > 755
     ) {
         btnToTop.style.display = "flex";
     } else {
