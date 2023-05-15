@@ -21,7 +21,7 @@ function exitFullScreen() {
         document.webkitExitFullscreen();
     } else if (document.msExitFullscreen) {
         /* IE/Edge */
-        document.msExitFullscreen();
+        document.msExitFullscreen(); 
     }
 }
 
@@ -88,7 +88,7 @@ function toggleDisplay(id, animation = "") {
 // Listen when user clicks outside of the popup, 
 // close it unless the popup has the class "outside-click-no-close"
 document.addEventListener('click', function (event) {
-    var popups = document.getElementsByClassName("popup");
+    var popups = document.getElementsByClassName("popup"); 
 
     for (var i = 0; i < popups.length; i++) {
         if (
